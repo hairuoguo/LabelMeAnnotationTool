@@ -3,10 +3,8 @@ function send_transformation(LM_xml, annotation, image){
     yPoints = annotation.GetPtsY();
     imName = image.file_info.GetImName();
     folder = image.file_info.GetDirName();
-    annoName =  
-     
-    
-    
+    annoName = LMgetObjectField(LM_xml, annotation.id, 'name') 
+      
     $.ajax({
         type: 'POST',
         url: "transfer_annotations.py"
