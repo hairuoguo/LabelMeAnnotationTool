@@ -76,27 +76,30 @@ def transfer_annotations():
         img2_min_x = match["that_min_x"]
         img2_max_y = match["that_max_y"]
         img2_min_y = match["that_min_y"]
+        
+        width = int(match["width"])
+        height = int(match["height"])
 
         H = np.array(match["H"])
         img2_name = match["that"].replace(".JPG", ".jpg")
-        outliers_x = filter(lambda x: x > img1_max_x or x < img1_min_x, x_points)
-        outliers_y = filter(lambda y: y > img1_max_y or y < img1_min_y, y_points)
+        x_points = np.array(x_points)
+        y_points = np.array(y_points)
+        ones = np.ones(x_points.size)
+        points_matrix = np.matrix(np.vstack((x_points, y_points, ones)))
+        transposed_points = np.asarray(np.matrix(H)*points_matrix)
+        s = transposed_points[2, 0]
+        transposed_x = transposed_points[0, :]/s
+        transposed_y = transposed_points[1, :]/s
+        transposed_points = []
+        corners_matrix = np.matrix(np.hstack((np.array([0, 0, 1]).reshape((3, 1)), np.array([width, height, 1]).reshape((3, 1)))))
+        corners = np.asarray(np.matrix(H)*corners_matrix)
+        corners = corners/corners[2, 0]
+        outliers_x = filter(lambda x: x > corners[0, 1] or x < corners[0, 0] or x < 0 or x > width, transposed_x)
+        outliers_y = filter(lambda y: y > corners[1, 1] or y < corners[1, 0] or y < 0 or y > height, transposed_y)
         if len(outliers_x) == 0 and len(outliers_y) == 0:
-            print("check", file=sys.stderr)
-            x_points = np.array(x_points)
-            y_points = np.array(y_points)
-            ones = np.ones(x_points.size)
-            points_matrix = np.matrix(np.vstack((x_points, y_points, ones)))
-            transposed_points = np.asarray(H*points_matrix)
-            s = transposed_points[2, 0]
-            transposed_x = transposed_points[0, :]/s
-            transposed_y = transposed_points[1, :]/s
-            transposed_points = []
-            for x, y in zip(transposed_x, transposed_y):
-                if x < img2_max_x and x > img2_min_x and y < img2_max_y and y > img2_min_y:
-                      transposed_points.append((x, y))
-            if len(transposed_points) > 2:
-                write_to_xml(img2_name, folder, transposed_points, anno_name)
+            for x, y, in zip(transposed_x, transposed_y): 
+                transposed_points.append((x, y))
+            write_to_xml(img2_name, folder, transposed_points, anno_name)
     return str(True) 
                
          
@@ -149,9 +152,12 @@ def write_to_xml(image_name, folder, points, anno_name):
     create_append_assign(anno_object, "verified", str(0))
     create_append_assign(anno_object, "date", datetime.now().strftime("%d-%b-%Y %H:%M:%S"))
     create_append_assign(anno_object, "id", str(xml.xpath('count(//object)')))
+    create_append_assign(anno_object, "occluded", "n")
+    attributes_element = create_append_assign(anno_object, "attributes", "")
     parts_element = create_append_assign(anno_object, 'parts', "")
     parts_element.append(ET.Element("hasparts"))
     parts_element.append(ET.Element("ispartof"))
+    attributes_element.append(parts_element)
     polygon_element = create_append_assign(anno_object, 'polygon', "")
     polygon_element.append(ET.Element("username"))
     for point in points:

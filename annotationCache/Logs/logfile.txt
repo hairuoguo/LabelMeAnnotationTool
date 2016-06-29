@@ -1317,3 +1317,220 @@
 29-Jun-2016 03:50:18 home_rooms DSC_8252 2 2 67.180.21.245  certificate 0 admin cpts_not_modified 0 1
 29-Jun-2016 03:50:18 67.180.21.245 *Closed_Edit_Popup
 29-Jun-2016 03:50:19 67.180.21.245 *Opened_Edit_Popup
+29-Jun-2016 03:57:27 67.180.21.245 *Closed_Edit_Popup
+29-Jun-2016 03:57:35 67.180.21.245 *Opened_Edit_Popup
+29-Jun-2016 04:34:39 67.180.21.245 *Closed_Edit_Popup
+29-Jun-2016 04:34:39 67.180.21.245 *Deleting_object
+29-Jun-2016 04:34:39 home_rooms DSC_8220 54 54 67.180.21.245  certificate 1 admin cpts_not_modified 52 53
+29-Jun-2016 04:34:40 67.180.21.245 *Opened_Edit_Popup
+29-Jun-2016 04:34:41 67.180.21.245 *Opened_Edit_Popup
+29-Jun-2016 04:34:41 67.180.21.245 *Deleting_object
+29-Jun-2016 04:34:41 67.180.21.245 *Closed_Edit_Popup
+29-Jun-2016 04:34:41 home_rooms DSC_8220 54 54 67.180.21.245  certificate 0 admin cpts_not_modified 53 54
+29-Jun-2016 04:34:46 67.180.21.245 *start_polygon
+29-Jun-2016 04:34:51 67.180.21.245 *What_is_this_object_query
+29-Jun-2016 04:35:02 67.180.21.245 *Closed_Edit_Popup
+29-Jun-2016 04:35:03 67.180.21.245 *Opened_Edit_Popup
+29-Jun-2016 04:35:04 67.180.21.245 *Deleting_object
+29-Jun-2016 04:35:04 home_rooms DSC_8252 2 2 67.180.21.245  certificate 0 admin cpts_not_modified 1 2
+29-Jun-2016 04:35:04 67.180.21.245 *Closed_Edit_Popup
+29-Jun-2016 04:35:10 home_rooms DSC_8220 54 55 67.180.21.245  certificate 1 admin cpts_not_modified 54 54
+29-Jun-2016 04:36:12 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/50.0.2661.102 Chrome/50.0.2661.102 Safari/537.36
+29-Jun-2016 04:36:12 67.180.21.245 *start_loading
+29-Jun-2016 04:36:13 67.180.21.245 *done_loading_Images/home_rooms/DSC_8220.jpg
+29-Jun-2016 04:36:14 67.180.21.245 *Opened_Edit_Popup
+29-Jun-2016 04:36:15 67.180.21.245 *Deleting_object
+29-Jun-2016 04:36:15 67.180.21.245 *Closed_Edit_Popup
+29-Jun-2016 04:36:16 67.180.21.245 *start_polygon
+29-Jun-2016 04:36:15 home_rooms DSC_8220 55 55 67.180.21.245  certificate 0 admin cpts_not_modified 54 55
+29-Jun-2016 04:36:21 67.180.21.245 *What_is_this_object_query
+29-Jun-2016 04:36:26 home_rooms DSC_8220 55 56 67.180.21.245  certificate 1 admin cpts_not_modified 55 55
+29-Jun-2016 04:36:52 67.180.21.245 *Opened_Edit_Popup
+29-Jun-2016 04:36:53 67.180.21.245 *Deleting_object
+29-Jun-2016 04:36:53 67.180.21.245 *Closed_Edit_Popup
+29-Jun-2016 04:36:53 home_rooms DSC_8220 56 56 67.180.21.245  certificate 0 admin cpts_not_modified 55 56
+29-Jun-2016 04:37:40 67.180.21.245 *start_polygon
+29-Jun-2016 04:37:41 67.180.21.245 *What_is_this_object_query
+29-Jun-2016 04:37:44 67.180.21.245 *start_polygon
+29-Jun-2016 04:37:48 67.180.21.245 *What_is_this_object_query
+29-Jun-2016 04:37:51 home_rooms DSC_8220 56 57 67.180.21.245  certificate 1 admin cpts_not_modified 56 56
+29-Jun-2016 04:40:37 67.180.21.245 *start_loading
+29-Jun-2016 04:40:37 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/50.0.2661.102 Chrome/50.0.2661.102 Safari/537.36
+29-Jun-2016 04:40:39 67.180.21.245 *done_loading_Images/home_rooms/DSC_8220.jpg
+29-Jun-2016 04:40:41 67.180.21.245 *Opened_Edit_Popup
+29-Jun-2016 04:40:42 67.180.21.245 *Deleting_object
+29-Jun-2016 04:40:42 67.180.21.245 *Closed_Edit_Popup
+29-Jun-2016 04:40:42 home_rooms DSC_8220 57 57 67.180.21.245  certificate 0 admin cpts_not_modified 56 57
+29-Jun-2016 04:40:44 67.180.21.245 *start_polygon
+29-Jun-2016 04:40:48 67.180.21.245 *What_is_this_object_query
+29-Jun-2016 04:40:51 home_rooms DSC_8220 57 58 67.180.21.245  certificate 1 admin cpts_not_modified 57 57
+29-Jun-2016 04:43:17 67.180.21.245 *start_loading
+29-Jun-2016 04:43:17 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/50.0.2661.102 Chrome/50.0.2661.102 Safari/537.36
+29-Jun-2016 04:43:26 67.180.21.245 *done_loading_Images/home_rooms/DSC_8220.jpg
+29-Jun-2016 04:43:30 67.180.21.245 *start_polygon
+29-Jun-2016 04:43:31 67.180.21.245 *What_is_this_object_query
+29-Jun-2016 04:43:33 67.180.21.245 *Opened_Edit_Popup
+29-Jun-2016 04:43:34 67.180.21.245 *Deleting_object
+29-Jun-2016 04:43:34 67.180.21.245 *Closed_Edit_Popup
+29-Jun-2016 04:43:34 home_rooms DSC_8220 58 58 67.180.21.245  certificate 0 admin cpts_not_modified 57 58
+29-Jun-2016 04:43:36 67.180.21.245 *start_polygon
+29-Jun-2016 04:43:41 67.180.21.245 *What_is_this_object_query
+29-Jun-2016 04:43:44 home_rooms DSC_8220 58 59 67.180.21.245  certificate 1 admin cpts_not_modified 58 58
+29-Jun-2016 04:45:43 67.180.21.245 *start_loading
+29-Jun-2016 04:45:43 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/50.0.2661.102 Chrome/50.0.2661.102 Safari/537.36
+29-Jun-2016 04:45:47 67.180.21.245 *done_loading_Images/home_rooms/DSC_8220.jpg
+29-Jun-2016 04:45:51 67.180.21.245 *Opened_Edit_Popup
+29-Jun-2016 04:45:54 67.180.21.245 *Deleting_object
+29-Jun-2016 04:45:54 67.180.21.245 *Closed_Edit_Popup
+29-Jun-2016 04:45:54 67.180.21.245 *start_polygon
+29-Jun-2016 04:45:54 home_rooms DSC_8220 59 59 67.180.21.245  certificate 0 admin cpts_not_modified 58 59
+29-Jun-2016 04:45:58 67.180.21.245 *What_is_this_object_query
+29-Jun-2016 04:46:01 home_rooms DSC_8220 59 60 67.180.21.245  certificate 1 admin cpts_not_modified 59 59
+29-Jun-2016 04:47:32 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/50.0.2661.102 Chrome/50.0.2661.102 Safari/537.36
+29-Jun-2016 04:47:32 67.180.21.245 *start_loading
+29-Jun-2016 04:47:33 67.180.21.245 *done_loading_Images/home_rooms/DSC_8220.jpg
+29-Jun-2016 04:47:34 67.180.21.245 *Opened_Edit_Popup
+29-Jun-2016 04:47:35 67.180.21.245 *Deleting_object
+29-Jun-2016 04:47:35 67.180.21.245 *Closed_Edit_Popup
+29-Jun-2016 04:47:35 home_rooms DSC_8220 60 60 67.180.21.245  certificate 0 admin cpts_not_modified 59 60
+29-Jun-2016 04:47:39 67.180.21.245 *start_polygon
+29-Jun-2016 04:47:42 67.180.21.245 *What_is_this_object_query
+29-Jun-2016 04:47:45 home_rooms DSC_8220 60 61 67.180.21.245  certificate 1 admin cpts_not_modified 60 60
+29-Jun-2016 04:51:39 67.180.21.245 *start_loading
+29-Jun-2016 04:51:39 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/50.0.2661.102 Chrome/50.0.2661.102 Safari/537.36
+29-Jun-2016 04:51:40 67.180.21.245 *done_loading_Images/home_rooms/DSC_8220.jpg
+29-Jun-2016 04:51:43 67.180.21.245 *Opened_Edit_Popup
+29-Jun-2016 04:51:44 67.180.21.245 *Deleting_object
+29-Jun-2016 04:51:44 67.180.21.245 *Closed_Edit_Popup
+29-Jun-2016 04:51:44 home_rooms DSC_8220 61 61 67.180.21.245  certificate 0 admin cpts_not_modified 60 61
+29-Jun-2016 04:51:46 67.180.21.245 *start_polygon
+29-Jun-2016 04:51:52 67.180.21.245 *What_is_this_object_query
+29-Jun-2016 04:51:55 home_rooms DSC_8220 61 62 67.180.21.245  certificate 1 admin cpts_not_modified 61 61
+29-Jun-2016 04:52:35 67.180.21.245 *start_loading
+29-Jun-2016 04:52:35 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/50.0.2661.102 Chrome/50.0.2661.102 Safari/537.36
+29-Jun-2016 04:52:36 67.180.21.245 *done_loading_Images/home_rooms/DSC_8220.jpg
+29-Jun-2016 04:52:38 67.180.21.245 *Opened_Edit_Popup
+29-Jun-2016 04:52:39 67.180.21.245 *Deleting_object
+29-Jun-2016 04:52:39 67.180.21.245 *Closed_Edit_Popup
+29-Jun-2016 04:52:39 home_rooms DSC_8220 62 62 67.180.21.245  certificate 0 admin cpts_not_modified 61 62
+29-Jun-2016 04:52:40 67.180.21.245 *start_polygon
+29-Jun-2016 04:52:46 67.180.21.245 *What_is_this_object_query
+29-Jun-2016 04:52:49 home_rooms DSC_8220 62 63 67.180.21.245  certificate 1 admin cpts_not_modified 62 62
+29-Jun-2016 04:56:05 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/50.0.2661.102 Chrome/50.0.2661.102 Safari/537.36
+29-Jun-2016 04:56:06 67.180.21.245 *start_loading
+29-Jun-2016 04:56:07 67.180.21.245 *done_loading_Images/home_rooms/DSC_8220.jpg
+29-Jun-2016 04:56:07 67.180.21.245 *Opened_Edit_Popup
+29-Jun-2016 04:56:08 67.180.21.245 *Deleting_object
+29-Jun-2016 04:56:08 67.180.21.245 *Closed_Edit_Popup
+29-Jun-2016 04:56:08 home_rooms DSC_8220 63 63 67.180.21.245  certificate 0 admin cpts_not_modified 62 63
+29-Jun-2016 04:56:11 67.180.21.245 *start_polygon
+29-Jun-2016 04:56:14 67.180.21.245 *What_is_this_object_query
+29-Jun-2016 04:56:17 home_rooms DSC_8220 63 64 67.180.21.245  certificate 1 admin cpts_not_modified 63 63
+29-Jun-2016 04:59:11 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/50.0.2661.102 Chrome/50.0.2661.102 Safari/537.36
+29-Jun-2016 04:59:11 67.180.21.245 *start_loading
+29-Jun-2016 04:59:11 67.180.21.245 *done_loading_Images/home_rooms/DSC_8220.jpg
+29-Jun-2016 04:59:13 67.180.21.245 *Opened_Edit_Popup
+29-Jun-2016 04:59:14 67.180.21.245 *Deleting_object
+29-Jun-2016 04:59:14 67.180.21.245 *Closed_Edit_Popup
+29-Jun-2016 04:59:14 home_rooms DSC_8220 64 64 67.180.21.245  certificate 0 admin cpts_not_modified 63 64
+29-Jun-2016 04:59:15 67.180.21.245 *start_polygon
+29-Jun-2016 04:59:20 67.180.21.245 *What_is_this_object_query
+29-Jun-2016 04:59:26 home_rooms DSC_8220 64 65 67.180.21.245  certificate 1 admin cpts_not_modified 64 64
+29-Jun-2016 05:00:52 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/50.0.2661.102 Chrome/50.0.2661.102 Safari/537.36
+29-Jun-2016 05:00:52 67.180.21.245 *start_loading
+29-Jun-2016 05:00:53 67.180.21.245 *done_loading_Images/home_rooms/DSC_8220.jpg
+29-Jun-2016 05:00:53 67.180.21.245 *Opened_Edit_Popup
+29-Jun-2016 05:00:54 67.180.21.245 *Deleting_object
+29-Jun-2016 05:00:54 67.180.21.245 *Closed_Edit_Popup
+29-Jun-2016 05:00:54 home_rooms DSC_8220 65 65 67.180.21.245  certificate 0 admin cpts_not_modified 64 65
+29-Jun-2016 05:00:56 67.180.21.245 *start_polygon
+29-Jun-2016 05:01:01 67.180.21.245 *What_is_this_object_query
+29-Jun-2016 05:01:05 home_rooms DSC_8220 65 66 67.180.21.245  certificate 1 admin cpts_not_modified 65 65
+29-Jun-2016 05:01:34 67.180.21.245 *start_loading
+29-Jun-2016 05:01:34 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/50.0.2661.102 Chrome/50.0.2661.102 Safari/537.36
+29-Jun-2016 05:01:35 67.180.21.245 *done_loading_Images/home_rooms/DSC_8252.jpg
+29-Jun-2016 05:01:40 67.180.21.245 *Opened_Edit_Popup
+29-Jun-2016 05:01:42 67.180.21.245 *Closed_Edit_Popup
+29-Jun-2016 05:01:50 67.180.21.245 *start_polygon
+29-Jun-2016 05:01:52 67.180.21.245 *What_is_this_object_query
+29-Jun-2016 05:01:54 home_rooms DSC_8220 66 67 67.180.21.245  eee 2 admin cpts_not_modified 65 65
+29-Jun-2016 05:02:00 67.180.21.245 *start_loading
+29-Jun-2016 05:02:00 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/50.0.2661.102 Chrome/50.0.2661.102 Safari/537.36
+29-Jun-2016 05:02:00 67.180.21.245 *done_loading_Images/home_rooms/DSC_8252.jpg
+29-Jun-2016 05:02:03 67.180.21.245 *Opened_Edit_Popup
+29-Jun-2016 05:02:04 67.180.21.245 *Deleting_object
+29-Jun-2016 05:02:04 67.180.21.245 *Closed_Edit_Popup
+29-Jun-2016 05:02:04 home_rooms DSC_8220 67 67 67.180.21.245  eee 1 admin cpts_not_modified 65 66
+29-Jun-2016 05:02:09 67.180.21.245 *start_polygon
+29-Jun-2016 05:02:13 67.180.21.245 *What_is_this_object_query
+29-Jun-2016 05:02:17 home_rooms DSC_8220 67 68 67.180.21.245  ribbon 2 admin cpts_not_modified 66 66
+29-Jun-2016 05:02:23 67.180.21.245 *start_loading
+29-Jun-2016 05:02:23 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/50.0.2661.102 Chrome/50.0.2661.102 Safari/537.36
+29-Jun-2016 05:02:23 67.180.21.245 *done_loading_Images/home_rooms/DSC_8252.jpg
+29-Jun-2016 05:02:38 67.180.21.245 *Opened_Edit_Popup
+29-Jun-2016 05:02:39 67.180.21.245 *Closed_Edit_Popup
+29-Jun-2016 05:02:40 67.180.21.245 *Opened_Edit_Popup
+29-Jun-2016 05:02:43 67.180.21.245 *Closed_Edit_Popup
+29-Jun-2016 05:02:51 67.180.21.245 *Opened_Edit_Popup
+29-Jun-2016 05:02:55 67.180.21.245 *Closed_Edit_Popup
+29-Jun-2016 05:03:05 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/50.0.2661.102 Chrome/50.0.2661.102 Safari/537.36
+29-Jun-2016 05:03:05 67.180.21.245 *start_loading
+29-Jun-2016 05:03:06 67.180.21.245 *done_loading_Images/example_folder/img1.jpg
+29-Jun-2016 05:03:07 67.180.21.245 *Opened_Edit_Popup
+29-Jun-2016 05:08:47 67.180.21.245 *start_polygon
+29-Jun-2016 05:08:52 67.180.21.245 *What_is_this_object_query
+29-Jun-2016 05:08:55 67.180.21.245 *start_polygon
+29-Jun-2016 05:08:59 67.180.21.245 *What_is_this_object_query
+29-Jun-2016 05:09:05 home_rooms DSC_8220 68 69 67.180.21.245  certificate 3 admin cpts_not_modified 66 66
+29-Jun-2016 05:09:15 67.180.21.245 *start_loading
+29-Jun-2016 05:09:15 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/50.0.2661.102 Chrome/50.0.2661.102 Safari/537.36
+29-Jun-2016 05:09:15 67.180.21.245 *done_loading_Images/home_rooms/DSC_8252.jpg
+29-Jun-2016 05:09:16 67.180.21.245 *Opened_Edit_Popup
+29-Jun-2016 05:10:37 67.180.21.245 *Closed_Edit_Popup
+29-Jun-2016 05:10:38 example_folder img1 51 51 67.180.21.245  ear->ear 0 admin cpts_modified 10 10
+29-Jun-2016 05:10:38 67.180.21.245 *Opened_Edit_Popup
+29-Jun-2016 05:12:45 67.180.21.245 *Closed_Edit_Popup
+29-Jun-2016 05:12:47 67.180.21.245 *Opened_Edit_Popup
+29-Jun-2016 05:12:48 67.180.21.245 *Deleting_object
+29-Jun-2016 05:12:48 home_rooms DSC_8252 5 5 67.180.21.245  certificate 0 admin cpts_not_modified 2 3
+29-Jun-2016 05:12:48 67.180.21.245 *Closed_Edit_Popup
+29-Jun-2016 05:12:49 67.180.21.245 *Opened_Edit_Popup
+29-Jun-2016 05:12:50 67.180.21.245 *Closed_Edit_Popup
+29-Jun-2016 05:12:50 home_rooms DSC_8252 5 5 67.180.21.245  certificate 0 admin cpts_not_modified 3 4
+29-Jun-2016 05:12:50 67.180.21.245 *Deleting_object
+29-Jun-2016 05:12:51 67.180.21.245 *Opened_Edit_Popup
+29-Jun-2016 05:12:52 67.180.21.245 *Deleting_object
+29-Jun-2016 05:12:52 home_rooms DSC_8252 5 5 67.180.21.245  ribbon 0 admin cpts_not_modified 4 5
+29-Jun-2016 05:12:52 67.180.21.245 *Closed_Edit_Popup
+29-Jun-2016 05:13:05 67.180.21.245 *Opened_Edit_Popup
+29-Jun-2016 05:13:05 67.180.21.245 *Deleting_object
+29-Jun-2016 05:13:05 67.180.21.245 *Closed_Edit_Popup
+29-Jun-2016 05:13:05 home_rooms DSC_8220 69 69 67.180.21.245  certificate 2 admin cpts_not_modified 66 67
+29-Jun-2016 05:13:07 67.180.21.245 *Opened_Edit_Popup
+29-Jun-2016 05:13:07 67.180.21.245 *Deleting_object
+29-Jun-2016 05:13:07 67.180.21.245 *Closed_Edit_Popup
+29-Jun-2016 05:13:07 home_rooms DSC_8220 69 69 67.180.21.245  certificate 1 admin cpts_not_modified 67 68
+29-Jun-2016 05:13:08 67.180.21.245 *Opened_Edit_Popup
+29-Jun-2016 05:13:09 67.180.21.245 *Deleting_object
+29-Jun-2016 05:13:09 67.180.21.245 *Closed_Edit_Popup
+29-Jun-2016 05:13:09 home_rooms DSC_8220 69 69 67.180.21.245  ribbon 0 admin cpts_not_modified 68 69
+29-Jun-2016 05:13:12 67.180.21.245 *start_polygon
+29-Jun-2016 05:13:17 67.180.21.245 *What_is_this_object_query
+29-Jun-2016 05:13:21 home_rooms DSC_8252 5 6 67.180.21.245  certificate 1 admin cpts_not_modified 5 5
+29-Jun-2016 05:13:26 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/50.0.2661.102 Chrome/50.0.2661.102 Safari/537.36
+29-Jun-2016 05:13:26 67.180.21.245 *start_loading
+29-Jun-2016 05:13:27 67.180.21.245 *done_loading_Images/home_rooms/DSC_8220.jpg
+29-Jun-2016 05:13:38 67.180.21.245 *Opened_Edit_Popup
+29-Jun-2016 05:13:39 67.180.21.245 *Deleting_object
+29-Jun-2016 05:13:39 67.180.21.245 *Closed_Edit_Popup
+29-Jun-2016 05:13:39 home_rooms DSC_8252 6 6 67.180.21.245  certificate 0 admin cpts_not_modified 5 6
+29-Jun-2016 05:13:41 67.180.21.245 *Opened_Edit_Popup
+29-Jun-2016 05:13:42 67.180.21.245 *Deleting_object
+29-Jun-2016 05:13:42 67.180.21.245 *Closed_Edit_Popup
+29-Jun-2016 05:13:42 home_rooms DSC_8220 70 70 67.180.21.245  certificate 0 admin cpts_not_modified 69 70
+29-Jun-2016 05:13:45 67.180.21.245 *start_polygon
+29-Jun-2016 05:13:50 67.180.21.245 *What_is_this_object_query
+29-Jun-2016 05:13:53 home_rooms DSC_8220 70 71 67.180.21.245  ribbon 1 admin cpts_not_modified 70 70
+29-Jun-2016 05:13:58 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/50.0.2661.102 Chrome/50.0.2661.102 Safari/537.36
+29-Jun-2016 05:13:58 67.180.21.245 *start_loading
+29-Jun-2016 05:13:58 67.180.21.245 *done_loading_Images/home_rooms/DSC_8252.jpg
