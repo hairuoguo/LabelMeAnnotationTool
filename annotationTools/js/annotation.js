@@ -349,4 +349,18 @@ function annotation(anno_id) {
     this.dist = function (x0,y0,x1,y1) {
         return Math.sqrt((x0-x1)*(x0-x1)+(y0-y1)*(y0-y1));
     };
+
+    this.transfer_annotation = function(main_media, anno_name){
+       var xPoints = this.GetPtsX();
+        var yPoints = this.GetPtsY();
+        var imName = main_media.file_info.GetImName();
+        var folder = main_media.file_info.GetDirName();
+        $.ajax({
+            type: 'POST',
+            url: "http://hairuo.scripts.mit.edu:5000/transfer_annotations",
+            data: JSON.stringify({'x_points': xPoints, 'y_points': yPoints, 'name': imName, 'folder': folder, 'anno_name': anno_name}),
+            contentType: 'application/json; charset=utf-8',
+            dataType: "json"
+        });
+    };
 }

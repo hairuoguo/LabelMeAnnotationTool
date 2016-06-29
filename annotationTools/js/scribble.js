@@ -840,9 +840,10 @@ function scribble (id){
   this.GetMaskURL = function (){
     var url_name =  $(LM_xml).children("annotation").children("object").eq(this.annot_id).children("segm").children("mask").text();
     var url_folder =  $(LM_xml).children("annotation").children("folder").text();
-    var loc = window.location.href;
-    var   dir = loc.substring(0, loc.lastIndexOf('/tool.html'));
-    url_name = dir+'/Masks/'+url_folder+'/'+url_name;
+    //var loc = window.location.href;
+    //var dir = loc.substring(0, loc.lastIndexOf('/tool.html'));
+    //console.log(loc)
+    url_name = 'Masks/'+url_folder+'/'+url_name;
     return url_name;
   };
   // Get the corners of the cropped image that was used to create the segmentation

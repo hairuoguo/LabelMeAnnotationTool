@@ -6,8 +6,8 @@ function send_transformation(annoName, annotation, image){
       
     $.ajax({
         type: 'POST',
-        url: "transfer_annotations.py"
-        data: {x_points: xPoints, y_points: yPoints, name: name, folder: folder}
+        url: "transfer_annotations.py",
+        data: {x_points: xPoints, y_points: yPoints, name: name, folder: folder},
         dataType: "text"
     });
 }

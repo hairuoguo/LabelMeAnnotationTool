@@ -1,14 +1,16 @@
 Options +Includes +ExecCGI
 AddHandler cgi-script .cgi .sh .pl
-AddType text/html .shtml
+AddType image/svg+xml .svg .svgz
+AddType application/xhtml+xml shtml
 AddHandler server-parsed .shtml
 XBitHack on
 BrowserMatchNoCase macintosh Mac
 BrowserMatchNoCase MSIE InternetExplorer
 
-<Files "tool.html">
-AddType application/xhtml+xml html
-AddHandler server-parsed .html
+<Files "tool.shtml">
+AddType application/xhtml+xml shtml
+AddHandler server-parsed .shtml
+AddType image/svg+xml .svg .svgz
 RewriteEngine On
 RewriteBase /
 RewriteCond %{HTTP_ACCEPT} !application/xhtml\+xml

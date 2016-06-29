@@ -1,49 +1,108 @@
 #!/usr/bin/python
-from flask import Flask
-import glob, datetime
+from __future__ import print_function
+from flask import Flask, request, current_app, make_response
+from flask_cors import CORS, cross_origin
+import glob, datetime, json, os
+import numpy as np
+from datetime import datetime, timedelta
+from functools import update_wrapper
 from lxml import etree as ET
+from OpenSSL import SSL
+import sys
 app = Flask(__name__)
+CORS(app)
+def crossdomain(origin=None, methods=None, headers=None,
+                max_age=21600, attach_to_all=True,
+                automatic_options=True):
+    if methods is not None:
+        methods = ', '.join(sorted(x.upper() for x in methods))
+    if headers is not None and not isinstance(headers, basestring):
+        headers = ', '.join(x.upper() for x in headers)
+    if not isinstance(origin, basestring):
+        origin = ', '.join(origin)
+    if isinstance(max_age, timedelta):
+        max_age = max_age.total_seconds()
 
-@app.route("/transfer_annotations")
-def transfer_annotations(x_points, y_points, name, folder):
-    name = name.replace(".JPG", "")
-    matches = glob.glob("Homographies/" + folder + "/*" + name + "*.JPG")
+    def get_methods():
+        if methods is not None:
+            return methods
+
+        options_resp = current_app.make_default_options_response()
+        return options_resp.headers['allow']
+
+    def decorator(f):
+        def wrapped_function(*args, **kwargs):
+            if automatic_options and request.method == 'OPTIONS':
+                resp = current_app.make_default_options_response()
+            else:
+                resp = make_response(f(*args, **kwargs))
+            if not attach_to_all and request.method != 'OPTIONS':
+                return resp
+
+            h = resp.headers
+
+            h['Access-Control-Allow-Origin'] = origin
+            h['Access-Control-Allow-Methods'] = get_methods()
+            h['Access-Control-Max-Age'] = str(max_age)
+            if headers is not None:
+                h['Access-Control-Allow-Headers'] = headers
+            return resp
+
+        f.provide_automatic_options = False
+        return update_wrapper(wrapped_function, f)
+    return decorator
+
+
+@app.route("/transfer_annotations", methods=['POST'])
+def transfer_annotations():
+    json_request = request.get_json(force=True)
+    x_points = json_request['x_points']
+    y_points = json_request['y_points']
+    name = json_request['name']
+    folder = json_request['folder']
+    anno_name = json_request['anno_name']
+    name = name.replace(".jpg", "")
+    with open("Homographies/" + folder + '/' + name.replace(".jpg", "") + "_matches.json") as json_file:
+        data = json.load(json_file)
+        matches = data["matches"] 
     for match in matches:
-        boundaries_list, H, image2_name = parse_file(match, name)
-        img1_max_x = boundaries_list[0]
-        img1_min_x = boundaries_list[1]
-        img1_max_y = boundaries_list[2]
-        img1_min_y = boundaries_list[3]
+        img1_max_x = match["this_max_x"]
+        img1_min_x = match["this_min_x"]
+        img1_max_y = match["this_max_y"]
+        img1_min_y = match["this_min_y"]
     
 
-        img2_max_x = boundaries_list[4]
-        img2_min_x = boundaries_list[5]
-        img2_max_y = boundaries_list[6]
-        img2_min_y = boundaries_list[7]
+        img2_max_x = match["that_max_x"]
+        img2_min_x = match["that_min_x"]
+        img2_max_y = match["that_max_y"]
+        img2_min_y = match["that_min_y"]
 
-        outliers_x = filter(lambda x: x > img1_max_x or x < img1_min_x, xPoints)
-        outliers_y = filter(lambda y: y > img1_max_y or y < img1_min_y, yPoints)
+        H = np.array(match["H"])
+        img2_name = match["that"].replace(".JPG", ".jpg")
+        outliers_x = filter(lambda x: x > img1_max_x or x < img1_min_x, x_points)
+        outliers_y = filter(lambda y: y > img1_max_y or y < img1_min_y, y_points)
         if len(outliers_x) == 0 and len(outliers_y) == 0:
+            print("check", file=sys.stderr)
             x_points = np.array(x_points)
             y_points = np.array(y_points)
             ones = np.ones(x_points.size)
             points_matrix = np.matrix(np.vstack((x_points, y_points, ones)))
-            transposed_points = np.asarray(points_matrix*H)
-            transposed_points = transposed_points/transposed_points[2, 0]
-            transposed_x = transposed_points[0, :]
-            transposed_y = transposed_points[1, :]
+            transposed_points = np.asarray(H*points_matrix)
+            s = transposed_points[2, 0]
+            transposed_x = transposed_points[0, :]/s
+            transposed_y = transposed_points[1, :]/s
             transposed_points = []
-            for x, y in transposed_x, transposed_y:
+            for x, y in zip(transposed_x, transposed_y):
                 if x < img2_max_x and x > img2_min_x and y < img2_max_y and y > img2_min_y:
                       transposed_points.append((x, y))
             if len(transposed_points) > 2:
-                write_to_xml(image2_name, folder, transposed_points, anno_name)
-            
+                write_to_xml(img2_name, folder, transposed_points, anno_name)
+    return str(True) 
                
          
             
-
-def parse_file(filename, image_name):
+'''
+def parse_file(filename):
     with open(filename) as f:
         content = f.readlines()
         line_1 = [int(x) for x in content[0].strip([" ", "\n"]).split(" ")]
@@ -52,58 +111,61 @@ def parse_file(filename, image_name):
 
         H = np.array([line_1, line_2, line_3])
         
-        image1 = content[3].strip([" ", "\n"]).split(".")[0] + ".JPG"
-        image2 = content[7].strip([" ", "\n"]).split(".")[0] + ".JPG"
+        image1 = content[3].strip([" ", "\n"]).split(".")[0] + ".jpg"
+        image2 = content[7].strip([" ", "\n"]).split(".")[0] + ".jpg"
 
         boundaries_list = []
         for line in content[3:-1]:
             corner = line.strip([" ", "\n"]).split(" ")[1] 
             boundaries_list.append(corner)
 
-        if image2 == image_name + ".JPG":
+        if image2 == image_name + ".jpg":
             H = np.linalg.inv(H)
         
            
         f.close()
     return boundaries_list, np.matrix(H), image2_name       
+'''
+def create_append_assign(anno_object, new_tag, text):
+    new_element = ET.Element(new_tag)
+    if text != "":
+        new_element.text = text
+    anno_object.append(new_element)
+    return new_element
 
 def write_to_xml(image_name, folder, points, anno_name):
     proposed_name = "PROPOSED" + anno_name
-    filename = folder + "/" + image_name + ".JPG"
-    if os.ispath("Annotations/" + filename):
+    filename = folder + "/" + image_name.replace(".jpg", ".xml")
+    if os.path.exists("Annotations/" + filename):
         xml = ET.parse("Annotations/" + filename)
     else:
         xml = ET.parse("annotationCache/XMLTemplates/labelme.xml")
-        xml.get("annotation").set("filename", image_name + ".JPG")
-        xml.get("annotation").set("folder", folder)
+        xml.find("filename").text = image_name 
+        xml.find("folder").text = folder
     
     anno_object = ET.Element("object")
-    name_element = anno_object.append(ET.Element("name"))
-    name_element.text = anno_name 
-    deleted_element = anno_object.append(ET.Element("deleted"))
-    deleted_element.text = str(0)
-    verified_element = anno_object.append(ET.Element("verified"))
-    verified_element.text = str(0)
-    date_element = anno_object.append(ET.Element("date"))
-    date_element.text = datetime.now().strftime("%d-%b-%Y %H:%M:%S") 
-    id_element = anno_object.append(ET.Element("id")) 
-    id_element.text = xml.xpath('count(//object)')  
-    parts_element = anno_object.append(ET.Element("parts"))
+    create_append_assign(anno_object, "name", anno_name)
+    create_append_assign(anno_object, "deleted", str(0))
+    create_append_assign(anno_object, "verified", str(0))
+    create_append_assign(anno_object, "date", datetime.now().strftime("%d-%b-%Y %H:%M:%S"))
+    create_append_assign(anno_object, "id", str(xml.xpath('count(//object)')))
+    parts_element = create_append_assign(anno_object, 'parts', "")
     parts_element.append(ET.Element("hasparts"))
     parts_element.append(ET.Element("ispartof"))
-    polygon_element = anno_object.append(ET.Element("polygon"))
+    polygon_element = create_append_assign(anno_object, 'polygon', "")
     polygon_element.append(ET.Element("username"))
     for point in points:
-        pt = ET.element("pt")
-        x = ET.element("x")
-        x.text = point[0]
-        y = ET.element("y")
-        y.text = point[1]
+        pt = ET.Element("pt")
+        x = ET.Element("x")
+        x.text = str(point[0])
+        y = ET.Element("y")
+        y.text = str(point[1])
         pt.append(x)
         pt.append(y)
-        polygon_element.append(pt) 
-    xml_tree = ET.ElementTree(xml)
-    xml_tree.write("Annotations/" + filename, pretty_print=True) 
+        polygon_element.append(pt)
+    root = xml.getroot()
+    root.append(anno_object) 
+    xml.write("Annotations/" + filename, pretty_print=True) 
     
 if __name__ == "__main__":
-    app.run()
+    app.run(host='0.0.0.0')

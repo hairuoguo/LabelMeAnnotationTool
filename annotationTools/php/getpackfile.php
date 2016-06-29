@@ -24,8 +24,8 @@
 	$zip->addEmptyDir("Scribbles");
   
     // Add the masks
-    $maskurl = $TOOLHOME. "Masks/".$folder."/".substr($imname,0,-4)."_mask_";
-    $scriburl = $TOOLHOME. "Scribbles/".$folder."/".substr($imname,0,-4)."_scribble_";
+    $maskurl = $TOOLHOME."Masks/".$folder."/".substr($imname,0,-4)."_mask_";
+    $scriburl = $TOOLHOME."Scribbles/".$folder."/".substr($imname,0,-4)."_scribble_";
     /*$cont = 0;
     while (file_exists($maskurl.strval($cont).".png")){
     	$zip->addFile($maskurl.strval($cont).".png", "Masks/".substr($imname,0,-4)."_".strval($cont).".png");

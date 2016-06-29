@@ -371,7 +371,7 @@ function handler() {
       	document.getElementById('number_objects').value=global_count;
       	document.getElementById('LMurl').value = LMbaseurl + '?collection=LabelMe&mode=i&folder=' + main_media.GetFileInfo().GetDirName() + '&image=' + main_media.GetFileInfo().GetImName();
       	if(global_count >= mt_N) document.getElementById('mt_submit').disabled=false;
-        send_transformation(new_name, annotation, image);
+      anno.transfer_annotation(main_media, new_name);
       }
       return anno;
     };
