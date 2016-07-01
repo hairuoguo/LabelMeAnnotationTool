@@ -281,6 +281,7 @@ function image(id) {
         return true;
     };
 
+    /*
     this.AddLock = function() {
         var imName = this.file_info.GetImName();
         var folder = this.file_info.GetDirName();
@@ -305,7 +306,7 @@ function image(id) {
         });
 
 
-    };
+    };*/ 
     
 }
 

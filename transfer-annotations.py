@@ -1,5 +1,6 @@
 #!/usr/bin/python
 from __future__ import print_function
+import threading
 from flask import Flask, request, current_app, make_response
 from flask_cors import CORS, cross_origin
 import glob, datetime, json, os, time, random
@@ -12,6 +13,7 @@ import sys
 
 
 app = Flask(__name__)
+lock = threading.Lock()
 CORS(app)
 def crossdomain(origin=None, methods=None, headers=None,
                 max_age=21600, attach_to_all=True,
@@ -56,6 +58,8 @@ def crossdomain(origin=None, methods=None, headers=None,
 
 def merge_xmls(folder, name):
     main_xml_file = "Annotations/" + folder + "/" + name.replace("jpg", "xml")
+    if not os.path.isfile(main_xml_file):
+        return str(False)
     main_xml = ET.parse(main_xml_file)
     main_root = main_xml.getroot()
     object_files = glob.glob(main_xml_file + ".[0-9]*")
@@ -71,33 +75,45 @@ def merge_xmls(folder, name):
 
 @app.route("/add_lock", methods=['POST'])
 def add_lock():
+    global lock
+    lock.acquire()
     json_request = request.get_json(force=True) 
     name = json_request["name"]
     folder = json_request['folder']
+    merge_xmls(folder, name)
+    '''
     lock_file = open("Images/" + folder + "/" + name + ".lock", "w")
-    all_locks = glob.glob("Images/" + folder + "/" + "*.lock") 
-    for lock in all_locks:
-        modified_time = os.path.getmtime(lock)
+    all_lock_files = glob.glob("Images/" + folder + "/" + "*.lock") 
+    for lock_file in all_lock_files:
+        modified_time = os.path.getmtime(lock_file)
         delta = datetime.now() - datetime.fromtimestamp(modified_time)
         if delta.seconds > 5400:
-            lock_name = os.path.basename(lock)
+            lock_name = os.path.basename(lock_file)
             merge_xmls(folder, lock_name)
-            os.remove(lock)
+            os.remove(lock_file)
+    '''
+    lock.release()
+    
     return str(True)
-                
+            
 @app.route("/remove_lock", methods=['POST'])
 def remove_lock():
+    global lock
+    lock.acquire()
     json_request = request.get_json(force=True)
     name = json_request["name"]
     folder = json_request['folder']
-    merge_xmls(folder, name)
-    os.remove("Images/" + folder + "/" + name + ".lock")
+    #merge_xmls(folder, name)
+    #os.remove("Images/" + folder + "/" + name + ".lock")
+    lock.release() 
     return str(True)
-    
-    
+        
+        
 
 @app.route("/transfer_annotations", methods=['POST'])
 def transfer_annotations():
+    global lock
+    lock.acquire()
     json_request = request.get_json(force=True)
     x_points = json_request['x_points']
     y_points = json_request['y_points']
@@ -133,9 +149,9 @@ def transfer_annotations():
             for x, y, in zip(transposed_x, transposed_y): 
                 transposed_points.append((x, y))
             write_to_xml(img2_name, folder, transposed_points, anno_name)
-                 
+    lock.release() 
     return str(True) 
-               
+           
          
             
 def create_append_assign(anno_object, new_tag, text):
@@ -180,15 +196,22 @@ def write_to_xml(image_name, folder, points, anno_name):
         polygon_element.append(pt)
     root = xml.getroot()
     root.append(anno_object)
+    '''
     if not os.path.isfile("Images/" + folder + "/" + image_name + ".lock"): 
         xml.write("Annotations/" + filename, pretty_print=True)
     else:
-        object_tree = ET.ElementTree(anno_object) 
+        iobject_tree = ET.ElementTree(anno_object) 
         filename = filename + "." + str(random.randint(100000, 999999))
         object_tree.write("Annotations/" + filename, pretty_print=True)
-        
+    '''
+    if os.path.isfile("Annotations/" + filename):
+        object_tree = ET.ElementTree(anno_object) 
+        filename = filename + "." + str(random.randint(100000, 999999))
+        object_tree.write("Annotations/" + filename, pretty_print=True)  
+    else:
+        xml.write("Annotations/" + filename, pretty_print=True) 
         
     
     
 if __name__ == "__main__":
-    app.run(host='0.0.0.0')
+    app.run(host='0.0.0.0', threaded=True)

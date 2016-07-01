@@ -19,7 +19,7 @@ function StartupLabelMe() {
     // annotation folder or image filename.  If false is returned, the 
     // function fetches a new image and sets the URL to reflect the 
     // fetched image.
-    if(!main_media.GetFileInfo().ParseURL()) return;
+    if(!main_media.GetFileInfo().ParseURL()){return};
 
     if(video_mode) {
       $('#generic_buttons').remove();
@@ -48,13 +48,32 @@ function StartupLabelMe() {
       // Read the XML annotation file:
       var anno_file = main_media.GetFileInfo().GetFullName();
       anno_file = 'Annotations/' + anno_file.substr(0,anno_file.length-4) + '.xml' + '?' + Math.random();
-      ReadXML(anno_file,LoadAnnotationSuccess,LoadAnnotation404);
-      main_media.GetFileInfo().PreFetchImage();
-          };
+    
+    
+      var imName = main_media.file_info.GetImName();
+      var folder = main_media.file_info.GetDirName();
+        $.ajax({
+            type: 'POST',
+            url: "http://hairuo.scripts.mit.edu:5000/add_lock",
+            data: JSON.stringify({'name': imName, 'folder': folder}),
+            contentType: 'application/json; charset=utf-8',
+            dataType: "text",
+            cache: false,
+            success: function (){
+                console.log("success")
+                ReadXML(anno_file,LoadAnnotationSuccess,LoadAnnotation404);
+                main_media.GetFileInfo().PreFetchImage();
+            },
+            error: function(){
+                console.log("error")
+            }
+        });
+    
+    };
 
+    main_media.GetNewImage(main_media_onload_helper);
       // Get the image:
-      main_media.GetNewImage(main_media_onload_helper);
-      main_media.AddLock();
+      
     }
   }
   else {
