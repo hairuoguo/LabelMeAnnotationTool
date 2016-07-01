@@ -2,13 +2,15 @@
 from __future__ import print_function
 from flask import Flask, request, current_app, make_response
 from flask_cors import CORS, cross_origin
-import glob, datetime, json, os
+import glob, datetime, json, os, time, random
 import numpy as np
 from datetime import datetime, timedelta
 from functools import update_wrapper
 from lxml import etree as ET
 from OpenSSL import SSL
 import sys
+
+
 app = Flask(__name__)
 CORS(app)
 def crossdomain(origin=None, methods=None, headers=None,
@@ -52,6 +54,47 @@ def crossdomain(origin=None, methods=None, headers=None,
         return update_wrapper(wrapped_function, f)
     return decorator
 
+def merge_xmls(folder, name):
+    main_xml_file = "Annotations/" + folder + "/" + name.replace("jpg", "xml")
+    main_xml = ET.parse(main_xml_file)
+    main_root = main_xml.getroot()
+    object_files = glob.glob(main_xml_file + ".[0-9]*")
+    for object_file in object_files:
+        object_xml = ET.parse(object_file)
+        object_xml.find('id').text = str(main_xml.xpath('count(//object)'))
+        object_root = object_xml.getroot()
+        main_root.append(object_root)
+        os.remove(object_file)
+    main_xml.write(main_xml_file, pretty_print=True)
+         
+        
+
+@app.route("/add_lock", methods=['POST'])
+def add_lock():
+    json_request = request.get_json(force=True) 
+    name = json_request["name"]
+    folder = json_request['folder']
+    lock_file = open("Images/" + folder + "/" + name + ".lock", "w")
+    all_locks = glob.glob("Images/" + folder + "/" + "*.lock") 
+    for lock in all_locks:
+        modified_time = os.path.getmtime(lock)
+        delta = datetime.now() - datetime.fromtimestamp(modified_time)
+        if delta.seconds > 5400:
+            lock_name = os.path.basename(lock)
+            merge_xmls(folder, lock_name)
+            os.remove(lock)
+    return str(True)
+                
+@app.route("/remove_lock", methods=['POST'])
+def remove_lock():
+    json_request = request.get_json(force=True)
+    name = json_request["name"]
+    folder = json_request['folder']
+    merge_xmls(folder, name)
+    os.remove("Images/" + folder + "/" + name + ".lock")
+    return str(True)
+    
+    
 
 @app.route("/transfer_annotations", methods=['POST'])
 def transfer_annotations():
@@ -66,16 +109,6 @@ def transfer_annotations():
         data = json.load(json_file)
         matches = data["matches"] 
     for match in matches:
-        img1_max_x = match["this_max_x"]
-        img1_min_x = match["this_min_x"]
-        img1_max_y = match["this_max_y"]
-        img1_min_y = match["this_min_y"]
-    
-
-        img2_max_x = match["that_max_x"]
-        img2_min_x = match["that_min_x"]
-        img2_max_y = match["that_max_y"]
-        img2_min_y = match["that_min_y"]
         
         width = int(match["width"])
         height = int(match["height"])
@@ -100,35 +133,11 @@ def transfer_annotations():
             for x, y, in zip(transposed_x, transposed_y): 
                 transposed_points.append((x, y))
             write_to_xml(img2_name, folder, transposed_points, anno_name)
+                 
     return str(True) 
                
          
             
-'''
-def parse_file(filename):
-    with open(filename) as f:
-        content = f.readlines()
-        line_1 = [int(x) for x in content[0].strip([" ", "\n"]).split(" ")]
-        line_2 = [int(x) for x in content[1].strip([" ", "\n"]).split(" ")]
-        line_3 = [int(x) for x in content[2].strip([" ", "\n"]).split(" ")]
-
-        H = np.array([line_1, line_2, line_3])
-        
-        image1 = content[3].strip([" ", "\n"]).split(".")[0] + ".jpg"
-        image2 = content[7].strip([" ", "\n"]).split(".")[0] + ".jpg"
-
-        boundaries_list = []
-        for line in content[3:-1]:
-            corner = line.strip([" ", "\n"]).split(" ")[1] 
-            boundaries_list.append(corner)
-
-        if image2 == image_name + ".jpg":
-            H = np.linalg.inv(H)
-        
-           
-        f.close()
-    return boundaries_list, np.matrix(H), image2_name       
-'''
 def create_append_assign(anno_object, new_tag, text):
     new_element = ET.Element(new_tag)
     if text != "":
@@ -159,7 +168,7 @@ def write_to_xml(image_name, folder, points, anno_name):
     parts_element.append(ET.Element("ispartof"))
     attributes_element.append(parts_element)
     polygon_element = create_append_assign(anno_object, 'polygon', "")
-    polygon_element.append(ET.Element("username"))
+    create_append_assign(polygon_element, 'username', 'transfer_bot')
     for point in points:
         pt = ET.Element("pt")
         x = ET.Element("x")
@@ -170,8 +179,16 @@ def write_to_xml(image_name, folder, points, anno_name):
         pt.append(y)
         polygon_element.append(pt)
     root = xml.getroot()
-    root.append(anno_object) 
-    xml.write("Annotations/" + filename, pretty_print=True) 
+    root.append(anno_object)
+    if not os.path.isfile("Images/" + folder + "/" + image_name + ".lock"): 
+        xml.write("Annotations/" + filename, pretty_print=True)
+    else:
+        object_tree = ET.ElementTree(anno_object) 
+        filename = filename + "." + str(random.randint(100000, 999999))
+        object_tree.write("Annotations/" + filename, pretty_print=True)
+        
+        
+    
     
 if __name__ == "__main__":
     app.run(host='0.0.0.0')

@@ -280,6 +280,32 @@ function image(id) {
             return false;  //the 160 is about the width of the right-side div
         return true;
     };
+
+    this.AddLock = function() {
+        var imName = this.file_info.GetImName();
+        var folder = this.file_info.GetDirName();
+        $.ajax({
+            type: 'POST',
+            url: "http://hairuo.scripts.mit.edu:5000/add_lock",
+            data: JSON.stringify({'name': imName, 'folder': folder}),
+            contentType: 'application/json; charset=utf-8',
+            dataType: "json"
+        });
+    };
+
+    this.RemoveLock = function(main_media){
+        var imName = this.file_info.GetImName();
+        var folder = this.file_info.GetDirName();
+        $.ajax({
+            type: 'POST',
+            url: "http://hairuo.scripts.mit.edu:5000/remove_lock",
+            data: JSON.stringify({'name': imName, 'folder': folder}),
+            contentType: 'application/json; charset=utf-8',
+            dataType: "json"
+        });
+
+
+    };
     
 }
 

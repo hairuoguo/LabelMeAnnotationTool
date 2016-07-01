@@ -54,6 +54,7 @@ function StartupLabelMe() {
 
       // Get the image:
       main_media.GetNewImage(main_media_onload_helper);
+      main_media.AddLock();
     }
   }
   else {
