@@ -2067,3 +2067,119 @@
 01-Jul-2016 20:31:27 171.64.70.40 *start_loading
 01-Jul-2016 20:31:27 171.64.70.40 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/50.0.2661.102 Chrome/50.0.2661.102 Safari/537.36
 01-Jul-2016 20:31:27 171.64.70.40 *done_loading_Images/home_rooms/DSC_8220.jpg
+01-Jul-2016 20:42:49 171.64.70.40 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/50.0.2661.102 Chrome/50.0.2661.102 Safari/537.36
+01-Jul-2016 20:42:49 171.64.70.40 *start_loading
+01-Jul-2016 20:42:49 171.64.70.40 *done_loading_Images/home_rooms/DSC_8252.jpg
+01-Jul-2016 20:42:50 171.64.70.40 *start_loading
+01-Jul-2016 20:42:50 171.64.70.40 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/50.0.2661.102 Chrome/50.0.2661.102 Safari/537.36
+01-Jul-2016 20:42:50 171.64.70.40 *done_loading_Images/home_rooms/DSC_8220.jpg
+01-Jul-2016 20:42:53 171.64.70.40 *start_polygon
+01-Jul-2016 20:42:58 171.64.70.40 *What_is_this_object_query
+01-Jul-2016 20:43:02 home_rooms DSC_8252 1 2 171.64.70.40  certificate 1 admin cpts_not_modified 0 0
+01-Jul-2016 20:43:07 171.64.70.40 *start_polygon
+01-Jul-2016 20:43:11 171.64.70.40 *What_is_this_object_query
+01-Jul-2016 20:43:14 home_rooms DSC_8220 1 2 171.64.70.40  certificate 1 admin cpts_not_modified 0 0
+01-Jul-2016 20:43:17 171.64.70.40 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/50.0.2661.102 Chrome/50.0.2661.102 Safari/537.36
+01-Jul-2016 20:43:17 171.64.70.40 *start_loading
+01-Jul-2016 20:43:18 171.64.70.40 *done_loading_Images/home_rooms/DSC_8220.jpg
+01-Jul-2016 20:43:21 171.64.70.40 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/50.0.2661.102 Chrome/50.0.2661.102 Safari/537.36
+01-Jul-2016 20:43:21 171.64.70.40 *start_loading
+01-Jul-2016 20:43:22 171.64.70.40 *done_loading_Images/home_rooms/DSC_8252.jpg
+01-Jul-2016 21:31:03 171.64.70.45 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/50.0.2661.102 Chrome/50.0.2661.102 Safari/537.36
+01-Jul-2016 21:31:03 171.64.70.45 *start_loading
+01-Jul-2016 21:31:04 171.64.70.45 *done_loading_Images/home_rooms/DSC_8220.jpg
+01-Jul-2016 22:23:05 67.180.21.245 *start_polygon
+01-Jul-2016 22:23:08 67.180.21.245 *What_is_this_object_query
+01-Jul-2016 22:23:11 home_rooms DSC_8220 3 4 67.180.21.245  tray 1 admin cpts_not_modified 0 0
+01-Jul-2016 22:23:18 67.180.21.245 *start_loading
+01-Jul-2016 22:23:18 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/50.0.2661.102 Chrome/50.0.2661.102 Safari/537.36
+01-Jul-2016 22:24:36 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/50.0.2661.102 Chrome/50.0.2661.102 Safari/537.36
+01-Jul-2016 22:24:36 67.180.21.245 *start_loading
+01-Jul-2016 22:24:37 67.180.21.245 *done_loading_Images/home_rooms/DSC_8252.jpg
+01-Jul-2016 22:24:42 67.180.21.245 *Opened_Edit_Popup
+01-Jul-2016 22:24:45 67.180.21.245 *Closed_Edit_Popup
+01-Jul-2016 22:24:45 home_rooms DSC_8220 4 4 67.180.21.245  tray 0 admin cpts_not_modified 0 1
+01-Jul-2016 22:24:46 67.180.21.245 *start_polygon
+01-Jul-2016 22:24:46 67.180.21.245 *Deleting_object
+01-Jul-2016 22:24:50 67.180.21.245 *What_is_this_object_query
+01-Jul-2016 22:24:53 home_rooms DSC_8220 4 5 67.180.21.245  tray 1 admin cpts_not_modified 1 1
+01-Jul-2016 22:24:59 67.180.21.245 *start_loading
+01-Jul-2016 22:24:59 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/50.0.2661.102 Chrome/50.0.2661.102 Safari/537.36
+01-Jul-2016 22:25:00 67.180.21.245 *done_loading_Images/home_rooms/DSC_8252.jpg
+01-Jul-2016 22:25:24 67.180.21.245 *Opened_Edit_Popup
+01-Jul-2016 22:25:25 67.180.21.245 *Deleting_object
+01-Jul-2016 22:25:25 home_rooms DSC_8252 4 4 67.180.21.245  tray 0 admin cpts_not_modified 0 1
+01-Jul-2016 22:25:25 67.180.21.245 *Closed_Edit_Popup
+01-Jul-2016 22:28:53 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/50.0.2661.102 Chrome/50.0.2661.102 Safari/537.36
+01-Jul-2016 22:28:53 67.180.21.245 *start_loading
+01-Jul-2016 22:28:54 67.180.21.245 *done_loading_Images/home_rooms/DSC_8200.jpg
+01-Jul-2016 22:29:01 67.180.21.245 *Opened_Edit_Popup
+01-Jul-2016 22:29:03 67.180.21.245 *Deleting_object
+01-Jul-2016 22:29:03 67.180.21.245 *Closed_Edit_Popup
+01-Jul-2016 22:29:03 home_rooms DSC_8200 4 4 67.180.21.245  certificate 0 admin cpts_not_modified 0 1
+01-Jul-2016 22:29:18 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/50.0.2661.102 Chrome/50.0.2661.102 Safari/537.36
+01-Jul-2016 22:29:18 67.180.21.245 *start_loading
+01-Jul-2016 22:29:19 67.180.21.245 *done_loading_Images/home_rooms/DSC_8236.jpg
+02-Jul-2016 03:11:20 76.103.103.244 *Browser_Information Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36
+02-Jul-2016 03:11:20 76.103.103.244 *start_loading
+02-Jul-2016 03:11:22 76.103.103.244 *done_loading_Images/home_rooms/DSC_8220.jpg
+02-Jul-2016 03:11:24 76.103.103.244 *start_polygon
+02-Jul-2016 03:11:29 76.103.103.244 *What_is_this_object_query
+02-Jul-2016 03:55:48 76.244.41.98 *start_loading
+02-Jul-2016 03:55:48 76.244.41.98 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/50.0.2661.102 Chrome/50.0.2661.102 Safari/537.36
+02-Jul-2016 03:55:49 76.244.41.98 *done_loading_Images/home_rooms/DSC_8220.jpg
+02-Jul-2016 03:55:53 76.244.41.98 *start_polygon
+02-Jul-2016 03:55:54 76.244.41.98 *What_is_this_object_query
+02-Jul-2016 03:56:26 76.244.41.98 *start_polygon
+02-Jul-2016 03:56:31 76.244.41.98 *What_is_this_object_query
+02-Jul-2016 03:56:34 home_rooms DSC_8220 0 1 76.244.41.98  certificate 1 admin cpts_not_modified 0 0
+02-Jul-2016 03:56:42 76.244.41.98 *start_loading
+02-Jul-2016 03:56:42 76.244.41.98 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/50.0.2661.102 Chrome/50.0.2661.102 Safari/537.36
+02-Jul-2016 03:56:43 76.244.41.98 *done_loading_Images/home_rooms/DSC_8236.jpg
+02-Jul-2016 03:56:50 76.244.41.98 *start_polygon
+02-Jul-2016 03:56:54 76.244.41.98 *What_is_this_object_query
+02-Jul-2016 03:56:58 home_rooms DSC_8236 5 6 76.244.41.98  certificate 1 admin cpts_not_modified 0 0
+02-Jul-2016 03:57:02 76.244.41.98 *start_polygon
+02-Jul-2016 03:57:05 76.244.41.98 *What_is_this_object_query
+02-Jul-2016 03:57:08 home_rooms DSC_8220 1 1 76.244.41.98  certificate 2 admin cpts_not_modified 0 0
+02-Jul-2016 03:57:19 76.244.41.98 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/50.0.2661.102 Chrome/50.0.2661.102 Safari/537.36
+02-Jul-2016 03:57:19 76.244.41.98 *start_loading
+02-Jul-2016 03:57:20 76.244.41.98 *done_loading_Images/home_rooms/DSC_8220.jpg
+02-Jul-2016 03:58:09 76.244.41.98 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/50.0.2661.102 Chrome/50.0.2661.102 Safari/537.36
+02-Jul-2016 03:58:09 76.244.41.98 *start_loading
+02-Jul-2016 03:58:10 76.244.41.98 *done_loading_Images/home_rooms/DSC_8236.jpg
+02-Jul-2016 03:59:02 76.244.41.98 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/50.0.2661.102 Chrome/50.0.2661.102 Safari/537.36
+02-Jul-2016 03:59:02 76.244.41.98 *start_loading
+02-Jul-2016 03:59:03 76.244.41.98 *done_loading_Images/home_rooms/DSC_8220.jpg
+02-Jul-2016 03:59:11 76.244.41.98 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/50.0.2661.102 Chrome/50.0.2661.102 Safari/537.36
+02-Jul-2016 03:59:11 76.244.41.98 *start_loading
+02-Jul-2016 03:59:12 76.244.41.98 *done_loading_Images/home_rooms/DSC_8236.jpg
+02-Jul-2016 03:59:13 76.244.41.98 *start_polygon
+02-Jul-2016 03:59:18 76.244.41.98 *What_is_this_object_query
+02-Jul-2016 03:59:21 home_rooms DSC_8236 0 1 76.244.41.98  certificate 1 admin cpts_not_modified 0 0
+02-Jul-2016 03:59:25 76.244.41.98 *start_polygon
+02-Jul-2016 03:59:30 76.244.41.98 *What_is_this_object_query
+02-Jul-2016 03:59:35 home_rooms DSC_8220 1 1 76.244.41.98  certificate 1 admin cpts_not_modified 0 0
+02-Jul-2016 03:59:45 76.244.41.98 *start_polygon
+02-Jul-2016 03:59:45 76.244.41.98 *What_is_this_object_query
+02-Jul-2016 04:01:23 76.244.41.98 *start_loading
+02-Jul-2016 04:01:23 76.244.41.98 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/50.0.2661.102 Chrome/50.0.2661.102 Safari/537.36
+02-Jul-2016 04:01:24 76.244.41.98 *done_loading_Images/home_rooms/DSC_8220.jpg
+02-Jul-2016 04:01:36 76.244.41.98 *start_polygon
+02-Jul-2016 04:01:40 76.244.41.98 *What_is_this_object_query
+02-Jul-2016 04:01:43 home_rooms DSC_8236 1 1 76.244.41.98  certificate 2 admin cpts_not_modified 0 0
+02-Jul-2016 04:01:48 76.244.41.98 *start_polygon
+02-Jul-2016 04:01:51 76.244.41.98 *What_is_this_object_query
+02-Jul-2016 04:01:54 home_rooms DSC_8220 1 2 76.244.41.98  certificate 1 admin cpts_not_modified 0 0
+02-Jul-2016 04:06:42 76.244.41.98 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/50.0.2661.102 Chrome/50.0.2661.102 Safari/537.36
+02-Jul-2016 04:06:42 76.244.41.98 *start_loading
+02-Jul-2016 04:06:43 76.244.41.98 *done_loading_Images/home_rooms/DSC_8220.jpg
+02-Jul-2016 04:06:56 76.244.41.98 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/50.0.2661.102 Chrome/50.0.2661.102 Safari/537.36
+02-Jul-2016 04:06:56 76.244.41.98 *start_loading
+02-Jul-2016 04:06:57 76.244.41.98 *done_loading_Images/home_rooms/DSC_8236.jpg
+02-Jul-2016 04:07:00 76.244.41.98 *start_polygon
+02-Jul-2016 04:07:04 76.244.41.98 *What_is_this_object_query
+02-Jul-2016 04:07:07 home_rooms DSC_8220 3 4 76.244.41.98  certificate 1 admin cpts_not_modified 0 0
+02-Jul-2016 04:07:10 76.244.41.98 *start_polygon
+02-Jul-2016 04:07:14 76.244.41.98 *What_is_this_object_query
+02-Jul-2016 04:07:17 home_rooms DSC_8236 3 4 76.244.41.98  certificate 1 admin cpts_not_modified 0 0

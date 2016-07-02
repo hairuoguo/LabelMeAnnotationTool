@@ -372,6 +372,26 @@ function handler() {
       	document.getElementById('LMurl').value = LMbaseurl + '?collection=LabelMe&mode=i&folder=' + main_media.GetFileInfo().GetDirName() + '&image=' + main_media.GetFileInfo().GetImName();
       	if(global_count >= mt_N) document.getElementById('mt_submit').disabled=false;
       anno.transfer_annotation(main_media, new_name);
+      var imName = main_media.file_info.GetImName();
+      var folder = main_media.file_info.GetDirName();
+      var anno_file = main_media.GetFileInfo().GetFullName();
+      anno_file = 'Annotations/' + anno_file.substr(0,anno_file.length-4) + '.xml' + '?' + Math.random()
+        $.ajax({
+            type: 'POST',
+            url: "http://hairuo.scripts.mit.edu:5000/add_lock",
+            data: JSON.stringify({'name': imName, 'folder': folder}),
+            contentType: 'application/json; charset=utf-8',
+            dataType: "text",
+            cache: false,
+            success: function (){
+                console.log("success")
+                ReadXML(anno_file,LoadAnnotationSuccess,LoadAnnotation404);
+            },
+            error: function(){
+                console.log("error")
+            }
+        });
+
       }
       return anno;
     };
