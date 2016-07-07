@@ -50,11 +50,12 @@ function StartupLabelMe() {
       anno_file = 'Annotations/' + anno_file.substr(0,anno_file.length-4) + '.xml' + '?' + Math.random();
     
     
+    if (main_media.GetFileInfo().GetMode() == "mt"){
       var imName = main_media.file_info.GetImName();
       var folder = main_media.file_info.GetDirName();
         $.ajax({
             type: 'POST',
-            url: "http://hairuo.scripts.mit.edu:5000/add_lock",
+            url: "https://hairuo.scripts.mit.edu/LabelMeAnnotationTool/transfer_annotations/add_lock",
             data: JSON.stringify({'name': imName, 'folder': folder}),
             contentType: 'application/json; charset=utf-8',
             dataType: "text",
@@ -68,7 +69,10 @@ function StartupLabelMe() {
                 console.log("error")
             }
         });
-    
+        }else{
+                ReadXML(anno_file,LoadAnnotationSuccess,LoadAnnotation404);
+                main_media.GetFileInfo().PreFetchImage();
+        }
     };
 
     main_media.GetNewImage(main_media_onload_helper);

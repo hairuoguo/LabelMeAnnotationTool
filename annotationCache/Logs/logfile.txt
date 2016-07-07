@@ -2183,3 +2183,170 @@
 02-Jul-2016 04:07:10 76.244.41.98 *start_polygon
 02-Jul-2016 04:07:14 76.244.41.98 *What_is_this_object_query
 02-Jul-2016 04:07:17 home_rooms DSC_8236 3 4 76.244.41.98  certificate 1 admin cpts_not_modified 0 0
+02-Jul-2016 04:20:18 76.244.41.98 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/50.0.2661.102 Chrome/50.0.2661.102 Safari/537.36
+02-Jul-2016 04:20:18 76.244.41.98 *start_loading
+02-Jul-2016 04:23:50 76.244.41.98 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/50.0.2661.102 Chrome/50.0.2661.102 Safari/537.36
+02-Jul-2016 04:23:50 76.244.41.98 *start_loading
+02-Jul-2016 04:23:51 76.244.41.98 *done_loading_Images/home_rooms/DSC_8236.jpg
+02-Jul-2016 04:27:33 76.244.41.98 *start_loading
+02-Jul-2016 04:27:33 76.244.41.98 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/50.0.2661.102 Chrome/50.0.2661.102 Safari/537.36
+02-Jul-2016 04:27:34 76.244.41.98 *done_loading_Images/example_folder/img1.jpg
+02-Jul-2016 04:31:08 76.244.41.98 *start_loading
+02-Jul-2016 04:31:08 76.244.41.98 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/50.0.2661.102 Chrome/50.0.2661.102 Safari/537.36
+02-Jul-2016 04:31:10 76.244.41.98 *done_loading_Images/example_folder/img1.jpg
+02-Jul-2016 04:35:22 76.244.41.98 *What_is_this_object_query
+02-Jul-2016 04:35:22 76.244.41.98 *start_polygon
+02-Jul-2016 04:35:26   76.244.41.98 *XML_ERROR admin
+02-Jul-2016 04:35:53 76.244.41.98 *start_polygon
+02-Jul-2016 04:35:57 76.244.41.98 *What_is_this_object_query
+02-Jul-2016 04:36:04   76.244.41.98 *XML_ERROR admin
+02-Jul-2016 04:36:27 76.244.41.98 *start_loading
+02-Jul-2016 04:36:27 76.244.41.98 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/50.0.2661.102 Chrome/50.0.2661.102 Safari/537.36
+02-Jul-2016 04:36:28 76.244.41.98 *done_loading_Images/example_folder/img1.jpg
+02-Jul-2016 04:36:30 76.244.41.98 *start_polygon
+02-Jul-2016 04:36:31 76.244.41.98 *What_is_this_object_query
+02-Jul-2016 04:36:36   76.244.41.98 *XML_ERROR admin
+02-Jul-2016 04:37:05 76.244.41.98 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/50.0.2661.102 Chrome/50.0.2661.102 Safari/537.36
+02-Jul-2016 04:37:05 76.244.41.98 *start_loading
+02-Jul-2016 04:37:08 76.244.41.98 *done_loading_Images/example_folder/img1.jpg
+02-Jul-2016 04:37:10 76.244.41.98 *start_polygon
+02-Jul-2016 04:37:12 76.244.41.98 *What_is_this_object_query
+02-Jul-2016 04:37:17 example_folder img1 56 57 76.244.41.98  ear 1 admin cpts_not_modified 11 11
+02-Jul-2016 04:37:19 76.244.41.98 *Opened_Edit_Popup
+02-Jul-2016 04:37:40 76.244.41.98 *Closed_Edit_Popup
+02-Jul-2016 04:41:32 76.244.41.98 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/50.0.2661.102 Chrome/50.0.2661.102 Safari/537.36
+02-Jul-2016 04:41:32 76.244.41.98 *start_loading
+02-Jul-2016 04:41:34 76.244.41.98 *done_loading_Images/example_folder/img1.jpg
+02-Jul-2016 04:41:40 76.244.41.98 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/50.0.2661.102 Chrome/50.0.2661.102 Safari/537.36
+02-Jul-2016 04:41:40 76.244.41.98 *start_loading
+02-Jul-2016 04:41:42 76.244.41.98 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/50.0.2661.102 Chrome/50.0.2661.102 Safari/537.36
+02-Jul-2016 04:41:42 76.244.41.98 *start_loading
+02-Jul-2016 04:41:52 76.244.41.98 *start_loading
+02-Jul-2016 04:41:52 76.244.41.98 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/50.0.2661.102 Chrome/50.0.2661.102 Safari/537.36
+02-Jul-2016 04:41:56 76.244.41.98 *done_loading_Images/home_rooms/DSC_8220.jpg
+02-Jul-2016 04:42:35 76.244.41.98 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/50.0.2661.102 Chrome/50.0.2661.102 Safari/537.36
+02-Jul-2016 04:42:35 76.244.41.98 *start_loading
+02-Jul-2016 04:42:41 76.244.41.98 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/50.0.2661.102 Chrome/50.0.2661.102 Safari/537.36
+02-Jul-2016 04:42:41 76.244.41.98 *start_loading
+02-Jul-2016 04:42:43 76.244.41.98 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/50.0.2661.102 Chrome/50.0.2661.102 Safari/537.36
+02-Jul-2016 04:42:43 76.244.41.98 *start_loading
+02-Jul-2016 04:42:45 76.244.41.98 *done_loading_Images/example_folder/img1.jpg
+02-Jul-2016 04:42:47 76.244.41.98 *start_polygon
+02-Jul-2016 04:42:50 76.244.41.98 *What_is_this_object_query
+02-Jul-2016 04:42:57   76.244.41.98 *XML_ERROR admin
+02-Jul-2016 04:43:39 76.244.41.98 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/50.0.2661.102 Chrome/50.0.2661.102 Safari/537.36
+02-Jul-2016 04:43:39 76.244.41.98 *start_loading
+02-Jul-2016 04:43:42 76.244.41.98 *done_loading_Images/example_folder/img1.jpg
+02-Jul-2016 04:46:32 76.244.41.98 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/50.0.2661.102 Chrome/50.0.2661.102 Safari/537.36
+02-Jul-2016 04:46:32 76.244.41.98 *start_loading
+02-Jul-2016 04:46:33 76.244.41.98 *done_loading_Images/example_folder/img1.jpg
+06-Jul-2016 00:54:53 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36
+06-Jul-2016 00:54:53 67.180.21.245 *start_loading
+06-Jul-2016 00:54:55 67.180.21.245 *done_loading_Images/example_folder/img1.jpg
+06-Jul-2016 00:55:00 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36
+06-Jul-2016 00:55:00 67.180.21.245 *start_loading
+06-Jul-2016 01:00:25 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36
+06-Jul-2016 01:00:25 67.180.21.245 *start_loading
+06-Jul-2016 01:05:10 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36
+06-Jul-2016 01:05:10 67.180.21.245 *start_loading
+06-Jul-2016 01:06:50 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36
+06-Jul-2016 01:06:50 67.180.21.245 *start_loading
+06-Jul-2016 01:07:38 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36
+06-Jul-2016 01:07:38 67.180.21.245 *start_loading
+06-Jul-2016 01:07:40 67.180.21.245 *done_loading_Images/example_folder/img1.jpg
+06-Jul-2016 01:07:42 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36
+06-Jul-2016 01:07:42 67.180.21.245 *start_loading
+06-Jul-2016 01:08:45 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36
+06-Jul-2016 01:08:45 67.180.21.245 *start_loading
+06-Jul-2016 01:12:19 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:47.0) Gecko/20100101 Firefox/47.0
+06-Jul-2016 01:12:19 67.180.21.245 *start_loading
+06-Jul-2016 01:17:22 67.180.21.245 *start_loading
+06-Jul-2016 01:17:22 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36
+06-Jul-2016 01:17:40 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36
+06-Jul-2016 01:17:40 67.180.21.245 *start_loading
+06-Jul-2016 01:18:40 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36
+06-Jul-2016 01:18:40 67.180.21.245 *start_loading
+06-Jul-2016 01:18:43 67.180.21.245 *done_loading_Images/example_folder/img1.jpg
+06-Jul-2016 01:19:20 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36
+06-Jul-2016 01:19:20 67.180.21.245 *start_loading
+06-Jul-2016 01:24:12 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36
+06-Jul-2016 01:24:12 67.180.21.245 *start_loading
+06-Jul-2016 01:24:41 67.180.21.245 *start_loading
+06-Jul-2016 01:24:41 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36
+06-Jul-2016 01:26:25 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36
+06-Jul-2016 01:26:25 67.180.21.245 *start_loading
+06-Jul-2016 01:26:58 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36
+06-Jul-2016 01:26:58 67.180.21.245 *start_loading
+06-Jul-2016 01:27:21 67.180.21.245 *start_loading
+06-Jul-2016 01:27:21 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36
+06-Jul-2016 01:27:37 67.180.21.245 *start_loading
+06-Jul-2016 01:27:37 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36
+06-Jul-2016 01:27:57 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36
+06-Jul-2016 01:27:57 67.180.21.245 *start_loading
+06-Jul-2016 01:39:01 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36
+06-Jul-2016 01:39:01 67.180.21.245 *start_loading
+06-Jul-2016 01:40:09 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36
+06-Jul-2016 01:40:09 67.180.21.245 *start_loading
+06-Jul-2016 01:41:07 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36
+06-Jul-2016 01:41:07 67.180.21.245 *start_loading
+06-Jul-2016 01:41:23 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36
+06-Jul-2016 01:41:23 67.180.21.245 *start_loading
+06-Jul-2016 20:34:24 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36
+06-Jul-2016 20:34:24 67.180.21.245 *start_loading
+06-Jul-2016 20:34:26 67.180.21.245 *done_loading_Images/example_folder/img1.jpg
+06-Jul-2016 20:37:09 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36
+06-Jul-2016 20:37:09 67.180.21.245 *start_loading
+06-Jul-2016 20:37:11 67.180.21.245 *done_loading_Images/example_folder/img1.jpg
+06-Jul-2016 20:37:17 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36
+06-Jul-2016 20:37:17 67.180.21.245 *start_loading
+06-Jul-2016 21:06:39 67.180.21.245 *start_loading
+06-Jul-2016 21:06:39 67.180.21.245 *Browser_Information Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.76 Mobile Safari/537.36
+06-Jul-2016 21:08:34 67.180.21.245 *Browser_Information Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.76 Mobile Safari/537.36
+06-Jul-2016 21:08:34 67.180.21.245 *start_loading
+06-Jul-2016 21:08:50 67.180.21.245 *start_loading
+06-Jul-2016 21:08:50 67.180.21.245 *Browser_Information Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.76 Mobile Safari/537.36
+06-Jul-2016 21:10:18 67.180.21.245 *start_loading
+06-Jul-2016 21:10:18 67.180.21.245 *Browser_Information Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.76 Mobile Safari/537.36
+06-Jul-2016 21:10:54 67.180.21.245 *start_loading
+06-Jul-2016 21:10:54 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36
+06-Jul-2016 21:26:39 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36
+06-Jul-2016 21:26:39 67.180.21.245 *start_loading
+06-Jul-2016 22:06:47 67.180.21.245 *start_loading
+06-Jul-2016 22:06:47 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36
+06-Jul-2016 22:17:59 67.180.21.245 *start_loading
+06-Jul-2016 22:17:59 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36
+06-Jul-2016 22:18:52 67.180.21.245 *start_loading
+06-Jul-2016 22:18:52 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36
+06-Jul-2016 22:20:40 67.180.21.245 *Browser_Information Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.76 Mobile Safari/537.36
+06-Jul-2016 22:20:40 67.180.21.245 *start_loading
+06-Jul-2016 22:32:10 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36
+06-Jul-2016 22:32:10 67.180.21.245 *start_loading
+06-Jul-2016 22:55:51 67.180.21.245 *Browser_Information Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.76 Mobile Safari/537.36
+06-Jul-2016 22:55:51 67.180.21.245 *start_loading
+07-Jul-2016 04:32:57 67.180.21.245 *start_loading
+07-Jul-2016 04:32:57 67.180.21.245 *Browser_Information Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.76 Mobile Safari/537.36
+07-Jul-2016 04:34:57 67.180.21.245 *Browser_Information Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.76 Mobile Safari/537.36
+07-Jul-2016 04:34:57 67.180.21.245 *start_loading
+07-Jul-2016 04:36:36 67.180.21.245 *start_loading
+07-Jul-2016 04:36:36 67.180.21.245 *Browser_Information Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.76 Mobile Safari/537.36
+07-Jul-2016 04:37:07 67.180.21.245 *Browser_Information Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.76 Mobile Safari/537.36
+07-Jul-2016 04:37:07 67.180.21.245 *start_loading
+07-Jul-2016 04:41:48 67.180.21.245 *start_loading
+07-Jul-2016 04:41:48 67.180.21.245 *Browser_Information Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.76 Mobile Safari/537.36
+07-Jul-2016 04:42:20 67.180.21.245 *Browser_Information Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.76 Mobile Safari/537.36
+07-Jul-2016 04:42:20 67.180.21.245 *start_loading
+07-Jul-2016 04:42:39 67.180.21.245 *Browser_Information Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.76 Mobile Safari/537.36
+07-Jul-2016 04:42:39 67.180.21.245 *start_loading
+07-Jul-2016 04:50:55 67.180.21.245 *Browser_Information Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.76 Mobile Safari/537.36
+07-Jul-2016 04:50:55 67.180.21.245 *start_loading
+07-Jul-2016 04:51:37 67.180.21.245 *start_loading
+07-Jul-2016 04:51:37 67.180.21.245 *Browser_Information Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.76 Mobile Safari/537.36
+07-Jul-2016 04:52:32 67.180.21.245 *Browser_Information Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.76 Mobile Safari/537.36
+07-Jul-2016 04:52:32 67.180.21.245 *start_loading
+07-Jul-2016 04:54:46 67.180.21.245 *start_loading
+07-Jul-2016 04:54:46 67.180.21.245 *Browser_Information Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.76 Mobile Safari/537.36
+07-Jul-2016 05:02:20 67.180.21.245 *Browser_Information Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.76 Mobile Safari/537.36
+07-Jul-2016 05:02:20 67.180.21.245 *start_loading
+07-Jul-2016 16:26:41 67.180.21.245 *start_loading
+07-Jul-2016 16:26:41 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36
+07-Jul-2016 16:26:43 67.180.21.245 *done_loading_Images/example_folder/img1.jpg

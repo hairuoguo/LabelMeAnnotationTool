@@ -1,6 +1,7 @@
 #!/usr/bin/python
 from __future__ import print_function
 import threading
+from OpenSSL import SSL
 from flask import Flask, request, current_app, make_response
 from flask_cors import CORS, cross_origin
 import glob, datetime, json, os, time, random
@@ -14,7 +15,6 @@ import sys
 
 app = Flask(__name__)
 lock = threading.Lock()
-CORS(app)
 def crossdomain(origin=None, methods=None, headers=None,
                 max_age=21600, attach_to_all=True,
                 automatic_options=True):
@@ -72,6 +72,7 @@ def merge_xmls(folder, name):
     main_xml.write(main_xml_file, pretty_print=True)
          
         
+
 
 @app.route("/add_lock", methods=['POST'])
 def add_lock():
@@ -211,7 +212,10 @@ def write_to_xml(image_name, folder, points, anno_name):
     else:
         xml.write("Annotations/" + filename, pretty_print=True) 
         
+@app.route("/")
+def hello_world():
+    return "Hello world!"
     
     
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', threaded=True)
+   app.run(threaded=True)
