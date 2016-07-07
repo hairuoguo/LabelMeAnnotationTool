@@ -77,6 +77,14 @@ function StartupLabelMe() {
 
     main_media.GetNewImage(main_media_onload_helper);
       // Get the image:
+    if (main_media.GetFileInfo().GetMode() == "mt"){
+        $('#image_submit').mousedown(function(){
+            var SubmitXmlUrl = 'annotationTools/perl/submit.cgi';
+            LM_xml.getElementsByTagName('imageDone')[0].childNodes[0].nodeValue=1;
+        WriteXML(SubmitXmlUrl, LM_xml, function(){return;});
+        $('#form').submit();
+        });
+  }
       
     }
   }
@@ -113,6 +121,8 @@ function LoadAnnotationSuccess(xml) {
 
   // Set global variable:
   LM_xml = xml;
+    
+  
 
   // Set AllAnnotations array:
   SetAllAnnotationsArray();
