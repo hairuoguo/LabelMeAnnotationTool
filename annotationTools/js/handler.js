@@ -54,10 +54,12 @@ function handler() {
     // Submits the object label in response to the edit/delete popup bubble.
     this.SubmitEditLabel = function () {
 
-      if (scribble_canvas.scribblecanvas){
-        scribble_canvas.annotationid = -1;
-        scribble_canvas.cleanscribbles();
-      } 
+      if (typeof scribble_canvas != "undefined"){
+          if (scribble_canvas.scribblecanvas){
+            scribble_canvas.annotationid = -1;
+            scribble_canvas.cleanscribbles();
+          } 
+      }
       submission_edited = 1;
       var anno = select_anno;
       
@@ -71,8 +73,7 @@ function handler() {
 	alert('Please enter an object name');
 	return;
       }
-      
-      if (use_attributes) {
+     if (use_attributes){ 
       	// occlusion field
       	if (document.getElementById('occluded')) new_occluded = RemoveSpecialChars(document.getElementById('occluded').value);
       	else new_occluded = RemoveSpecialChars(adjust_occluded);
@@ -80,7 +81,7 @@ function handler() {
       	// attributes field
       	if(document.getElementById('attributes')) new_attributes = RemoveSpecialChars(document.getElementById('attributes').value);
       	else new_attributes = RemoveSpecialChars(adjust_attributes);
-      }
+    }
       
       StopEditEvent();
       
@@ -96,12 +97,13 @@ function handler() {
       // Set fields:
       LMsetObjectField(LM_xml, obj_ndx, "name", new_name);
       LMsetObjectField(LM_xml, obj_ndx, "automatic", "0");
-      
+      if (use_attributes){ 
       // Insert attributes (and create field if it is not there):
       LMsetObjectField(LM_xml, obj_ndx, "attributes", new_attributes);
         
       
       LMsetObjectField(LM_xml, obj_ndx, "occluded", new_occluded);
+        }
       
       // Write XML to server:
       WriteXML(SubmitXmlUrl,LM_xml,function(){return;});
@@ -378,7 +380,7 @@ function handler() {
       anno_file = 'Annotations/' + anno_file.substr(0,anno_file.length-4) + '.xml' + '?' + Math.random()
         $.ajax({
             type: 'POST',
-            url: "http://hairuo.scripts.mit.edu:5000/add_lock",
+            url: "https://hairuo.scripts.mit.edu/LabelMeAnnotationTool/transfer_annotations/add_lock",
             data: JSON.stringify({'name': imName, 'folder': folder}),
             contentType: 'application/json; charset=utf-8',
             dataType: "text",

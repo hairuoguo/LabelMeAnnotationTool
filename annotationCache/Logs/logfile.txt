@@ -2418,3 +2418,363 @@
 07-Jul-2016 20:14:26 67.180.21.245 *start_loading
 07-Jul-2016 20:14:27 67.180.21.245 *done_loading_Images/example_folder/img1.jpg
 07-Jul-2016 20:14:27 example_folder img1 0 0 67.180.21.245  *empty*    0 0
+07-Jul-2016 21:29:56 67.180.21.245 *start_loading
+07-Jul-2016 21:29:56 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36
+07-Jul-2016 21:30:14 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36
+07-Jul-2016 21:30:14 67.180.21.245 *start_loading
+07-Jul-2016 21:30:18 67.180.21.245 *done_loading_Images/home_rooms/DSC_8576.jpg
+07-Jul-2016 21:30:25 67.180.21.245 *start_loading
+07-Jul-2016 21:30:25 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36
+07-Jul-2016 21:34:21 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36
+07-Jul-2016 21:34:21 67.180.21.245 *start_loading
+07-Jul-2016 21:34:27 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36
+07-Jul-2016 21:34:27 67.180.21.245 *start_loading
+07-Jul-2016 21:34:28 67.180.21.245 *done_loading_Images/home_rooms/DSC_8490.jpg
+07-Jul-2016 21:34:38 67.180.21.245 *start_polygon
+07-Jul-2016 21:34:51 67.180.21.245 *What_is_this_object_query
+07-Jul-2016 21:34:57 67.180.21.245 *What_is_this_object_query
+08-Jul-2016 00:18:41 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36
+08-Jul-2016 00:18:41 67.180.21.245 *start_loading
+08-Jul-2016 00:18:41 67.180.21.245 *done_loading_Images/example_folder/img1.jpg
+08-Jul-2016 00:18:50 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36
+08-Jul-2016 00:18:50 67.180.21.245 *start_loading
+08-Jul-2016 00:18:53 67.180.21.245 *done_loading_Images/example_folder/img1.jpg
+08-Jul-2016 00:19:50 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36
+08-Jul-2016 00:19:50 67.180.21.245 *start_loading
+08-Jul-2016 00:26:18 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36
+08-Jul-2016 00:26:18 67.180.21.245 *start_loading
+08-Jul-2016 00:26:19 67.180.21.245 *done_loading_Images/example_folder/img1.jpg
+08-Jul-2016 00:28:55 67.180.21.245 *start_polygon
+08-Jul-2016 00:28:57 67.180.21.245 *What_is_this_object_query
+08-Jul-2016 00:28:59 example_folder img1 0 1 67.180.21.245  eee 1 admin cpts_not_modified 0 0
+08-Jul-2016 00:29:09 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36
+08-Jul-2016 00:29:09 67.180.21.245 *start_loading
+08-Jul-2016 00:29:09 67.180.21.245 *done_loading_Images/example_folder/img1.jpg
+08-Jul-2016 00:29:11 67.180.21.245 *Opened_Edit_Popup
+08-Jul-2016 00:31:36 67.180.21.245 *Browser_Information Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.76 Mobile Safari/537.36
+08-Jul-2016 00:31:36 67.180.21.245 *start_loading
+08-Jul-2016 00:31:36 67.180.21.245 *done_loading_Images/example_folder/img1.jpg
+08-Jul-2016 00:31:48 67.180.21.245 *Opened_Edit_Popup
+08-Jul-2016 00:31:58 67.180.21.245 *start_loading
+08-Jul-2016 00:31:58 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36
+08-Jul-2016 00:31:59 67.180.21.245 *done_loading_Images/example_folder/img1.jpg
+08-Jul-2016 00:32:47 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36
+08-Jul-2016 00:32:47 67.180.21.245 *start_loading
+08-Jul-2016 00:33:43 67.180.21.245 *start_loading
+08-Jul-2016 00:33:43 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36
+08-Jul-2016 00:33:51 67.180.21.245 *Opened_Edit_Popup
+08-Jul-2016 00:33:54 67.180.21.245 *Closed_Edit_Popup
+08-Jul-2016 00:33:54 example_folder img1 1 1 67.180.21.245  eee 0 anonymous cpts_not_modified 0 1
+08-Jul-2016 00:33:54 67.180.21.245 *Deleting_object
+08-Jul-2016 00:34:18 67.180.21.245 *start_loading
+08-Jul-2016 00:34:18 67.180.21.245 *Browser_Information Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.76 Mobile Safari/537.36
+08-Jul-2016 00:34:19 67.180.21.245 *done_loading_Images/example_folder/img1.jpg
+08-Jul-2016 00:35:19 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36
+08-Jul-2016 00:35:19 67.180.21.245 *start_loading
+08-Jul-2016 00:35:19 67.180.21.245 *done_loading_Images/example_folder/img1.jpg
+08-Jul-2016 00:35:22 67.180.21.245 *start_polygon
+08-Jul-2016 00:35:23 67.180.21.245 *What_is_this_object_query
+08-Jul-2016 00:35:26 example_folder img1 1 2 67.180.21.245  vareaer 1 admin cpts_not_modified 1 1
+08-Jul-2016 00:35:29 67.180.21.245 *Opened_Edit_Popup
+08-Jul-2016 00:35:30 67.180.21.245 *Closed_Edit_Popup
+08-Jul-2016 00:35:31 67.180.21.245 *Opened_Edit_Popup
+08-Jul-2016 00:35:32 67.180.21.245 *Deleting_object
+08-Jul-2016 00:35:32 example_folder img1 2 2 67.180.21.245  vareaer 0 admin cpts_not_modified 1 2
+08-Jul-2016 00:35:32 67.180.21.245 *Closed_Edit_Popup
+08-Jul-2016 00:35:44 67.180.21.245 *start_polygon
+08-Jul-2016 00:35:46 67.180.21.245 *What_is_this_object_query
+08-Jul-2016 00:35:50 example_folder img1 2 3 67.180.21.245  eee 1 admin cpts_not_modified 2 2
+08-Jul-2016 00:35:51 67.180.21.245 *Opened_Edit_Popup
+08-Jul-2016 00:42:30 67.180.21.245 *start_loading
+08-Jul-2016 00:42:30 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36
+08-Jul-2016 00:42:34 67.180.21.245 *Opened_Edit_Popup
+08-Jul-2016 00:42:58 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36
+08-Jul-2016 00:42:58 67.180.21.245 *start_loading
+08-Jul-2016 00:43:00 67.180.21.245 *Opened_Edit_Popup
+08-Jul-2016 00:43:34 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36
+08-Jul-2016 00:43:34 67.180.21.245 *start_loading
+08-Jul-2016 00:43:46 67.180.21.245 *Opened_Edit_Popup
+08-Jul-2016 00:46:56 67.180.21.245 *start_loading
+08-Jul-2016 00:46:56 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36
+08-Jul-2016 00:46:58 67.180.21.245 *Opened_Edit_Popup
+08-Jul-2016 00:47:14 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36
+08-Jul-2016 00:47:14 67.180.21.245 *start_loading
+08-Jul-2016 00:47:22 67.180.21.245 *Opened_Edit_Popup
+08-Jul-2016 00:50:08 67.180.21.245 *start_loading
+08-Jul-2016 00:50:08 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36
+08-Jul-2016 00:50:13 67.180.21.245 *Opened_Edit_Popup
+08-Jul-2016 00:50:47 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36
+08-Jul-2016 00:50:47 67.180.21.245 *start_loading
+08-Jul-2016 00:50:56 67.180.21.245 *Opened_Edit_Popup
+08-Jul-2016 00:51:49 67.180.21.245 *start_loading
+08-Jul-2016 00:51:49 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36
+08-Jul-2016 00:51:56 67.180.21.245 *Opened_Edit_Popup
+08-Jul-2016 00:52:02 67.180.21.245 *Closed_Edit_Popup
+08-Jul-2016 00:52:05 67.180.21.245 *Opened_Edit_Popup
+08-Jul-2016 00:52:12 67.180.21.245 *Closed_Edit_Popup
+08-Jul-2016 00:52:12 67.180.21.245 *Opened_Edit_Popup
+08-Jul-2016 00:52:15 67.180.21.245 *Closed_Edit_Popup
+08-Jul-2016 00:52:16 67.180.21.245 *Opened_Edit_Popup
+08-Jul-2016 00:52:21 67.180.21.245 *Closed_Edit_Popup
+08-Jul-2016 00:52:22 67.180.21.245 *Opened_Edit_Popup
+08-Jul-2016 00:52:38 67.180.21.245 *Closed_Edit_Popup
+08-Jul-2016 00:52:52 67.180.21.245 *Opened_Edit_Popup
+08-Jul-2016 00:53:02 67.180.21.245 *Deleting_object
+08-Jul-2016 00:53:02 example_folder img1 3 3 67.180.21.245  eee 0 anonymous cpts_not_modified 2 3
+08-Jul-2016 00:53:02 67.180.21.245 *Closed_Edit_Popup
+08-Jul-2016 00:54:43 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36
+08-Jul-2016 00:54:43 67.180.21.245 *start_loading
+08-Jul-2016 00:54:43 67.180.21.245 *done_loading_Images/example_folder/img1.jpg
+08-Jul-2016 00:54:44 67.180.21.245 *start_polygon
+08-Jul-2016 00:54:45 67.180.21.245 *What_is_this_object_query
+08-Jul-2016 00:54:48 example_folder img1 3 4 67.180.21.245  ear 1 admin cpts_not_modified 3 3
+08-Jul-2016 00:54:50 67.180.21.245 *Opened_Edit_Popup
+08-Jul-2016 00:54:54 67.180.21.245 *Closed_Edit_Popup
+08-Jul-2016 00:54:55 67.180.21.245 *Opened_Edit_Popup
+08-Jul-2016 00:54:59 67.180.21.245 *Closed_Edit_Popup
+08-Jul-2016 00:55:01 67.180.21.245 *Opened_Edit_Popup
+08-Jul-2016 00:55:04 67.180.21.245 *Closed_Edit_Popup
+08-Jul-2016 00:55:05 67.180.21.245 *Opened_Edit_Popup
+08-Jul-2016 00:55:06 67.180.21.245 *Deleting_object
+08-Jul-2016 00:55:06 example_folder img1 4 4 67.180.21.245  ear 0 admin cpts_not_modified 3 4
+08-Jul-2016 00:55:07 67.180.21.245 *Closed_Edit_Popup
+08-Jul-2016 00:55:45 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36
+08-Jul-2016 00:55:45 67.180.21.245 *start_loading
+08-Jul-2016 00:55:45 67.180.21.245 *done_loading_Images/example_folder/img1.jpg
+08-Jul-2016 00:55:52 67.180.21.245 *start_polygon
+08-Jul-2016 00:55:53 67.180.21.245 *What_is_this_object_query
+08-Jul-2016 00:55:58 example_folder img1 4 5 67.180.21.245  ceramic_box 1 admin cpts_not_modified 4 4
+08-Jul-2016 00:56:14 67.180.21.245 *start_polygon
+08-Jul-2016 00:56:15 67.180.21.245 *What_is_this_object_query
+08-Jul-2016 00:56:21 67.180.21.245 *Opened_Edit_Popup
+08-Jul-2016 00:56:34 67.180.21.245 *Closed_Edit_Popup
+08-Jul-2016 01:05:04 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36
+08-Jul-2016 01:05:04 67.180.21.245 *start_loading
+08-Jul-2016 01:05:09 67.180.21.245 *start_loading
+08-Jul-2016 01:05:09 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36
+08-Jul-2016 01:05:12 67.180.21.245 *Opened_Edit_Popup
+08-Jul-2016 01:05:17 67.180.21.245 *Closed_Edit_Popup
+08-Jul-2016 01:05:18 67.180.21.245 *Opened_Edit_Popup
+08-Jul-2016 01:05:24 67.180.21.245 *Deleting_object
+08-Jul-2016 01:05:24 example_folder img1 5 5 67.180.21.245  ceramic_box 0 anonymous cpts_not_modified 4 5
+08-Jul-2016 01:05:24 67.180.21.245 *Closed_Edit_Popup
+08-Jul-2016 01:05:55 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36
+08-Jul-2016 01:05:55 67.180.21.245 *start_loading
+08-Jul-2016 01:05:56 67.180.21.245 *done_loading_Images/example_folder/img1.jpg
+08-Jul-2016 01:05:59 67.180.21.245 *start_polygon
+08-Jul-2016 01:06:00 67.180.21.245 *What_is_this_object_query
+08-Jul-2016 01:06:02 example_folder img1 5 6 67.180.21.245  ee 1 anonymous cpts_not_modified 5 5
+08-Jul-2016 01:06:11 67.180.21.245 *Opened_Edit_Popup
+08-Jul-2016 01:06:12 67.180.21.245 *Deleting_object
+08-Jul-2016 01:06:12 example_folder img1 6 6 67.180.21.245  ee 0 anonymous cpts_not_modified 5 6
+08-Jul-2016 01:06:13 67.180.21.245 *Closed_Edit_Popup
+08-Jul-2016 01:07:17 67.180.21.245 *start_loading
+08-Jul-2016 01:07:17 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36
+08-Jul-2016 01:07:18 67.180.21.245 *done_loading_Images/example_folder/img1.jpg
+08-Jul-2016 01:09:27 67.180.21.245 *start_loading
+08-Jul-2016 01:09:27 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36
+08-Jul-2016 01:09:28 67.180.21.245 *done_loading_Images/example_folder/img1.jpg
+08-Jul-2016 01:09:30 67.180.21.245 *start_polygon
+08-Jul-2016 01:09:37 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36
+08-Jul-2016 01:09:37 67.180.21.245 *start_loading
+08-Jul-2016 01:09:38 67.180.21.245 *done_loading_Images/example_folder/img1.jpg
+08-Jul-2016 01:09:39 67.180.21.245 *start_polygon
+08-Jul-2016 01:09:41 67.180.21.245 *What_is_this_object_query
+08-Jul-2016 01:09:46 example_folder img1 6 7 67.180.21.245  ear 1 admin cpts_not_modified 6 6
+08-Jul-2016 01:09:47 67.180.21.245 *Opened_Edit_Popup
+08-Jul-2016 01:09:48 67.180.21.245 *Closed_Edit_Popup
+08-Jul-2016 01:09:50 67.180.21.245 *start_polygon
+08-Jul-2016 01:09:50 67.180.21.245 *What_is_this_object_query
+08-Jul-2016 01:09:52 67.180.21.245 *Opened_Edit_Popup
+08-Jul-2016 01:09:54 67.180.21.245 *Deleting_object
+08-Jul-2016 01:09:54 example_folder img1 7 7 67.180.21.245  ear 0 admin cpts_not_modified 6 7
+08-Jul-2016 01:09:54 67.180.21.245 *Closed_Edit_Popup
+08-Jul-2016 01:13:31 67.180.21.245 *start_loading
+08-Jul-2016 01:13:31 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36
+08-Jul-2016 01:13:32 67.180.21.245 *done_loading_Images/example_folder/img1.jpg
+08-Jul-2016 01:13:37 67.180.21.245 *start_polygon
+08-Jul-2016 01:13:39 67.180.21.245 *What_is_this_object_query
+08-Jul-2016 01:13:42 example_folder img1 7 8 67.180.21.245  argar 1 admin cpts_not_modified 7 7
+08-Jul-2016 01:13:44 67.180.21.245 *Opened_Edit_Popup
+08-Jul-2016 01:13:46 67.180.21.245 *Closed_Edit_Popup
+08-Jul-2016 01:13:47 67.180.21.245 *Opened_Edit_Popup
+08-Jul-2016 01:13:49 67.180.21.245 *Deleting_object
+08-Jul-2016 01:13:49 example_folder img1 8 8 67.180.21.245  argar 0 admin cpts_not_modified 7 8
+08-Jul-2016 01:13:50 67.180.21.245 *Closed_Edit_Popup
+08-Jul-2016 01:14:22 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36
+08-Jul-2016 01:14:22 67.180.21.245 *start_loading
+08-Jul-2016 01:14:23 67.180.21.245 *done_loading_Images/example_folder/img1.jpg
+08-Jul-2016 01:14:27 67.180.21.245 *start_polygon
+08-Jul-2016 01:14:29 67.180.21.245 *What_is_this_object_query
+08-Jul-2016 01:14:33 67.180.21.245 *What_is_this_object_query
+08-Jul-2016 01:14:36 example_folder img1 8 9 67.180.21.245  earmuffs 1 admin cpts_not_modified 8 8
+08-Jul-2016 01:14:43 67.180.21.245 *Opened_Edit_Popup
+08-Jul-2016 01:14:45 67.180.21.245 *Closed_Edit_Popup
+08-Jul-2016 01:14:47 67.180.21.245 *Opened_Edit_Popup
+08-Jul-2016 01:14:50 67.180.21.245 *Closed_Edit_Popup
+08-Jul-2016 01:15:23 67.180.21.245 *start_polygon
+08-Jul-2016 01:16:12 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36
+08-Jul-2016 01:16:12 67.180.21.245 *start_loading
+08-Jul-2016 01:16:19 67.180.21.245 *Opened_Edit_Popup
+08-Jul-2016 01:16:22 67.180.21.245 *Closed_Edit_Popup
+08-Jul-2016 01:17:49 67.180.21.245 *start_loading
+08-Jul-2016 01:17:49 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36
+08-Jul-2016 01:20:01 67.180.21.245 *start_loading
+08-Jul-2016 01:20:01 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36
+08-Jul-2016 01:20:04 67.180.21.245 *done_loading_Images/example_folder/img1.jpg
+08-Jul-2016 01:20:13 67.180.21.245 *Opened_Edit_Popup
+08-Jul-2016 01:20:15 67.180.21.245 *Closed_Edit_Popup
+08-Jul-2016 01:20:16 67.180.21.245 *Opened_Edit_Popup
+08-Jul-2016 01:20:18 67.180.21.245 *Deleting_object
+08-Jul-2016 01:20:18 example_folder img1 9 9 67.180.21.245  eee 0 admin cpts_not_modified 8 9
+08-Jul-2016 01:20:18 67.180.21.245 *Closed_Edit_Popup
+08-Jul-2016 01:22:29 67.180.21.245 *start_polygon
+08-Jul-2016 01:22:34 67.180.21.245 *start_loading
+08-Jul-2016 01:22:34 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36
+08-Jul-2016 01:22:35 67.180.21.245 *done_loading_Images/example_folder/img1.jpg
+08-Jul-2016 01:23:01 67.180.21.245 *start_polygon
+08-Jul-2016 01:23:02 67.180.21.245 *What_is_this_object_query
+08-Jul-2016 01:23:05 example_folder img1 9 10 67.180.21.245  eee 1 admin cpts_not_modified 9 9
+08-Jul-2016 01:23:06 67.180.21.245 *Opened_Edit_Popup
+08-Jul-2016 01:24:27 67.180.21.245 *start_loading
+08-Jul-2016 01:24:27 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36
+08-Jul-2016 01:24:28 67.180.21.245 *done_loading_Images/example_folder/img1.jpg
+08-Jul-2016 01:24:29 67.180.21.245 *Opened_Edit_Popup
+08-Jul-2016 01:25:01 67.180.21.245 *start_loading
+08-Jul-2016 01:25:01 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36
+08-Jul-2016 01:25:01 67.180.21.245 *done_loading_Images/example_folder/img1.jpg
+08-Jul-2016 01:25:21 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36
+08-Jul-2016 01:25:21 67.180.21.245 *start_loading
+08-Jul-2016 01:25:22 67.180.21.245 *done_loading_Images/example_folder/img1.jpg
+08-Jul-2016 01:25:23 67.180.21.245 *start_polygon
+08-Jul-2016 01:25:25 67.180.21.245 *What_is_this_object_query
+08-Jul-2016 01:25:28 example_folder img1 0 1 67.180.21.245  ear 1 admin cpts_not_modified 0 0
+08-Jul-2016 01:29:28 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36
+08-Jul-2016 01:29:28 67.180.21.245 *start_loading
+08-Jul-2016 01:29:45 67.180.21.245 *start_loading
+08-Jul-2016 01:29:45 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36
+08-Jul-2016 01:29:48 67.180.21.245 *done_loading_Images/example_folder/img1.jpg
+08-Jul-2016 01:29:53 67.180.21.245 *start_polygon
+08-Jul-2016 01:29:56 67.180.21.245 *What_is_this_object_query
+08-Jul-2016 01:30:00 example_folder img1 1 2 67.180.21.245  earmuffs 1 admin cpts_not_modified 0 0
+08-Jul-2016 01:31:45 67.180.21.245 *start_loading
+08-Jul-2016 01:31:45 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36
+08-Jul-2016 01:32:12 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36
+08-Jul-2016 01:32:12 67.180.21.245 *start_loading
+08-Jul-2016 01:32:19 67.180.21.245 *done_loading_Images/example_folder/img1.jpg
+08-Jul-2016 01:32:27 67.180.21.245 *start_polygon
+08-Jul-2016 01:32:29 67.180.21.245 *What_is_this_object_query
+08-Jul-2016 01:32:32 example_folder img1 2 3 67.180.21.245  ceramic_box 1 admin cpts_not_modified 0 0
+08-Jul-2016 01:35:16 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36
+08-Jul-2016 01:35:16 67.180.21.245 *start_loading
+08-Jul-2016 01:35:17 67.180.21.245 *done_loading_Images/example_folder/img1.jpg
+08-Jul-2016 01:35:19 67.180.21.245 *start_polygon
+08-Jul-2016 01:35:21 67.180.21.245 *What_is_this_object_query
+08-Jul-2016 01:35:23 example_folder img1 3 4 67.180.21.245  ee 1 admin cpts_not_modified 0 0
+08-Jul-2016 01:35:46 67.180.21.245 *Opened_Edit_Popup
+08-Jul-2016 01:38:01 67.180.21.245 *start_loading
+08-Jul-2016 01:38:01 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36
+08-Jul-2016 01:38:04 67.180.21.245 *done_loading_Images/example_folder/img1.jpg
+08-Jul-2016 01:38:35 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36
+08-Jul-2016 01:38:35 67.180.21.245 *start_loading
+08-Jul-2016 01:38:36 67.180.21.245 *done_loading_Images/example_folder/img1.jpg
+08-Jul-2016 01:38:41 67.180.21.245 *start_polygon
+08-Jul-2016 01:38:42 67.180.21.245 *What_is_this_object_query
+08-Jul-2016 01:38:45 67.180.21.245 *Opened_Edit_Popup
+08-Jul-2016 01:39:32 67.180.21.245 *start_loading
+08-Jul-2016 01:39:32 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36
+08-Jul-2016 01:39:33 67.180.21.245 *done_loading_Images/example_folder/img1.jpg
+08-Jul-2016 01:39:35 67.180.21.245 *Opened_Edit_Popup
+08-Jul-2016 01:40:57 67.180.21.245 *start_loading
+08-Jul-2016 01:40:57 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36
+08-Jul-2016 01:40:58 67.180.21.245 *done_loading_Images/example_folder/img1.jpg
+08-Jul-2016 01:41:01 67.180.21.245 *Opened_Edit_Popup
+08-Jul-2016 01:41:06 67.180.21.245 *Closed_Edit_Popup
+08-Jul-2016 01:41:13 67.180.21.245 *Opened_Edit_Popup
+08-Jul-2016 01:41:15 67.180.21.245 *Closed_Edit_Popup
+08-Jul-2016 01:41:18 67.180.21.245 *Opened_Edit_Popup
+08-Jul-2016 01:41:20 67.180.21.245 *Closed_Edit_Popup
+08-Jul-2016 01:41:24 67.180.21.245 *Opened_Edit_Popup
+08-Jul-2016 01:41:25 67.180.21.245 *Closed_Edit_Popup
+08-Jul-2016 01:42:15 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36
+08-Jul-2016 01:42:15 67.180.21.245 *start_loading
+08-Jul-2016 01:42:16 67.180.21.245 *done_loading_Images/example_folder/img1.jpg
+08-Jul-2016 01:42:24 67.180.21.245 *Opened_Edit_Popup
+08-Jul-2016 01:42:26 67.180.21.245 *Closed_Edit_Popup
+08-Jul-2016 01:42:26 example_folder img1 4 4 67.180.21.245  ee->eee 0 admin cpts_not_modified 0 0
+08-Jul-2016 01:42:32 67.180.21.245 *start_loading
+08-Jul-2016 01:42:32 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36
+08-Jul-2016 01:42:33 67.180.21.245 *done_loading_Images/example_folder/img1.jpg
+08-Jul-2016 01:42:34 67.180.21.245 *Opened_Edit_Popup
+08-Jul-2016 01:42:37 67.180.21.245 *Closed_Edit_Popup
+08-Jul-2016 01:42:37 example_folder img1 4 4 67.180.21.245  eee->eee 0 admin cpts_modified 0 0
+08-Jul-2016 01:42:38 67.180.21.245 *Opened_Edit_Popup
+08-Jul-2016 01:42:39 67.180.21.245 *Deleting_object
+08-Jul-2016 01:42:39 example_folder img1 4 4 67.180.21.245  eee 0 admin cpts_not_modified 0 1
+08-Jul-2016 01:42:39 67.180.21.245 *Closed_Edit_Popup
+08-Jul-2016 01:42:46 67.180.21.245 *start_polygon
+08-Jul-2016 01:42:50 67.180.21.245 *What_is_this_object_query
+08-Jul-2016 01:43:41 67.180.21.245 *start_polygon
+08-Jul-2016 01:43:59 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36
+08-Jul-2016 01:43:59 67.180.21.245 *start_loading
+08-Jul-2016 01:44:00 67.180.21.245 *done_loading_Images/example_folder/img1.jpg
+08-Jul-2016 01:46:29 67.180.21.245 *start_polygon
+08-Jul-2016 01:46:30 67.180.21.245 *What_is_this_object_query
+08-Jul-2016 01:46:35 example_folder img1 4 5 67.180.21.245  ee 1 admin cpts_not_modified 1 1
+08-Jul-2016 01:46:37 67.180.21.245 *Opened_Edit_Popup
+08-Jul-2016 01:46:40 67.180.21.245 *Deleting_object
+08-Jul-2016 01:46:40 example_folder img1 5 5 67.180.21.245  ee 0 admin cpts_not_modified 1 2
+08-Jul-2016 01:46:40 67.180.21.245 *Closed_Edit_Popup
+08-Jul-2016 01:46:41 67.180.21.245 *Opened_Edit_Popup
+08-Jul-2016 01:46:43 67.180.21.245 *Closed_Edit_Popup
+08-Jul-2016 01:46:43 example_folder img1 5 5 67.180.21.245  ear->ear 0 admin cpts_not_modified 2 2
+08-Jul-2016 01:46:44 67.180.21.245 *start_polygon
+08-Jul-2016 01:46:45 67.180.21.245 *What_is_this_object_query
+08-Jul-2016 01:48:00 67.180.21.245 *start_polygon
+08-Jul-2016 01:48:02 67.180.21.245 *What_is_this_object_query
+08-Jul-2016 01:50:45 67.180.21.245 *start_loading
+08-Jul-2016 01:50:45 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36
+08-Jul-2016 01:50:49 67.180.21.245 *done_loading_Images/example_folder/img1.jpg
+08-Jul-2016 01:50:50 67.180.21.245 *Opened_Edit_Popup
+08-Jul-2016 01:50:52 67.180.21.245 *Closed_Edit_Popup
+08-Jul-2016 01:50:52 example_folder img1 5 5 67.180.21.245  ear->ear 0 admin cpts_not_modified 2 2
+08-Jul-2016 01:51:35 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36
+08-Jul-2016 01:51:35 67.180.21.245 *start_loading
+08-Jul-2016 01:51:36 67.180.21.245 *done_loading_Images/example_folder/img1.jpg
+08-Jul-2016 01:51:55 67.180.21.245 *Opened_Edit_Popup
+08-Jul-2016 01:51:57 67.180.21.245 *Closed_Edit_Popup
+08-Jul-2016 01:53:08 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36
+08-Jul-2016 01:53:08 67.180.21.245 *start_loading
+08-Jul-2016 01:53:09 67.180.21.245 *done_loading_Images/example_folder/img1.jpg
+08-Jul-2016 01:53:10 67.180.21.245 *Opened_Edit_Popup
+08-Jul-2016 01:54:12 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36
+08-Jul-2016 01:54:12 67.180.21.245 *start_loading
+08-Jul-2016 01:54:13 67.180.21.245 *done_loading_Images/example_folder/img1.jpg
+08-Jul-2016 01:54:14 67.180.21.245 *Opened_Edit_Popup
+08-Jul-2016 01:54:16 67.180.21.245 *Closed_Edit_Popup
+08-Jul-2016 01:54:29 67.180.21.245 *Opened_Edit_Popup
+08-Jul-2016 01:54:37 67.180.21.245 *Closed_Edit_Popup
+08-Jul-2016 01:54:37 example_folder img1 5 5 67.180.21.245  earmuffs->earmuffs 0 admin cpts_not_modified 2 2
+08-Jul-2016 01:54:39 67.180.21.245 *Opened_Edit_Popup
+08-Jul-2016 01:54:48 67.180.21.245 *Closed_Edit_Popup
+08-Jul-2016 01:54:48 example_folder img1 5 5 67.180.21.245  earmuffs->earmuffs 0 admin cpts_modified 2 2
+08-Jul-2016 01:57:23 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36
+08-Jul-2016 01:57:23 67.180.21.245 *start_loading
+08-Jul-2016 01:57:23 67.180.21.245 *done_loading_Images/example_folder/img1.jpg
+08-Jul-2016 01:58:16 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36
+08-Jul-2016 01:58:16 67.180.21.245 *start_loading
+08-Jul-2016 01:58:17 67.180.21.245 *done_loading_Images/example_folder/img1.jpg
+08-Jul-2016 01:59:32 67.180.21.245 *start_loading
+08-Jul-2016 01:59:32 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36
+08-Jul-2016 01:59:33 67.180.21.245 *done_loading_Images/example_folder/img1.jpg
+08-Jul-2016 02:01:09 67.180.21.245 *start_loading
+08-Jul-2016 02:01:09 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36
+08-Jul-2016 02:02:07 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36
+08-Jul-2016 02:02:07 67.180.21.245 *start_loading
+08-Jul-2016 02:08:10 67.180.21.245 *start_loading
+08-Jul-2016 02:08:10 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36
+08-Jul-2016 02:08:11 67.180.21.245 *done_loading_Images/example_folder/img1.jpg
+08-Jul-2016 02:08:25 67.180.21.245 *Opened_Edit_Popup
+08-Jul-2016 02:08:28 67.180.21.245 *Deleting_object
+08-Jul-2016 02:08:28 example_folder img1 5 5 67.180.21.245  earmuffs 0 admin cpts_not_modified 2 3
+08-Jul-2016 02:08:28 67.180.21.245 *Closed_Edit_Popup

@@ -161,8 +161,10 @@ function AdjustPolygonButton() {
     return;
   }
   adjust_objEnter = document.getElementById('objEnter').value;
+if (use_attributes == true){
   adjust_attributes = document.getElementById('attributes').value;
   adjust_occluded = document.getElementById('occluded').value;
+}
   
   // Close the edit popup bubble:
   CloseEditPopup();

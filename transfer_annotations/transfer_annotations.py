@@ -122,7 +122,10 @@ def transfer_annotations():
     folder = json_request['folder']
     anno_name = json_request['anno_name']
     name = name.replace(".jpg", "")
-    with open("Homographies/" + folder + '/' + name.replace(".jpg", "") + "_matches.json") as json_file:
+    homographies_path = "Homographies/" + folder + '/' + name.replace(".jpg", "") + "_matches.json"
+    if not os.path.exists(homographies_path):
+        return
+    with open(homographies_path) as json_file:
         data = json.load(json_file)
         matches = data["matches"] 
     for match in matches:

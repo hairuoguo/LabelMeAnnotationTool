@@ -301,6 +301,7 @@ function InitializeAnnotationTools(tag_button, tag_canvas){
 
     if (scribble_mode){
 	 scribble_canvas = new Scribble_canvas(tag_canvas);
+        scribble_canvas.scribblecanvas = false;
     }
     var html_str = '<div id= "polygonDiv" class="annotatemenu">Polygon<br></br>Tool \
         <button id="polygon" class="labelBtnDraw" type="button" title="Start Polygon" onclick="SetPolygonDrawingMode(false)" > \

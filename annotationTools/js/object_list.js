@@ -79,6 +79,7 @@ function RenderObjectList() {
 	  'ondragenter="return dragEnter(event)" '+
 	  'ondragover="return dragOver(event)">';
       }
+      html_str += '>';
       
       // change the icon for parts
       if(level==0) {
@@ -130,10 +131,12 @@ function RenderObjectList() {
     }
   }
   
-  html_str += '</ol><p><br/></p></div>';
-  
+  html_str += '</ol><p><br></br></p></div>';
   // Attach annotation list to 'anno_anchor' DIV element:
-  $('#anno_anchor').append(html_str);
+  //$('#anno_anchor').append(html_str);
+  anno_anchor = document.getElementById("anno_anchor");
+  anno_anchor.innerHTML = anno_anchor.innerHTML + html_str;
+
   $('#Link'+add_parts_to).css('font-weight',700); //
   $('#anno_list').scrollTop(scrollPos);
 }
@@ -159,12 +162,14 @@ function ChangeLinkColorBG(idx) {
 
 
 function ChangeLinkColorFG(idx) {
+if(document.getElementById('Link'+idx)){
   document.getElementById('Link'+idx).style.color = '#FF0000';
   var anid = main_canvas.GetAnnoIndex(idx);
   // If we're hiding all polygons, then render polygon on canvas:
   if(IsHidingAllPolygons && main_canvas.annotations[anid].hidden) {
     main_canvas.annotations[anid].DrawPolygon(main_media.GetImRatio(), main_canvas.annotations[anid].GetPtsX(), main_canvas.annotations[anid].GetPtsY());
   }
+}
 }
 
 function HideAllPolygons() {

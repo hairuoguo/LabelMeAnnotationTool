@@ -357,7 +357,7 @@ function annotation(anno_id) {
         var folder = main_media.file_info.GetDirName();
         $.ajax({
             type: 'POST',
-            url: "https://hairuo.scripts.mit.edu:5000/transfer_annotations",
+            url: "https://hairuo.scripts.mit.edu/LabelMeAnnotationTool/transfer_annotations/transfer_annotations",
             data: JSON.stringify({'x_points': xPoints, 'y_points': yPoints, 'name': imName, 'folder': folder, 'anno_name': anno_name}),
             contentType: 'application/json; charset=utf-8',
             dataType: "json"
