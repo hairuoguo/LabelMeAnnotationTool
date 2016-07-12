@@ -209,11 +209,20 @@ function file_info() {
                 }
                 if(mt_N=='inf') mt_N = 1;
                 
-                var html_str = '<table><tr><td><font size="4"><b>' + this.mt_instructions + '  Scroll down to see the entire image. &#160;&#160;&#160; </b></font></td><td><form action="' + externalSubmitURL + '" id="form"><input type="hidden" id="assignmentId" name="assignmentId" value="'+ this.assignmentId +'" /><input type="hidden" id="number_objects" name="number_objects" value="" /><input type="hidden" id="object_name" name="object_name" value="" /><input type="hidden" id="LMurl" name="LMurl" value="" /><input type="hidden" id="mt_comments" name="mt_comments" value="" /><input disabled="true" type="submit" id="mt_submit" name="Submit" value="Submit HIT" onmousedown="javascript:document.getElementById(\'mt_comments\').value=document.getElementById(\'mt_comments_textbox\').value;" /><input type="button" id="image_submit" name="All Objects Annotated" value="All Objects Annotated" onmousedown="javascript:document.getElementById(\'mt_comments\').value=document.getElementById(\'mt_comments_textbox\').value;" /></form></td></tr></table>';
+                var html_str = '<table><tr><td><font size="4"><b>' + this.mt_instructions + '  Scroll down to see the entire image. &#160;&#160;&#160; </b></font></td><td><form action="' + externalSubmitURL + '" id="form"><input type="hidden" id="assignmentId" name="assignmentId" value="'+ this.assignmentId +'" /><input type="hidden" id="number_objects" name="number_objects" value="" /><input type="hidden" id="object_name" name="object_name" value="" /><input type="hidden" id="LMurl" name="LMurl" value="" /><input type="hidden" id="mt_comments" name="mt_comments" value="" /><input disabled="true" type="button" id="mt_submit" name="Submit" value="Submit HIT"  /><input type="button" id="image_submit" name="All Objects Annotated" value="All Objects Annotated"  /></form></td></tr></table>';
+
 
                 
 		$('#mt_submit_form').append(html_str);
-                
+                $('#image_submit, #mt_submit').click(function(){
+                    window.opener.$("#assignmentId").val(main_media.file_info.assignmentId);
+                    window.opener.$("#workerId").val(main_media.file_info.workerId); 
+                    window.opener.$("#hitId").val(main_media.file_info.hitId);                   
+                     opener.document.getElementById("mturk_form").action = externalSubmitURL;     
+                    window.opener.$('#comment').val(document.getElementById('mt_comments_textbox').value); 
+                    opener.submit_AMT();
+                    window.close(); 
+                }); 
                 var html_str2 = '<font size="4"><b>Scroll up to see the entire image</b></font>&#160;&#160;&#160;<font size="3">(Optional) Do you wish to provide any feedback on this HIT?</font><br /><textarea id="mt_comments_textbox" name="mt_comments_texbox" cols="94" nrows="5" />';
 		$('#mt_feedback').append(html_str2);
                 

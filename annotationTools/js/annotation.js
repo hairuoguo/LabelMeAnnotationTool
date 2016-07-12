@@ -360,7 +360,11 @@ function annotation(anno_id) {
             url: "https://hairuo.scripts.mit.edu/LabelMeAnnotationTool/transfer_annotations/transfer_annotations",
             data: JSON.stringify({'x_points': xPoints, 'y_points': yPoints, 'name': imName, 'folder': folder, 'anno_name': anno_name}),
             contentType: 'application/json; charset=utf-8',
-            dataType: "json"
+            dataType: "text",
+            success: function(){console.log("transfer success");},
+            error: function(returned_data){
+                console.log(returned_data)
+            }
         });
     };
 }

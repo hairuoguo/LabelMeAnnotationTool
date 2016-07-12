@@ -11,7 +11,9 @@ from functools import update_wrapper
 from lxml import etree as ET
 from OpenSSL import SSL
 import sys
+import logging
 
+logging.basicConfig(stream=sys.stderr)
 
 app = Flask(__name__)
 lock = threading.Lock()
@@ -57,7 +59,7 @@ def crossdomain(origin=None, methods=None, headers=None,
     return decorator
 
 def merge_xmls(folder, name):
-    main_xml_file = "Annotations/" + folder + "/" + name.replace("jpg", "xml")
+    main_xml_file = "../Annotations/" + folder + "/" + name.replace("jpg", "xml")
     if not os.path.isfile(main_xml_file):
         return str(False)
     main_xml = ET.parse(main_xml_file)
@@ -94,7 +96,6 @@ def add_lock():
             os.remove(lock_file)
     '''
     lock.release()
-    
     return str(True)
             
 @app.route("/remove_lock", methods=['POST'])
@@ -106,7 +107,7 @@ def remove_lock():
     folder = json_request['folder']
     #merge_xmls(folder, name)
     #os.remove("Images/" + folder + "/" + name + ".lock")
-    lock.release() 
+    lock.release()
     return str(True)
         
         
@@ -121,15 +122,13 @@ def transfer_annotations():
     name = json_request['name']
     folder = json_request['folder']
     anno_name = json_request['anno_name']
-    name = name.replace(".jpg", "")
-    homographies_path = "Homographies/" + folder + '/' + name.replace(".jpg", "") + "_matches.json"
-    if not os.path.exists(homographies_path):
-        return
+    homographies_path = "../Homographies/" + folder + '/' + name.replace(".jpg", "") + "_matches.json"
+    if os.path.exists(homographies_path) == False:
+        return homographies_path
     with open(homographies_path) as json_file:
         data = json.load(json_file)
         matches = data["matches"] 
     for match in matches:
-        
         width = int(match["width"])
         height = int(match["height"])
 
@@ -153,7 +152,7 @@ def transfer_annotations():
             for x, y, in zip(transposed_x, transposed_y): 
                 transposed_points.append((x, y))
             write_to_xml(img2_name, folder, transposed_points, anno_name)
-    lock.release() 
+    lock.release()
     return str(True) 
            
          
@@ -168,10 +167,10 @@ def create_append_assign(anno_object, new_tag, text):
 def write_to_xml(image_name, folder, points, anno_name):
     proposed_name = "PROPOSED" + anno_name
     filename = folder + "/" + image_name.replace(".jpg", ".xml")
-    if os.path.exists("Annotations/" + filename):
-        xml = ET.parse("Annotations/" + filename)
+    if os.path.exists("../Annotations/" + filename):
+        xml = ET.parse("../Annotations/" + filename)
     else:
-        xml = ET.parse("annotationCache/XMLTemplates/labelme.xml")
+        xml = ET.parse("../annotationCache/XMLTemplates/labelme.xml")
         xml.find("filename").text = image_name 
         xml.find("folder").text = folder
     
@@ -208,12 +207,12 @@ def write_to_xml(image_name, folder, points, anno_name):
         filename = filename + "." + str(random.randint(100000, 999999))
         object_tree.write("Annotations/" + filename, pretty_print=True)
     '''
-    if os.path.isfile("Annotations/" + filename):
+    if os.path.isfile("../Annotations/" + filename):
         object_tree = ET.ElementTree(anno_object) 
         filename = filename + "." + str(random.randint(100000, 999999))
-        object_tree.write("Annotations/" + filename, pretty_print=True)  
+        object_tree.write("../Annotations/" + filename, pretty_print=True)  
     else:
-        xml.write("Annotations/" + filename, pretty_print=True) 
+        xml.write("../Annotations/" + filename, pretty_print=True) 
         
 @app.route("/")
 def hello_world():

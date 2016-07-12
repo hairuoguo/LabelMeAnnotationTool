@@ -82,7 +82,6 @@ function StartupLabelMe() {
             var SubmitXmlUrl = 'annotationTools/perl/submit.cgi';
             LM_xml.getElementsByTagName('imageDone')[0].childNodes[0].nodeValue=1;
         WriteXML(SubmitXmlUrl, LM_xml, function(){return;});
-        $('#form').submit();
         });
   }
       
