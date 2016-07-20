@@ -82,7 +82,7 @@ var view_ObjList = true;
 var LMbaseurl = 'https://' + window.location.host + window.location.pathname;
 var MThelpPage = 'annotationTools/html/mt_instructions.html';
 var externalSubmitURL = 'https://www.mturk.com/mturk/externalSubmit';
-var externalSubmitURLsandbox = 'https://www.workersandbox.mturk.com/mturk/externalSubmit';
+var externalSubmitURLsandbox = 'https://workersandbox.mturk.com/mturk/externalSubmit';
 var mt_N = 'inf';
 
 var object_choices = '...';

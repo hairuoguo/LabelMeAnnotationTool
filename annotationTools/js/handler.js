@@ -363,7 +363,7 @@ function handler() {
 
       if (add_parts_to != null) addPart(add_parts_to, anno.anno_id);
       // Write XML to server:
-      WriteXML(SubmitXmlUrl,LM_xml,function(){return;});
+      WriteXML(SubmitXmlUrl,LM_xml,function(){console.log("True");});
       
       if(view_ObjList) RenderObjectList();
       
@@ -374,7 +374,7 @@ function handler() {
       	document.getElementById('LMurl').value = LMbaseurl + '?collection=LabelMe&mode=i&folder=' + main_media.GetFileInfo().GetDirName() + '&image=' + main_media.GetFileInfo().GetImName();
       	if(global_count >= mt_N) document.getElementById('mt_submit').disabled=false;
       anno.transfer_annotation(main_media, new_name);
-      var imName = main_media.file_info.GetImName();
+      /*var imName = main_media.file_info.GetImName();
       var folder = main_media.file_info.GetDirName();
       var anno_file = main_media.GetFileInfo().GetFullName();
       anno_file = 'Annotations/' + anno_file.substr(0,anno_file.length-4) + '.xml' + '?' + Math.random()
@@ -393,7 +393,7 @@ function handler() {
                 console.log("error")
             }
         });
-
+        */
       }
       return anno;
     };

@@ -358,10 +358,10 @@ function annotation(anno_id) {
         $.ajax({
             type: 'POST',
             url: "https://hairuo.scripts.mit.edu/LabelMeAnnotationTool/transfer_annotations/transfer_annotations",
-            data: JSON.stringify({'x_points': xPoints, 'y_points': yPoints, 'name': imName, 'folder': folder, 'anno_name': anno_name}),
+            data: JSON.stringify({'x_points': xPoints, 'y_points': yPoints, 'name': imName, 'folder': folder, 'anno_name': anno_name, 'assignment_id': parent.assignmentId}),
             contentType: 'application/json; charset=utf-8',
             dataType: "text",
-            success: function(){console.log("transfer success");},
+            success: function(returned_data){console.log(returned_data);},
             error: function(returned_data){
                 console.log(returned_data)
             }

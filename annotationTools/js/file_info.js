@@ -209,7 +209,7 @@ function file_info() {
                 }
                 if(mt_N=='inf') mt_N = 1;
                 
-                var html_str = '<table><tr><td><font size="4"><b>' + this.mt_instructions + '  Scroll down to see the entire image. &#160;&#160;&#160; </b></font></td><td><form action="' + externalSubmitURL + '" id="form"><input type="hidden" id="assignmentId" name="assignmentId" value="'+ this.assignmentId +'" /><input type="hidden" id="number_objects" name="number_objects" value="" /><input type="hidden" id="object_name" name="object_name" value="" /><input type="hidden" id="LMurl" name="LMurl" value="" /><input type="hidden" id="mt_comments" name="mt_comments" value="" /><input disabled="true" type="button" id="mt_submit" name="Submit" value="Submit HIT"  /><input type="button" id="image_submit" name="All Objects Annotated" value="All Objects Annotated"  /></form></td></tr></table>';
+                var html_str = '<table><tr><td><font size="4"><b>' + this.mt_instructions + '  Scroll down to see the entire image. &#160;&#160;&#160; </b></font></td><td><form action="' + externalSubmitURL + '" id="form"><input type="hidden" id="assignmentId" name="assignmentId" value="'+ this.assignmentId +'" /><input type="hidden" id="number_objects" name="number_objects" value="" /><input type="hidden" id="object_name" name="object_name" value="" /><input type="hidden" id="LMurl" name="LMurl" value="" /><input type="hidden" id="mt_comments" name="mt_comments" value="" /><input disabled="true" type="button" id="mt_submit" name="Submit" value="Submit HIT" style="display:none"  /><input type="button" id="image_submit" name="All Objects Annotated" value="All Objects Annotated"/></form></td></tr></table>';
 
 
                 

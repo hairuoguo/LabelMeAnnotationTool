@@ -2,7 +2,7 @@
 from __future__ import print_function
 import threading
 from OpenSSL import SSL
-from flask import Flask, request, current_app, make_response
+from flask import Flask, request, current_app, make_response, jsonify
 from flask_cors import CORS, cross_origin
 import glob, datetime, json, os, time, random
 import numpy as np
@@ -10,6 +10,7 @@ from datetime import datetime, timedelta
 from functools import update_wrapper
 from lxml import etree as ET
 from OpenSSL import SSL
+from shutil import copyfile
 import sys
 import logging
 
@@ -60,30 +61,40 @@ def crossdomain(origin=None, methods=None, headers=None,
 
 def merge_xmls(folder, name):
     main_xml_file = "../Annotations/" + folder + "/" + name.replace("jpg", "xml")
-    if not os.path.isfile(main_xml_file):
-        return str(False)
-    main_xml = ET.parse(main_xml_file)
+    if os.path.isfile(main_xml_file) != True:
+        copyfile("../annotationCache/XMLTemplates/labelme.xml", main_xml_file)
+    try:
+        main_xml = ET.parse(main_xml_file)
+    except:
+        return "False"
+    main_xml.find("filename").text = name 
+    main_xml.find("folder").text = folder
     main_root = main_xml.getroot()
-    object_files = glob.glob(main_xml_file + ".[0-9]*")
+    object_files = glob.glob(main_xml_file + ".*")
+    if len(object_files) == 0:
+        return "False"
     for object_file in object_files:
-        object_xml = ET.parse(object_file)
+        try:
+            object_xml = ET.parse(object_file)
+        except:
+            continue
         object_xml.find('id').text = str(main_xml.xpath('count(//object)'))
         object_root = object_xml.getroot()
         main_root.append(object_root)
         os.remove(object_file)
     main_xml.write(main_xml_file, pretty_print=True)
-         
+    return "True"
         
 
 
-@app.route("/add_lock", methods=['POST'])
-def add_lock():
+@app.route("/get_transfer_update", methods=['POST'])
+def get_transfer_update():
     global lock
     lock.acquire()
     json_request = request.get_json(force=True) 
     name = json_request["name"]
     folder = json_request['folder']
-    merge_xmls(folder, name)
+    answer = merge_xmls(folder, name)
     '''
     lock_file = open("Images/" + folder + "/" + name + ".lock", "w")
     all_lock_files = glob.glob("Images/" + folder + "/" + "*.lock") 
@@ -96,22 +107,49 @@ def add_lock():
             os.remove(lock_file)
     '''
     lock.release()
-    return str(True)
-            
-@app.route("/remove_lock", methods=['POST'])
-def remove_lock():
+    return answer
+
+@app.route("/get_all_matches", methods=["POST"])
+def get_all_matches():
+    json_request = request.get_json(force=True)
+    name = json_request["name"]
+    folder = json_request["folder"]
+    json_data = json_from_file(folder, name)
+    json_data = json_data["matches"]
+    matches = []
+    
+    if len(json_data) != 0:
+        for match in json_data:
+            matches.append(match["that"])
+        return json.dumps(matches)
+    else:
+        return json.dumps([])
+    
+    
+           
+@app.route("/image_done", methods=['POST'])
+def image_done():
     global lock
     lock.acquire()
     json_request = request.get_json(force=True)
     name = json_request["name"]
     folder = json_request['folder']
-    #merge_xmls(folder, name)
-    #os.remove("Images/" + folder + "/" + name + ".lock")
+    assignment_id = json_request['assignment_id']
+    anno_path = "../Annotations/" + folder + '/' + name.replace(".jpg", ".xml") + "." + assignment_id
+    if os.path.exists(anno_path) == False:
+        f = file(anno_path, "w")
+        f.close() 
     lock.release()
     return str(True)
         
-        
-
+def json_from_file(folder, name):
+    homographies_path = "../Homographies/" + folder + '/' + name.replace(".jpg", "") + "_matches.json"
+    if os.path.exists(homographies_path) == False:
+        return {}
+    with open(homographies_path) as json_file:
+        data = json.load(json_file)
+    return data
+    
 @app.route("/transfer_annotations", methods=['POST'])
 def transfer_annotations():
     global lock
@@ -121,8 +159,10 @@ def transfer_annotations():
     y_points = json_request['y_points']
     name = json_request['name']
     folder = json_request['folder']
+    
     anno_name = json_request['anno_name']
     homographies_path = "../Homographies/" + folder + '/' + name.replace(".jpg", "") + "_matches.json"
+
     if os.path.exists(homographies_path) == False:
         return homographies_path
     with open(homographies_path) as json_file:
@@ -137,25 +177,28 @@ def transfer_annotations():
         x_points = np.array(x_points)
         y_points = np.array(y_points)
         ones = np.ones(x_points.size)
+    
         points_matrix = np.matrix(np.vstack((x_points, y_points, ones)))
         transposed_points = np.asarray(np.matrix(H)*points_matrix)
-        s = transposed_points[2, 0]
+        s = transposed_points[2, :]
         transposed_x = transposed_points[0, :]/s
         transposed_y = transposed_points[1, :]/s
         transposed_points = []
-        corners_matrix = np.matrix(np.hstack((np.array([0, 0, 1]).reshape((3, 1)), np.array([width, height, 1]).reshape((3, 1)))))
+        #corners_matrix = np.matrix(np.hstack((np.array([0, 0, 1]).reshape((3, 1)), np.array([width, height, 1]).reshape((3, 1)))))
+        corners_matrix = np.matrix([[0, width], [0, height], [1, 1]])
         corners = np.asarray(np.matrix(H)*corners_matrix)
-        corners = corners/corners[2, 0]
+        corners = corners/corners[2, :]
         outliers_x = filter(lambda x: x > corners[0, 1] or x < corners[0, 0] or x < 0 or x > width, transposed_x)
         outliers_y = filter(lambda y: y > corners[1, 1] or y < corners[1, 0] or y < 0 or y > height, transposed_y)
+        
         if len(outliers_x) == 0 and len(outliers_y) == 0:
             for x, y, in zip(transposed_x, transposed_y): 
                 transposed_points.append((x, y))
             write_to_xml(img2_name, folder, transposed_points, anno_name)
     lock.release()
-    return str(True) 
+    return str(corners) 
            
-         
+ 
             
 def create_append_assign(anno_object, new_tag, text):
     new_element = ET.Element(new_tag)
@@ -165,7 +208,7 @@ def create_append_assign(anno_object, new_tag, text):
     return new_element
 
 def write_to_xml(image_name, folder, points, anno_name):
-    proposed_name = "PROPOSED" + anno_name
+    proposed_name = "PROPOSED_" + anno_name
     filename = folder + "/" + image_name.replace(".jpg", ".xml")
     if os.path.exists("../Annotations/" + filename):
         xml = ET.parse("../Annotations/" + filename)
@@ -175,17 +218,15 @@ def write_to_xml(image_name, folder, points, anno_name):
         xml.find("folder").text = folder
     
     anno_object = ET.Element("object")
-    create_append_assign(anno_object, "name", anno_name)
+    create_append_assign(anno_object, "name", proposed_name)
     create_append_assign(anno_object, "deleted", str(0))
     create_append_assign(anno_object, "verified", str(0))
     create_append_assign(anno_object, "date", datetime.now().strftime("%d-%b-%Y %H:%M:%S"))
     create_append_assign(anno_object, "id", str(xml.xpath('count(//object)')))
-    create_append_assign(anno_object, "occluded", "n")
-    attributes_element = create_append_assign(anno_object, "attributes", "")
+    #create_append_assign(anno_object, "occluded", "n")
     parts_element = create_append_assign(anno_object, 'parts', "")
     parts_element.append(ET.Element("hasparts"))
     parts_element.append(ET.Element("ispartof"))
-    attributes_element.append(parts_element)
     polygon_element = create_append_assign(anno_object, 'polygon', "")
     create_append_assign(polygon_element, 'username', 'transfer_bot')
     for point in points:
@@ -203,16 +244,20 @@ def write_to_xml(image_name, folder, points, anno_name):
     if not os.path.isfile("Images/" + folder + "/" + image_name + ".lock"): 
         xml.write("Annotations/" + filename, pretty_print=True)
     else:
-        iobject_tree = ET.ElementTree(anno_object) 
+        object_tree = ET.ElementTree(anno_object) 
         filename = filename + "." + str(random.randint(100000, 999999))
         object_tree.write("Annotations/" + filename, pretty_print=True)
     '''
-    if os.path.isfile("../Annotations/" + filename):
-        object_tree = ET.ElementTree(anno_object) 
-        filename = filename + "." + str(random.randint(100000, 999999))
-        object_tree.write("../Annotations/" + filename, pretty_print=True)  
-    else:
-        xml.write("../Annotations/" + filename, pretty_print=True) 
+    
+    filename = filename + "." + str(random.randint(100000, 999999))
+    #if not os.path.isfile("../Annotations/" + filename):
+        #only saving the object, and not the whole (copied) annotation file
+    object_tree = ET.ElementTree(anno_object) 
+    object_tree.write("../Annotations/" + filename, pretty_print=True)
+    
+    #else:
+        #xml.write("../Annotations/" + filename, pretty_print=True) 
+    
         
 @app.route("/")
 def hello_world():

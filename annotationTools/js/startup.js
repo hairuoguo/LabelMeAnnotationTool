@@ -49,41 +49,59 @@ function StartupLabelMe() {
       var anno_file = main_media.GetFileInfo().GetFullName();
       anno_file = 'Annotations/' + anno_file.substr(0,anno_file.length-4) + '.xml' + '?' + Math.random();
     
-    
-    if (main_media.GetFileInfo().GetMode() == "mt"){
-      var imName = main_media.file_info.GetImName();
-      var folder = main_media.file_info.GetDirName();
-        $.ajax({
-            type: 'POST',
-            url: "https://hairuo.scripts.mit.edu/LabelMeAnnotationTool/transfer_annotations/add_lock",
-            data: JSON.stringify({'name': imName, 'folder': folder}),
-            contentType: 'application/json; charset=utf-8',
-            dataType: "text",
-            cache: false,
-            success: function (){
-                console.log("success")
-                ReadXML(anno_file,LoadAnnotationSuccess,LoadAnnotation404);
-                main_media.GetFileInfo().PreFetchImage();
-            },
-            error: function(){
-                console.log("error")
-            }
-        });
-        }else{
-                ReadXML(anno_file,LoadAnnotationSuccess,LoadAnnotation404);
-                main_media.GetFileInfo().PreFetchImage();
-        }
+         
+      ReadXML(anno_file,LoadAnnotationSuccess,LoadAnnotation404);
     };
+    if (main_media.GetFileInfo().GetMode() == "mt"){
+          var anno_file = main_media.GetFileInfo().GetFullName();
+          anno_file = 'Annotations/' + anno_file.substr(0,anno_file.length-4) + '.xml' + '?' + Math.random();
+        var imName = main_media.file_info.GetImName();
+          var folder = main_media.file_info.GetDirName();
+            /*$.ajax({
+                type: 'POST',
+                url: "https://hairuo.scripts.mit.edu/LabelMeAnnotationTool/transfer_annotations/add_lock",
+                data: JSON.stringify({'name': imName, 'folder': folder}),
+                contentType: 'application/json; charset=utf-8',
+                dataType: "text",
+                cache: false,
+                success: function (returned_data){
+                    console.log(returned_data)
+                },
+                error: function(returned_data){
+                    console.log(returned_data)
+                }
+            });*/
+            var interval = 5000;
+            function ajax_poll(){
+                console.log("polling");
+                $.ajax({
+                type: 'POST',
+                url: "https://hairuo.scripts.mit.edu/LabelMeAnnotationTool/transfer_annotations/get_transfer_update",
+                data: JSON.stringify({'name': imName, 'folder': folder}),
+                contentType: 'application/json; charset=utf-8',
+                dataType: "text",
+                cache: false,
+                success: function (returned_data){
+                    if (returned_data == "True"){
+                        ReadXML(anno_file,LoadAnnotationSuccess,LoadAnnotation404);
+                    }
+                },
+                complete: function(returned_data){
+                    setTimeout(ajax_poll, interval);
+                }
+            });
+            }
 
+            ajax_poll();
+            $('#image_submit').mousedown(function(){
+                LM_xml.getElementsByTagName('imageDone')[0].childNodes[0].nodeValue=1;
+                var SubmitXmlUrl = 'annotationTools/perl/submit.cgi';
+                WriteXML(SubmitXmlUrl, LM_xml, function(){return;});
+            });
+      }
     main_media.GetNewImage(main_media_onload_helper);
       // Get the image:
-    if (main_media.GetFileInfo().GetMode() == "mt"){
-        $('#image_submit').mousedown(function(){
-            var SubmitXmlUrl = 'annotationTools/perl/submit.cgi';
-            LM_xml.getElementsByTagName('imageDone')[0].childNodes[0].nodeValue=1;
-        WriteXML(SubmitXmlUrl, LM_xml, function(){return;});
-        });
-  }
+    
       
     }
   }

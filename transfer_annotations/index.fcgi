@@ -74,6 +74,7 @@ def reload_on_edit():
             time.sleep(1)
 
 
+
 if __name__ == '__main__':
     t = threading.Thread(target=reload_on_edit)
     t.daemon = True
