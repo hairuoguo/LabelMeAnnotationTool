@@ -257,6 +257,8 @@ function GetPopupFormEdit(anno) {
   
   html_str += "<br />";
   
+  html_str += '<input type="button" value="Redraw Polygon" title="Press this button if you want to redraw the polygon for this object." onclick="main_handler.StartRedrawQuery();" tabindex="0" />';
+
   // Done button:
   if (video_mode) html_str += '<input type="button" value="Done" title="Press this button when you are done editing." onclick="main_media.SubmitEditObject();" tabindex="0" />';
   

@@ -51,7 +51,7 @@ function handler() {
       if (scribble_canvas.scribblecanvas) scribble_canvas.cleanscribbles();
     };
     
-    // Submits the object label in response to the edit/delete popup bubble.
+
     this.SubmitEditLabel = function () {
 
       if (typeof scribble_canvas != "undefined"){
@@ -220,6 +220,75 @@ function handler() {
         if(IsNearPolygon(x,y,pp)) selectObject(pp);
         else unselectObjects();
     };
+
+    this.SubmitRedrawQuery = function(){
+        var anno = redraw_anno;
+        LMsetObjectField(LM_xml, anno.anno_id, 'x', draw_x);
+        LMsetObjectField(LM_xml, anno.anno_id, 'y', draw_y);
+        redraw_anno = null;
+	if(draw_anno) {
+	  draw_anno.DeletePolygon();
+	  draw_anno = null;
+	}
+        this.QueryToRest();
+        if(!LMgetObjectField(LM_xml, LMnumberOfObjects(LM_xml)-1, 'deleted') ||view_Deleted) {
+	main_canvas.AttachAnnotation(anno);
+	anno.RenderAnnotation('rest');
+      }
+      
+      /*************************************************************/
+      /*************************************************************/
+      // Scribble: Clean scribbles.
+      if(anno.GetType() == 1) {
+      	scribble_canvas.cleanscribbles();
+      	scribble_canvas.scribble_image = "";
+      	scribble_canvas.colorseg = Math.floor(Math.random()*14);
+      }
+        WriteXML(SubmitXmlUrl, LM_xml, function(){console.log("success");});
+        return anno;
+    }
+
+    this.StartRedrawQuery = function(){
+      redraw_anno = select_anno;
+      CloseQueryPopup();
+      active_canvas = REST_CANVAS;
+      edit_popup_open = 0;
+      // Move select_canvas to back:
+      $('#select_canvas').css('z-index','-2');
+      $('#select_canvas_div').css('z-index','-2');
+      
+      $('#query_canvas').css('z-index','-2');
+      $('#query_canvas_div').css('z-index','-2');
+      // Remove polygon from the select canvas:
+      if (!video_mode) select_anno.DeletePolygon();
+      else $('#'+select_anno.polygon_id).remove();
+      var anno = select_anno;
+
+      // Write logfile message:
+      WriteLogMsg('*Closed_Edit_Popup');
+
+      // Close the edit popup bubble:
+      CloseEditPopup();
+      // Turn on the image scrollbars:
+      main_media.ScrollbarsOn();
+
+      // If the annotation is not deleted or we are in "view deleted" mode, 
+      // then attach the annotation to the main_canvas:
+      if(!LMgetObjectField(LM_xml, anno.anno_id, 'deleted') || view_Deleted) {
+        
+        main_canvas.AttachAnnotation(anno);
+        if(!anno.hidden) {
+          anno.RenderAnnotation('rest');
+        }
+        if (video_mode){
+          oVP.DisplayFrame(oVP.getcurrentFrame());
+        }
+      }
+
+        redraw_anno.DeletePolygon();
+      // Render the object list:
+      console.log('LabelMe: Stopped edit event.');
+    }
     
     // Submits the object label in response to the "What is this object?"
     // popup bubble. THIS FUNCTION IS A MESS!!!!
@@ -363,7 +432,7 @@ function handler() {
 
       if (add_parts_to != null) addPart(add_parts_to, anno.anno_id);
       // Write XML to server:
-      WriteXML(SubmitXmlUrl,LM_xml,function(){console.log("True");});
+      WriteXML(SubmitXmlUrl,LM_xml,function(){console.log("write complete");});
       
       if(view_ObjList) RenderObjectList();
       

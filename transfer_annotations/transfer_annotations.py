@@ -61,14 +61,19 @@ def crossdomain(origin=None, methods=None, headers=None,
 
 def merge_xmls(folder, name):
     main_xml_file = "../Annotations/" + folder + "/" + name.replace("jpg", "xml")
-    if os.path.isfile(main_xml_file) != True:
-        copyfile("../annotationCache/XMLTemplates/labelme.xml", main_xml_file)
-    try:
-        main_xml = ET.parse(main_xml_file)
-    except:
-        return "False"
-    main_xml.find("filename").text = name 
-    main_xml.find("folder").text = folder
+    if not os.path.isfile(main_xml_file):
+        try:
+            main_xml = ET.parse("../annotationCache/XMLTemplates/labelme.xml")
+        except:
+            return "False"
+        main_xml.find("filename").text = name 
+        main_xml.find("folder").text = folder
+        main_xml.write(main_xml_file, pretty_print=True)
+    else:    
+        try:
+            main_xml = ET.parse(main_xml_file)
+        except:
+            return "False"
     main_root = main_xml.getroot()
     object_files = glob.glob(main_xml_file + ".*")
     if len(object_files) == 0:

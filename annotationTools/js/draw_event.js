@@ -42,7 +42,11 @@ function StartDrawEvent(event) {
   
   // Create new annotation structure:
   var numItems = $(LM_xml).children('annotation').children('object').length;
-  draw_anno = new annotation(numItems);
+  if (redraw_anno == null){
+        draw_anno = new annotation(numItems);
+  }else{
+        draw_anno = redraw_anno;
+  }
   
   // Add first control point:
   draw_x.push(Math.round(x/main_media.GetImRatio()));
@@ -192,6 +196,27 @@ function DrawCanvasClosePolygon() {
   
     // Done button:
     html_str += '<input type="button" value="Done" title="Press this button after you have provided all the information you want about the object." onclick="main_media.SubmitObject();" tabindex="0" />';
+  
+    // Undo close button:
+    if (!bounding_box) html_str += '<input type="button" value="Undo close" title="Press this button if you accidentally closed the polygon. You can continue adding control points." onclick="UndoCloseButton();" tabindex="0" />';
+  
+    // Delete button:
+    html_str += '<input type="button" value="Delete" title="Press this button if you wish to delete the polygon." onclick="main_handler.WhatIsThisObjectDeleteButton();" tabindex="0" />';
+    
+
+
+    wait_for_input = 1;
+    CreatePopupBubble(pt[0],pt[1], html_str, 'main_section');
+  }
+  else if (redraw_anno != null){
+
+    var html_str = "<b>You are redrawing the polygon for this object:</b><br />";
+    html_str += "<p>" + LMgetObjectField(LM_xml, redraw_anno.anno_id, 'name') + "</p>";
+ 
+    html_str += "<br />";
+    html_str += '<input type="button" value="Redraw Polygon" title="Press this button if you would like to redraw the polygon for this object." onclick="main_handler.StartRedrawQuery();" tabindex="0" />';
+    // Done button:
+    html_str += '<input type="button" value="Done" title="Press this button after you have provided all the information you want about the object." onclick="main_handler.SubmitRedrawQuery();" tabindex="0" />';
   
     // Undo close button:
     if (!bounding_box) html_str += '<input type="button" value="Undo close" title="Press this button if you accidentally closed the polygon. You can continue adding control points." onclick="UndoCloseButton();" tabindex="0" />';

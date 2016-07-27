@@ -13,7 +13,7 @@ function ReadXML(xml_file,SuccessFunction,ErrorFunction) {
 function WriteXML(url,xml_data,SuccessFunction,ErrorFunction) {
     oXmlSerializer =  new XMLSerializer();
     sXmlString = oXmlSerializer.serializeToString(xml_data);
-        
+    read_write_switch = true; 
     // use regular expressions to replace all occurrences of
     sXmlString = sXmlString.replace(/ xmlns=\"http:\/\/www.w3.org\/1999\/xhtml\"/g, "");
                                     
@@ -28,6 +28,7 @@ function WriteXML(url,xml_data,SuccessFunction,ErrorFunction) {
     error: function(xhr,ajaxOptions,thrownError) {
       console.log(xhr.status);          
       console.log(thrownError);
-    }
+    },
+    complete: function(){read_write_switch = false;}
   });
 }

@@ -74,6 +74,10 @@ function StartupLabelMe() {
             var interval = 5000;
             function ajax_poll(){
                 console.log("polling");
+                if (read_write_switch == true){
+                    setTimeout(ajax_poll, interval);
+                    return;
+                }
                 $.ajax({
                 type: 'POST',
                 url: "https://hairuo.scripts.mit.edu/LabelMeAnnotationTool/transfer_annotations/get_transfer_update",
