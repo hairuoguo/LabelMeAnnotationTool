@@ -135,14 +135,12 @@ function LMsetObjectField(xml, ind_object, name, value){
 			}			   	
 		}
 	}if (name == 'xy'){
+            obj.children("polygon").remove()
+            obj.append($('<polygon></polygon>')) 
             for (var ii = 0; ii < value.length; ii++){
-                if (obj.children("polygon").children("pt").eq(ii).length > 0){
-                        obj.children("polygon").children("pt").eq(ii).children('x').text(value[ii][0]);
-                        obj.children("polygon").children("pt").eq(ii).children('y').text(value[ii][1]);
-                }else{
-                        new_pt = '<pt><x>' + value[ii][0] + '</x>' + '<y>' + value[ii][1] + '</y>';
-                        obj.children("polygon").append(new_pt);
-                }
+                new_pt = '<pt><x>' + value[ii][0] + '</x>' + '<y>' + value[ii][1] + '</y></pt>';
+                obj.children("polygon").append($(new_pt));
+                
         }
     }
 

@@ -94,16 +94,10 @@ function handler() {
       
       // Pointer to object:
       
+      console.log("submitted"); 
       // Set fields:
-      var points_list = []
-      var ptsX = anno.GetPtsX();
-      var ptsY = anno.GetPtsY();
-      for (var i = 0; i < ptsX.length; i++){
-           points_list.append([ptsX[i], ptsY[i]]); 
-        }
       LMsetObjectField(LM_xml, obj_ndx, "name", new_name);
       LMsetObjectField(LM_xml, obj_ndx, "automatic", "0");
-      LMsetObjectField(LM_xml, obj_ndx, 'xy', points_list);
       if (use_attributes){ 
       // Insert attributes (and create field if it is not there):
       LMsetObjectField(LM_xml, obj_ndx, "attributes", new_attributes);
@@ -111,9 +105,8 @@ function handler() {
       
       LMsetObjectField(LM_xml, obj_ndx, "occluded", new_occluded);
         }
-      
       // Write XML to server:
-      WriteXML(SubmitXmlUrl,LM_xml,function(){return;});
+      if (nosave == false) WriteXML(SubmitXmlUrl,LM_xml,function(){console.log("submitted"); return;});
       
       // Refresh object list:
       if(view_ObjList) {
@@ -153,7 +146,7 @@ function handler() {
         removeAllParts(idx);
         
         // Write XML to server:
-        WriteXML(SubmitXmlUrl,LM_xml,function(){return;});
+        if (nosave == false) WriteXML(SubmitXmlUrl,LM_xml,function(){return;});
 
 	// Refresh object list:
         if(view_ObjList) RenderObjectList();
@@ -246,9 +239,15 @@ function handler() {
     };
 
     this.SubmitRedrawQuery = function(){
-        var anno = redraw_anno;
-        LMsetObjectField(LM_xml, anno.anno_id, 'x', draw_x);
-        LMsetObjectField(LM_xml, anno.anno_id, 'y', draw_y);
+          var anno = redraw_anno;
+          var obj_ndx = anno.anno_id;
+          var points_list = []
+          var ptsX = draw_x;
+          var ptsY = draw_y;
+          for (var i = 0; i < ptsX.length; i++){
+               points_list.push([ptsX[i], ptsY[i]]); 
+            }
+          LMsetObjectField(LM_xml, obj_ndx, 'xy', points_list);
         redraw_anno = null;
 	if(draw_anno) {
 	  draw_anno.DeletePolygon();
@@ -268,7 +267,7 @@ function handler() {
       	scribble_canvas.scribble_image = "";
       	scribble_canvas.colorseg = Math.floor(Math.random()*14);
       }
-        WriteXML(SubmitXmlUrl, LM_xml, function(){console.log("success");});
+        if (nosave == false) WriteXML(SubmitXmlUrl, LM_xml, function(){console.log("success");});
         return anno;
     }
 
@@ -456,7 +455,7 @@ function handler() {
 
       if (add_parts_to != null) addPart(add_parts_to, anno.anno_id);
       // Write XML to server:
-      WriteXML(SubmitXmlUrl,LM_xml,function(){console.log("write complete");});
+      if (nosave == false) WriteXML(SubmitXmlUrl,LM_xml,function(){console.log("write complete");});
       
       if(view_ObjList) RenderObjectList();
       

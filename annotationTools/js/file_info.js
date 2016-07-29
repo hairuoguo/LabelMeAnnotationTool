@@ -71,6 +71,9 @@ function file_info() {
                     this.hitId = par_value;
                     isMT = true;
                 }
+                if(par_field=='nosave' && par_value =='true'){
+                    nosave = true;
+                }
                 if(par_field=='turkSubmitTo') {
                     isMT = true;
                 }

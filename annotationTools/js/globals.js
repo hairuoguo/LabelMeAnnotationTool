@@ -92,3 +92,5 @@ var loaded_once = false;
 var read_write_switch = false;
 
 var redraw_anno = null;
+
+var nosave = false;
