@@ -117,7 +117,9 @@ function handler() {
     
     // Handles when the user presses the delete button in response to
     // the edit popup bubble.
-    this.EditBubbleDeleteButton = function () {
+
+    EditBubbleDelete = function() {
+
         var idx = select_anno.GetAnnoID();
 
         if((IsUserAnonymous() || (!IsCreator(LMgetObjectField(LM_xml, idx, 'username')))) && (!IsUserAdmin()) && (idx<num_orig_anno) && !action_DeleteExistingObjects) {
@@ -155,6 +157,21 @@ function handler() {
           scribble_canvas.annotationid = -1;
           scribble_canvas.cleanscribbles();
         } 
+    }
+    
+    this.EditBubbleDeleteButton = function () {
+        alertify.set({ labels: {
+            ok     : "Yes",
+            cancel : "No"
+        } });
+        alertify.set({ buttonFocus: "none" });
+        alertify.confirm('This will delete both the polygon and the label (the name) - it is for objects that are not in the image at all or not visible. If the polygon is the wrong shape or in the wrong location, use the "Redraw Polygon" button instead. Are you sure that the object is not present at all?', function (e) {
+            if (e) {
+                EditBubbleDelete();
+            } else {
+                return;
+            }
+        });        
     };
     
     // Handles when the user clicks on the link for an annotation.

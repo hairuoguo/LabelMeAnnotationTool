@@ -51,10 +51,10 @@ MM_reloadPage(true);
 	  <p>
         <u>NOTE: PLEASE DO NOT LABEL ANY HUMANS WHO APPEAR IN THE IMAGE. PLEASE ALSO DO NOT LABEL EMPTY WALLS. IF YOUR ENGLISH VOCABULARY IS POOR, I STRONGLY ADVISE YOU TO NOT DO THIS HIT - LABELS WITH WRONG OR MISSPELLED NAMES MEAN THAT YOU WILL NOT GET PAID.</u>
         <br/><br/>
-          1. <b>Adjust and edit PROPOSED objects.</b> The objects with the word "PROPOSED" in their names are ones proposed by the computer. Adjust these objects so that they fit better or delete them if they are wrong. Please also delete duplicates so that each object only has one annotation. You can adjust the objects by clicking on the polygon and then clicking "Adjust Polygon" or "Delete" on the popup. <b>New PROPOSED objects will periodically appear as the computer proposes new ones.</b> 
+          1. <b>Adjust and edit PROPOSED objects.</b> The objects with the word "PROPOSED" in their names are ones proposed by the computer. These proposed annotations will be approximately correct in location and shape, but may require editing. You can either adjust the existing polygon ("Adjust Polygon" button) or redraw the polygon completely ("Redraw Polygon" button). If the proposed object is not present (not in the image at all or not visible), you may click the "Object Not Present" button to delete the object. USE THIS BUTTON CAREFULLY - ONLY CLICK IT IF THE OBJECT THAT IS NAMED IS NOT PRESENT AT ALL. If the polygon is merely in the wrong place or the wrong shape, adjust or redraw the polygon instead. <b>New PROPOSED objects will periodically appear as the computer proposes new ones.</b> 
              <br/><br/>
-	  2. <b> Label new objects. </b> Start by pressing the left 
-          mouse button ONCE (single-click) at some point along the boundary of the object.
+	  2. <b> Outline and label (name) new objects. </b> Start by pressing the left 
+          mouse button ONCE (single-click) at some point along the boundary of the object. If you double-click and label an object with a single point (no outline) <u>YOU WILL BE BLOCKED AND YOU WILL NOT BE PAID</u>.
 	  <br /><br/>3. Continue clicking along the boundary of the object
           to create a polygon.
 	  <br /><br/>4. Once you have finished
@@ -188,9 +188,11 @@ MM_reloadPage(true);
           You can select one of the control points (hold the left mouse button 
           down) and move it to a new position. Then click anywhere in the image 
           to deselect the polygon. This will also save the modified polygon. </p>
-        <p><strong>Delete entire polygon: </strong>Select the polygon. You will 
-          have the option to delete the polygon. You can only edit polygons that 
-          you have entered before. You can not delete polygons by other users.</p>
+        <p><strong>Redraw Polygon</strong>
+          This will allow you to completely redraw the polygon for labels that are inaccurate in location and shape.
+          Use this if the previous label is too inaccurate to just modify control points.
+        <p><strong>Object Not Present</strong>
+          This will delete the object completely. Only use this if the object that is referred to is not in the image or not visible. If the polygon is in the wrong location or of the wrong shape, use <b>Redraw Polygon</b> instead.
         </td><td />
     <tr> 
       <td>&nbsp;</td>

@@ -49,9 +49,8 @@ function StartupLabelMe() {
       var anno_file = main_media.GetFileInfo().GetFullName();
       anno_file = 'Annotations/' + anno_file.substr(0,anno_file.length-4) + '.xml' + '?' + Math.random();
     
-         
-      ReadXML(anno_file,LoadAnnotationSuccess,LoadAnnotation404);
-    };
+       // ajax_poll();
+      //ReadXML(anno_file,LoadAnnotationSuccess,LoadAnnotation404);
     if (main_media.GetFileInfo().GetMode() == "mt"){
           var anno_file = main_media.GetFileInfo().GetFullName();
           anno_file = 'Annotations/' + anno_file.substr(0,anno_file.length-4) + '.xml' + '?' + Math.random();
@@ -72,6 +71,27 @@ function StartupLabelMe() {
                 }
             });*/
             var interval = 5000;
+    $.ajax({
+                type: 'POST',
+                url: "https://hairuo.scripts.mit.edu/LabelMeAnnotationTool/transfer_annotations/get_transfer_update",
+                data: JSON.stringify({'name': imName, 'folder': folder, 'init': true}),
+                contentType: 'application/json; charset=utf-8',
+                dataType: "text",
+                cache: false,
+                success: function (returned_data){
+                    if (returned_data == "True"){
+                        ReadXML(anno_file,LoadAnnotationSuccess,LoadAnnotation404);
+                    }
+                    console.log(returned_data);
+                },
+                error: function(returned_data){
+                    console.log("error");
+                },
+                complete: function(returned_data){
+                    setTimeout(ajax_poll, interval);
+                }
+            });
+    };
             function ajax_poll(){
                 console.log("polling");
                 if (read_write_switch == true){
@@ -81,7 +101,7 @@ function StartupLabelMe() {
                 $.ajax({
                 type: 'POST',
                 url: "https://hairuo.scripts.mit.edu/LabelMeAnnotationTool/transfer_annotations/get_transfer_update",
-                data: JSON.stringify({'name': imName, 'folder': folder}),
+                data: JSON.stringify({'name': imName, 'folder': folder, 'init': false}),
                 contentType: 'application/json; charset=utf-8',
                 dataType: "text",
                 cache: false,
@@ -96,7 +116,7 @@ function StartupLabelMe() {
             });
             }
 
-            ajax_poll();
+            //ajax_poll();
             $('#image_submit').mousedown(function(){
                 LM_xml.getElementsByTagName('imageDone')[0].childNodes[0].nodeValue=1;
                 var SubmitXmlUrl = 'annotationTools/perl/submit.cgi';

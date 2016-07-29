@@ -262,14 +262,12 @@ function GetPopupFormEdit(anno) {
   // Done button:
   if (video_mode) html_str += '<input type="button" value="Done" title="Press this button when you are done editing." onclick="main_media.SubmitEditObject();" tabindex="0" />';
   
-  else html_str += '<input type="button" value="Done" title="Press this button when you are done editing." onclick="main_handler.SubmitEditLabel();" tabindex="0" />';
+  else html_str += '<input type="button" style="float: right" value="Done" title="Press this button when you are done editing." onclick="main_handler.SubmitEditLabel();" tabindex="0" />';
   
   /*************************************************************/
   /*************************************************************/
   // Scribble: if anno.GetType() != 0 then scribble mode:
 
-  // Delete button:
-  html_str += '<input type="button" style="float:right" value="Delete" title="Press this button if you wish to delete the polygon." onclick="main_handler.EditBubbleDeleteButton();" tabindex="0" /><br />';
   // Adjust polygon button:
   if (anno.GetType() == 0) {
     html_str += '<input type="button" value="Adjust polygon" title="Press this button if you wish to update the polygon\'s control points." onclick="javascript:AdjustPolygonButton();" />';
@@ -277,6 +275,8 @@ function GetPopupFormEdit(anno) {
   else {
     html_str += '<input type="button" value="Edit Scribbles" title="Press this button if you wish to update the segmentation." onclick="javascript:EditBubbleEditScribble();" />';  
   }
+  // Delete button:
+  html_str += '<input type="button" style="float:left" value="Object Not Present" title="Press this button if the object that the label refers to is not in the image or not visible." onclick="main_handler.EditBubbleDeleteButton();" tabindex="0" /><br />';
   /*************************************************************/
   /*************************************************************/
   

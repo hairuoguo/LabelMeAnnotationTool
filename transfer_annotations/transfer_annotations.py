@@ -99,8 +99,9 @@ def get_transfer_update():
     json_request = request.get_json(force=True) 
     name = json_request["name"]
     folder = json_request['folder']
+    init = json_request['init']
     answer = merge_xmls(folder, name)
-    '''
+    ''' 
     lock_file = open("Images/" + folder + "/" + name + ".lock", "w")
     all_lock_files = glob.glob("Images/" + folder + "/" + "*.lock") 
     for lock_file in all_lock_files:
@@ -112,7 +113,10 @@ def get_transfer_update():
             os.remove(lock_file)
     '''
     lock.release()
-    return answer
+    if init == True:
+        return str(init)
+    else:
+        return answer
 
 @app.route("/get_all_matches", methods=["POST"])
 def get_all_matches():
@@ -190,18 +194,18 @@ def transfer_annotations():
         transposed_y = transposed_points[1, :]/s
         transposed_points = []
         #corners_matrix = np.matrix(np.hstack((np.array([0, 0, 1]).reshape((3, 1)), np.array([width, height, 1]).reshape((3, 1)))))
-        corners_matrix = np.matrix([[0, width], [0, height], [1, 1]])
-        corners = np.asarray(np.matrix(H)*corners_matrix)
-        corners = corners/corners[2, :]
-        outliers_x = filter(lambda x: x > corners[0, 1] or x < corners[0, 0] or x < 0 or x > width, transposed_x)
-        outliers_y = filter(lambda y: y > corners[1, 1] or y < corners[1, 0] or y < 0 or y > height, transposed_y)
+        #corners_matrix = np.matrix([[0, width], [0, height], [1, 1]])
+        #corners = np.asarray(np.matrix(H)*corners_matrix)
+        #corners = corners/corners[2, :]
+        outliers_x = filter(lambda x: x < 0 or x > width, transposed_x)
+        outliers_y = filter(lambda y: y < 0 or y > height, transposed_y)
         
         if len(outliers_x) == 0 and len(outliers_y) == 0:
             for x, y, in zip(transposed_x, transposed_y): 
                 transposed_points.append((x, y))
             write_to_xml(img2_name, folder, transposed_points, anno_name)
     lock.release()
-    return str(corners) 
+    return "True" 
            
  
             

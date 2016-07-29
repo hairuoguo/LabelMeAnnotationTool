@@ -351,20 +351,55 @@ function annotation(anno_id) {
     };
 
     this.transfer_annotation = function(main_media, anno_name){
-       var xPoints = this.GetPtsX();
+        var xCloseToBorder = false;
+        var yCloseToBorder = false;
+        var xPoints = this.GetPtsX();
         var yPoints = this.GetPtsY();
+        for (var i = 0; i < xPoints.length; i++){
+            if (xPoints[i] < main_media.width_orig*0.05 || xPoints[i] > main_media.width_orig*0.95) xCloseToBorder = true;
+    
+        }
+        for (var j = 0; j < yPoints.length; j++){
+            if (yPoints[j] < main_media.height_orig*0.05 || yPoints[j] > main_media.height_orig*0.95) yCloseToBorder = true;
+        }
         var imName = main_media.file_info.GetImName();
         var folder = main_media.file_info.GetDirName();
-        $.ajax({
-            type: 'POST',
-            url: "https://hairuo.scripts.mit.edu/LabelMeAnnotationTool/transfer_annotations/transfer_annotations",
-            data: JSON.stringify({'x_points': xPoints, 'y_points': yPoints, 'name': imName, 'folder': folder, 'anno_name': anno_name, 'assignment_id': parent.assignmentId}),
-            contentType: 'application/json; charset=utf-8',
-            dataType: "text",
-            success: function(returned_data){console.log(returned_data);},
-            error: function(returned_data){
-                console.log(returned_data)
-            }
-        });
+        if (xCloseToBorder || yCloseToBorder){
+                 
+            alertify.set({ labels: {
+                ok     : "Yes",
+                cancel : "No"
+            } });
+            alertify.set({ buttonFocus: "none" });
+            alertify.confirm('Is this object cut off by the edge of the image?', function (e) {
+                if (e) {
+                    return;
+                } else {
+                    $.ajax({
+                        type: 'POST',
+                        url: "https://hairuo.scripts.mit.edu/LabelMeAnnotationTool/transfer_annotations/transfer_annotations",
+                        data: JSON.stringify({'x_points': xPoints, 'y_points': yPoints, 'name': imName, 'folder': folder, 'anno_name': anno_name, 'assignment_id': parent.assignmentId}),
+                        contentType: 'application/json; charset=utf-8',
+                        dataType: "text",
+                        success: function(returned_data){console.log(returned_data);},
+                        error: function(returned_data){
+                            console.log(returned_data)
+                        }
+                    });
+                }
+            });        
+        }else{
+            $.ajax({
+                type: 'POST',
+                url: "https://hairuo.scripts.mit.edu/LabelMeAnnotationTool/transfer_annotations/transfer_annotations",
+                data: JSON.stringify({'x_points': xPoints, 'y_points': yPoints, 'name': imName, 'folder': folder, 'anno_name': anno_name, 'assignment_id': parent.assignmentId}),
+                contentType: 'application/json; charset=utf-8',
+                dataType: "text",
+                success: function(returned_data){console.log(returned_data);},
+                error: function(returned_data){
+                    console.log(returned_data)
+                }
+            });
+        }
     };
 }

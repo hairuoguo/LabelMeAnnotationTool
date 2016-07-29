@@ -49,7 +49,18 @@ function DrawPolygon(element_id,X,Y,obj_name,attr,scale) {
 
   // Draw polygon:
   $('#'+element_id).append('<a xmlns="http://www.w3.org/2000/svg"> <polygon xmlns="http://www.w3.org/2000/svg" id="' + dom_id + '" points="' + poly_points + '" ' + attr + ' /><title xmlns="http://www.w3.org/2000/svg">' + obj_name + '</title></a>');
+/*
+var newLink = document.createElementNS("http://www.w3.org/2000/svg", 'a');
+var newPoly = document.createElementNS("http://www.w3.org/2000/svg", 'polygon');
+var title = document.createElementNS("http://www.w3.org/2000/svg", 'title');
+title.innerHTML = obj_name;
 
+newPoly.appendChild(title);
+newPoly.id = dom_id;
+newPoly.points = poly_points;
+newLink.appendChild(newPoly);
+document.getElementById(element_id).appendChild(newLink);
+*/
   return dom_id;
 }
 

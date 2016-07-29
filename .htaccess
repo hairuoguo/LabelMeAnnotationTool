@@ -1,7 +1,6 @@
 Options +Includes +ExecCGI
 AddHandler cgi-script .cgi .sh .pl
-AddType image/svg+xml .svg .svgz
-AddType application/xhtml+xml shtml
+AddType image/svg+xml .svg .svgz svg
 AddHandler server-parsed .shtml
 XBitHack on
 BrowserMatchNoCase macintosh Mac
@@ -9,14 +8,12 @@ BrowserMatchNoCase MSIE InternetExplorer
 
 <Files "tool.shtml">
 AddType application/xhtml+xml shtml
+#AddType text/html shtml
 AddHandler server-parsed .shtml
-AddType image/svg+xml .svg .svgz
-RewriteEngine On
-RewriteBase /
-RewriteCond %{HTTP_ACCEPT} !application/xhtml\+xml
-RewriteCond %{HTTP_ACCEPT} (text/html|\*/\*)
-RewriteCond %{REQUEST_FILENAME} .*\.html
-RewriteRule ^.*$ - "[T=text/html,L]"
+AddType image/svg+xml .svg .svgz svg
+XBitHack on
+BrowserMatchNoCase macintosh Mac
+BrowserMatchNoCase MSIE InternetExplorer
 </Files>
 
 <Files "unit_tests.html">
