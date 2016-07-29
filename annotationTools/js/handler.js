@@ -95,8 +95,15 @@ function handler() {
       // Pointer to object:
       
       // Set fields:
+      var points_list = []
+      var ptsX = anno.GetPtsX();
+      var ptsY = anno.GetPtsY();
+      for (var i = 0; i < ptsX.length; i++){
+           points_list.append([ptsX[i], ptsY[i]]); 
+        }
       LMsetObjectField(LM_xml, obj_ndx, "name", new_name);
       LMsetObjectField(LM_xml, obj_ndx, "automatic", "0");
+      LMsetObjectField(LM_xml, obj_ndx, 'xy', points_list);
       if (use_attributes){ 
       // Insert attributes (and create field if it is not there):
       LMsetObjectField(LM_xml, obj_ndx, "attributes", new_attributes);
