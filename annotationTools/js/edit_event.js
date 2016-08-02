@@ -180,16 +180,20 @@ if (use_attributes == true){
   // Set to polygon drawing mode:
   SetDrawingMode(0);
 
+      var folder = main_media.file_info.GetDirName();
+      var anno_file = main_media.GetFileInfo().GetFullName();
+      anno_file = 'Annotations/' + anno_file.substr(0,anno_file.length-4) + '.xml' + '?' + Math.random()
   // Create adjust event:
   var frame = null;
   if (video_mode) frame = oVP.getcurrentFrame();
   adjust_event = new AdjustEvent('select_canvas',LMgetObjectField(LM_xml,anno.anno_id,'x', frame),LMgetObjectField(LM_xml,anno.anno_id,'y', frame),
-    LMgetObjectField(LM_xml,anno.anno_id,'name'),function(x,y,_editedControlPoints) {
+    LMgetObjectField(LM_xml,anno.anno_id,'name'), function(x,y,_editedControlPoints) {
       // Submit username:
       if(username_flag) submit_username();
 
-      // Redraw polygon:
-      anno.RenderAnnotation('rest');
+      //ReadXML(anno_file, UpdateLoadAnnotationSuccess, function(){return;});
+      
+     // Redraw polygon:
       
       // Set polygon (x,y) points:
       if (!video_mode){
@@ -202,7 +206,7 @@ if (use_attributes == true){
           main_media.UpdateObjectPosition(anno, x, y);
         }
       }
-      
+      anno.RenderAnnotation('rest');
 
       // Set global variable whether the control points have been edited:
       editedControlPoints = _editedControlPoints;

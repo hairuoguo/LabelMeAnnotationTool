@@ -83,7 +83,7 @@ def merge_xmls(folder, name):
             object_xml = ET.parse(object_file)
         except:
             continue
-        object_xml.find('id').text = str(main_xml.xpath('count(//object)'))
+        object_xml.find('id').text = str(int(main_xml.xpath('count(//object)')))
         object_root = object_xml.getroot()
         main_root.append(object_root)
         os.remove(object_file)
@@ -231,7 +231,7 @@ def write_to_xml(image_name, folder, points, anno_name):
     create_append_assign(anno_object, "deleted", str(0))
     create_append_assign(anno_object, "verified", str(0))
     create_append_assign(anno_object, "date", datetime.now().strftime("%d-%b-%Y %H:%M:%S"))
-    create_append_assign(anno_object, "id", str(xml.xpath('count(//object)')))
+    create_append_assign(anno_object, "id", str(int(xml.xpath('count(//object)'))))
     #create_append_assign(anno_object, "occluded", "n")
     parts_element = create_append_assign(anno_object, 'parts', "")
     parts_element.append(ET.Element("hasparts"))

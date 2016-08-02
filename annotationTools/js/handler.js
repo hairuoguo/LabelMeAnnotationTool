@@ -84,7 +84,7 @@ function handler() {
     }
       
       StopEditEvent();
-      
+     
       // Insert data to write to logfile:
       if(editedControlPoints) InsertServerLogData('cpts_modified');
       else InsertServerLogData('cpts_not_modified');
@@ -100,13 +100,18 @@ function handler() {
       LMsetObjectField(LM_xml, obj_ndx, "automatic", "0");
       if (use_attributes){ 
       // Insert attributes (and create field if it is not there):
-      LMsetObjectField(LM_xml, obj_ndx, "attributes", new_attributes);
+      LMsetObjectField(LM_xml, obj_ndx, "attributes", new_attributes)
         
       
       LMsetObjectField(LM_xml, obj_ndx, "occluded", new_occluded);
         }
+      var folder = main_media.file_info.GetDirName();
+      var anno_file = main_media.GetFileInfo().GetFullName();
+      anno_file = 'Annotations/' + anno_file.substr(0,anno_file.length-4) + '.xml' + '?' + Math.random()
+      
       // Write XML to server:
-      if (nosave == false) WriteXML(SubmitXmlUrl,LM_xml,function(){console.log("submitted"); return;});
+      if (nosave == false) WriteXML(SubmitXmlUrl,LM_xml,function(){ReadXML(anno_file, UpdateLoadAnnotationSuccess, LoadAnnotation404); return;});
+    
       
       // Refresh object list:
       if(view_ObjList) {
@@ -239,25 +244,32 @@ function handler() {
     };
 
     this.SubmitRedrawQuery = function(){
-          var anno = redraw_anno;
-          var obj_ndx = anno.anno_id;
-          var points_list = []
-          var ptsX = draw_x;
-          var ptsY = draw_y;
-          for (var i = 0; i < ptsX.length; i++){
-               points_list.push([ptsX[i], ptsY[i]]); 
+          var folder = main_media.file_info.GetDirName();
+          var anno_file = main_media.GetFileInfo().GetFullName();
+          anno_file = 'Annotations/' + anno_file.substr(0,anno_file.length-4) + '.xml' + '?' + Math.random()
+            
+         var SubmitRedraw = function(xml){
+              UpdateLoadAnnotationSuccess(xml);
+              var anno = redraw_anno;
+              var obj_ndx = anno.anno_id;
+              var points_list = []
+              var ptsX = draw_x;
+              var ptsY = draw_y;
+              for (var i = 0; i < ptsX.length; i++){
+                   points_list.push([ptsX[i], ptsY[i]]); 
+                }
+              LMsetObjectField(LM_xml, obj_ndx, 'xy', points_list);
+            if(draw_anno) {
+              draw_anno.DeletePolygon();
+              draw_anno = null;
             }
-          LMsetObjectField(LM_xml, obj_ndx, 'xy', points_list);
-        redraw_anno = null;
-	if(draw_anno) {
-	  draw_anno.DeletePolygon();
-	  draw_anno = null;
-	}
-        this.QueryToRest();
-        if(!LMgetObjectField(LM_xml, LMnumberOfObjects(LM_xml)-1, 'deleted') ||view_Deleted) {
-	main_canvas.AttachAnnotation(anno);
-	anno.RenderAnnotation('rest');
-      }
+            main_canvas.AttachAnnotation(anno);
+            main_handler.QueryToRest();
+            if(!LMgetObjectField(LM_xml, LMnumberOfObjects(LM_xml)-1, 'deleted') ||view_Deleted) {
+            //anno.RenderAnnotation('rest');
+            }
+        
+      
       
       /*************************************************************/
       /*************************************************************/
@@ -267,12 +279,21 @@ function handler() {
       	scribble_canvas.scribble_image = "";
       	scribble_canvas.colorseg = Math.floor(Math.random()*14);
       }
-        if (nosave == false) WriteXML(SubmitXmlUrl, LM_xml, function(){console.log("success");});
+        if (nosave == false) WriteXML(SubmitXmlUrl, LM_xml, function(){
+          LoadAnnotationSuccess(LM_xml); //ReadXML(anno_file, LoadAnnotationSuccess, LoadAnnotation404);
+         console.log("success");});
+      //main_canvas.RenderAnnotations();
+        redraw_anno = null;
         return anno;
+        }
+          
+        ReadXML(anno_file, SubmitRedraw, LoadAnnotation404);
     }
 
     this.StartRedrawQuery = function(){
       redraw_anno = select_anno;
+      if (!video_mode) select_anno.DeletePolygon();
+      else $('#'+select_anno.polygon_id).remove();
       CloseQueryPopup();
       active_canvas = REST_CANVAS;
       edit_popup_open = 0;
@@ -282,9 +303,8 @@ function handler() {
       
       $('#query_canvas').css('z-index','-2');
       $('#query_canvas_div').css('z-index','-2');
+      
       // Remove polygon from the select canvas:
-      if (!video_mode) select_anno.DeletePolygon();
-      else $('#'+select_anno.polygon_id).remove();
       var anno = select_anno;
 
       // Write logfile message:
@@ -299,7 +319,7 @@ function handler() {
       // then attach the annotation to the main_canvas:
       if(!LMgetObjectField(LM_xml, anno.anno_id, 'deleted') || view_Deleted) {
         
-        main_canvas.AttachAnnotation(anno);
+        //main_canvas.AttachAnnotation(anno);
         if(!anno.hidden) {
           anno.RenderAnnotation('rest');
         }
@@ -384,6 +404,9 @@ function handler() {
       html_str += '<parts><hasparts></hasparts><ispartof></ispartof></parts>';
       var ts = GetTimeStamp();
       if(ts.length==20) html_str += '<date>' + ts + '</date>';
+      
+      var numItems = $(LM_xml).children('annotation').children('object').length;
+      anno.anno_id = numItems;
       html_str += '<id>' + anno.anno_id + '</id>';
       if (bounding_box){
           html_str += '<type>'
@@ -455,7 +478,7 @@ function handler() {
 
       if (add_parts_to != null) addPart(add_parts_to, anno.anno_id);
       // Write XML to server:
-      if (nosave == false) WriteXML(SubmitXmlUrl,LM_xml,function(){console.log("write complete");});
+      if (nosave == false) WriteXML(SubmitXmlUrl,LM_xml,function(){UpdateLoadAnnotationSuccess(LM_xml); console.log("write complete");});
       
       if(view_ObjList) RenderObjectList();
       

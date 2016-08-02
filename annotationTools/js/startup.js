@@ -107,7 +107,7 @@ function StartupLabelMe() {
                 cache: false,
                 success: function (returned_data){
                     if (returned_data == "True"){
-                        ReadXML(anno_file,LoadAnnotationSuccess,LoadAnnotation404);
+                        ReadXML(anno_file,UpdateLoadAnnotationSuccess,LoadAnnotation404);
                     }
                 },
                 complete: function(returned_data){
@@ -170,17 +170,26 @@ function LoadAnnotationSuccess(xml) {
 
   console.time('attach main_canvas');
   // Attach valid annotations to the main_canvas:
+  var on_canvas;
   for(var pp = 0; pp < LMnumberOfObjects(LM_xml); pp++) {
     var isDeleted = LMgetObjectField(LM_xml, pp, 'deleted');
     if((view_Existing&&!isDeleted)||(isDeleted&&view_Deleted)) {
       // Attach to main_canvas:
-      main_canvas.AttachAnnotation(new annotation(pp));
+      on_canvas = false;
+      for (var i = 0; i < main_canvas.annotations.length; i++){
+        console.log(pp);
+        console.log(main_canvas.annotations[i].GetAnnoID());
+        if (main_canvas.annotations[i].GetAnnoID() == pp) {on_canvas = true; console.log("skipped");} 
+      }
+        
+      if (on_canvas == false) main_canvas.AttachAnnotation(new annotation(pp));
       if (!video_mode && LMgetObjectField(LM_xml, pp, 'x') == null){
         main_canvas.annotations[main_canvas.annotations.length -1].SetType(1);
         main_canvas.annotations[main_canvas.annotations.length -1].scribble = new scribble(pp);
       }
     }
   }
+    
   console.timeEnd('attach main_canvas');
 
   console.time('RenderAnnotations()');
@@ -436,3 +445,54 @@ function SetPolygonDrawingMode(bounding){
   bounding_box = bounding;
   SetDrawingMode(0);
 }
+
+
+function UpdateLoadAnnotationSuccess(xml) {
+  
+  console.time('load success');
+
+  LM_xml = xml;
+ console.log(adjust_event);  
+  // Set global variable:
+    
+  
+  if ((active_canvas != 1) || (redraw_anno != null) || (adjust_event != null)) return;
+
+  // Set AllAnnotations array:
+  SetAllAnnotationsArray();
+
+  console.time('attach main_canvas');
+  // Attach valid annotations to the main_canvas:
+
+  for(var pp = 0; pp < LMnumberOfObjects(LM_xml); pp++) {
+    var isDeleted = LMgetObjectField(LM_xml, pp, 'deleted');
+    var on_canvas;
+    if((view_Existing&&!isDeleted)||(isDeleted&&view_Deleted)) {
+      // Attach to main_canvas:
+      on_canvas = false;
+      for (var i = 0; i < main_canvas.annotations.length; i++){
+        if (main_canvas.annotations[i].GetAnnoID() == pp) on_canvas = true; 
+      }
+      if (on_canvas == false) main_canvas.AttachAnnotation(new annotation(pp));
+      if (!video_mode && LMgetObjectField(LM_xml, pp, 'x') == null){
+        main_canvas.annotations[main_canvas.annotations.length -1].SetType(1);
+        main_canvas.annotations[main_canvas.annotations.length -1].scribble = new scribble(pp);
+      }
+    }
+  }
+  console.timeEnd('attach main_canvas');
+
+  console.time('RenderAnnotations()');
+  // Render the annotations:
+
+  main_canvas.RenderAnnotations();
+  
+  console.timeEnd('RenderAnnotations()');
+
+  console.timeEnd('load success');
+
+  //FinishStartup();
+  if(view_ObjList) RenderObjectList();
+
+}
+
