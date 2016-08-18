@@ -125,7 +125,7 @@ function StartupLabelMe() {
       }
     main_media.GetNewImage(main_media_onload_helper);
       // Get the image:
-    
+   SetPolygonDrawingMode(true); 
       
     }
   }
@@ -438,10 +438,12 @@ function SetPolygonDrawingMode(bounding){
       alert("Need to close current polygon first.");
       return;
   }
-  var buttons = document.getElementsByClassName("labelBtnDraw");
-  for (var i = 0; i < buttons.length; i++) buttons[i].setAttribute('style', 'background-color: #fff');
-  if (!bounding) document.getElementById("polygon").setAttribute('style', 'background-color: #faa');
-  else document.getElementById("bounding_box").setAttribute('style', 'background-color: #faa');
+  if (main_media.file_info.GetMode() != 'mt'){
+      var buttons = document.getElementsByClassName("labelBtnDraw");
+      for (var i = 0; i < buttons.length; i++) buttons[i].setAttribute('style', 'background-color: #fff');
+      if (!bounding) document.getElementById("polygon").setAttribute('style', 'background-color: #faa');
+      else document.getElementById("bounding_box").setAttribute('style', 'background-color: #faa');
+ }
   bounding_box = bounding;
   SetDrawingMode(0);
 }

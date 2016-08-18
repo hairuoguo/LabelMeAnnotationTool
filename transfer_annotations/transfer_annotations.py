@@ -201,8 +201,19 @@ def transfer_annotations():
         outliers_y = filter(lambda y: y < 0 or y > height, transposed_y)
         
         if len(outliers_x) == 0 and len(outliers_y) == 0:
-            for x, y, in zip(transposed_x, transposed_y): 
-                transposed_points.append((x, y))
+            #for x, y, in zip(transposed_x, transposed_y): 
+               # transposed_points.append((x, y))
+            min_x = min(transposed_x)  
+            max_x = max(transposed_x)
+            min_y = min(transposed_y)
+            max_y = max(transposed_y)
+
+            transposed_points.append((min_x, max_y))
+            transposed_points.append((max_x, max_y))
+            transposed_points.append((max_x, min_y))
+            transposed_points.append((min_x, min_y)) 
+
+
             write_to_xml(img2_name, folder, transposed_points, anno_name)
     lock.release()
     return "True" 
@@ -233,6 +244,7 @@ def write_to_xml(image_name, folder, points, anno_name):
     create_append_assign(anno_object, "date", datetime.now().strftime("%d-%b-%Y %H:%M:%S"))
     create_append_assign(anno_object, "id", str(int(xml.xpath('count(//object)'))))
     #create_append_assign(anno_object, "occluded", "n")
+    create_append_assign(anno_object, 'type', 'bounding_box')
     parts_element = create_append_assign(anno_object, 'parts', "")
     parts_element.append(ET.Element("hasparts"))
     parts_element.append(ET.Element("ispartof"))
@@ -268,9 +280,11 @@ def write_to_xml(image_name, folder, points, anno_name):
         #xml.write("../Annotations/" + filename, pretty_print=True) 
     
         
-@app.route("/")
+
+@app.route("/hello_world", methods=['POST'])
 def hello_world():
-    return "Hello world!"
+    return "Hello"
+
     
     
 if __name__ == "__main__":

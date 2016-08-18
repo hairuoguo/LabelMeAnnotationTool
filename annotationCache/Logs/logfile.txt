@@ -43444,3 +43444,320 @@
 02-Aug-2016 20:31:09 171.64.70.40 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36
 02-Aug-2016 20:31:09 171.64.70.40 *start_loading
 02-Aug-2016 20:31:11 171.64.70.40 *done_loading_Images/360_room/R0010009_0004.jpg
+02-Aug-2016 20:31:47 171.64.70.40 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36
+02-Aug-2016 20:31:47 171.64.70.40 *start_loading
+02-Aug-2016 20:31:47 171.64.70.40 *done_loading_Images/360_room/R0010009_0004.jpg
+03-Aug-2016 19:09:48 67.180.21.245 *start_loading
+03-Aug-2016 19:09:48 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36
+03-Aug-2016 19:09:49 67.180.21.245 *done_loading_Images/360_room/R0010015_0002.jpg
+03-Aug-2016 19:22:25 67.180.21.245 *start_polygon
+03-Aug-2016 19:22:28 67.180.21.245 *What_is_this_object_query
+03-Aug-2016 19:22:35 67.180.21.245 *start_loading
+03-Aug-2016 19:22:35 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36
+03-Aug-2016 19:22:36 67.180.21.245 *done_loading_Images/360_room/R0010015_0002.jpg
+03-Aug-2016 19:22:51 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36
+03-Aug-2016 19:22:51 67.180.21.245 *start_loading
+03-Aug-2016 19:22:52 67.180.21.245 *done_loading_Images/360_room/R0010009_0004.jpg
+03-Aug-2016 19:23:04 67.180.21.245 *start_polygon
+03-Aug-2016 19:23:23 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36
+03-Aug-2016 19:23:23 67.180.21.245 *start_loading
+03-Aug-2016 19:23:24 67.180.21.245 *done_loading_Images/360_room/R0010009_0004.jpg
+03-Aug-2016 19:41:19 67.180.21.245 *start_polygon
+03-Aug-2016 19:42:39 67.180.21.245 *What_is_this_object_query
+03-Aug-2016 19:45:54 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36
+03-Aug-2016 19:45:54 67.180.21.245 *start_loading
+03-Aug-2016 19:45:57 67.180.21.245 *done_loading_Images/360_room/R0010009_0004.jpg
+03-Aug-2016 19:48:08 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36
+03-Aug-2016 19:48:08 67.180.21.245 *start_loading
+03-Aug-2016 19:48:09 67.180.21.245 *done_loading_Images/360_room/R0010009_0004.jpg
+03-Aug-2016 19:49:02 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36
+03-Aug-2016 19:49:02 67.180.21.245 *start_loading
+03-Aug-2016 19:49:04 67.180.21.245 *done_loading_Images/360_room/R0010009_0004.jpg
+03-Aug-2016 19:49:54 67.180.21.245 *start_polygon
+03-Aug-2016 19:49:55 67.180.21.245 *What_is_this_object_query
+03-Aug-2016 19:50:01 360_room R0010009_0004 0 1 67.180.21.245  poster 1 admin cpts_not_modified 0 0
+03-Aug-2016 19:50:02 67.180.21.245 *start_polygon
+03-Aug-2016 19:50:03 67.180.21.245 *What_is_this_object_query
+03-Aug-2016 19:50:39 67.180.21.245 *Opened_Edit_Popup
+03-Aug-2016 19:50:44 67.180.21.245 *Closed_Edit_Popup
+03-Aug-2016 19:50:46 67.180.21.245 *Opened_Edit_Popup
+03-Aug-2016 19:50:47 67.180.21.245 *Closed_Edit_Popup
+03-Aug-2016 19:50:44 360_room R0010009_0004 1 1 67.180.21.245  poster->poster 1 admin cpts_modified 0 0
+03-Aug-2016 19:50:48 67.180.21.245 *start_polygon
+03-Aug-2016 19:50:49 67.180.21.245 *What_is_this_object_query
+03-Aug-2016 19:50:51 360_room R0010009_0004 1 1 67.180.21.245  *empty*    0 0
+03-Aug-2016 19:54:23 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36
+03-Aug-2016 19:54:23 67.180.21.245 *start_loading
+03-Aug-2016 19:54:23 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36
+03-Aug-2016 19:54:23 67.180.21.245 *start_loading
+03-Aug-2016 19:54:24 67.180.21.245 *done_loading_Images/360_room/R0010009_0004.jpg
+03-Aug-2016 19:54:25 67.180.21.245 *done_loading_Images/360_room/R0010015_0002.jpg
+03-Aug-2016 19:58:00 67.180.21.245 *start_loading
+03-Aug-2016 19:58:00 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36
+03-Aug-2016 19:58:02 67.180.21.245 *done_loading_Images/360_room/R0010009_0004.jpg
+03-Aug-2016 20:00:40 67.180.21.245 *start_polygon
+03-Aug-2016 20:00:50 67.180.21.245 *What_is_this_object_query
+03-Aug-2016 20:01:14 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36
+03-Aug-2016 20:01:14 67.180.21.245 *start_loading
+03-Aug-2016 20:01:15 67.180.21.245 *done_loading_Images/360_room/R0010015_0002.jpg
+03-Aug-2016 20:01:20 67.180.21.245 *start_polygon
+03-Aug-2016 20:01:22 67.180.21.245 *What_is_this_object_query
+03-Aug-2016 20:01:25 360_room R0010015_0002 0 1 67.180.21.245  poster 1 admin cpts_not_modified 0 0
+03-Aug-2016 20:01:31 360_room R0010009_0004 1 1 67.180.21.245  poster 1 admin cpts_not_modified 0 0
+03-Aug-2016 20:02:33 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36
+03-Aug-2016 20:02:33 67.180.21.245 *start_loading
+03-Aug-2016 20:02:35 67.180.21.245 *done_loading_Images/360_room/R0010015_0002.jpg
+03-Aug-2016 20:02:41 67.180.21.245 *start_loading
+03-Aug-2016 20:02:41 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36
+03-Aug-2016 20:02:42 67.180.21.245 *done_loading_Images/360_room/R0010009_0004.jpg
+03-Aug-2016 20:02:47 67.180.21.245 *start_polygon
+03-Aug-2016 20:02:49 67.180.21.245 *What_is_this_object_query
+03-Aug-2016 20:02:53 67.180.21.245 *start_polygon
+03-Aug-2016 20:02:56 67.180.21.245 *What_is_this_object_query
+03-Aug-2016 20:02:59 360_room R0010015_0002 0 1 67.180.21.245  poster 1 admin cpts_not_modified 0 0
+03-Aug-2016 20:03:06 360_room R0010009_0004 1 2 67.180.21.245  poster 1 admin cpts_not_modified 0 0
+03-Aug-2016 20:03:18 67.180.21.245 *start_polygon
+03-Aug-2016 20:03:22 67.180.21.245 *start_polygon
+03-Aug-2016 20:03:24 67.180.21.245 *What_is_this_object_query
+03-Aug-2016 20:03:26 360_room R0010015_0002 2 3 67.180.21.245  poster 2 admin cpts_not_modified 0 0
+03-Aug-2016 20:03:34 67.180.21.245 *What_is_this_object_query
+03-Aug-2016 20:03:37 360_room R0010009_0004 3 4 67.180.21.245  poster 2 admin cpts_not_modified 0 0
+03-Aug-2016 20:04:17 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36
+03-Aug-2016 20:04:17 67.180.21.245 *start_loading
+03-Aug-2016 20:04:18 67.180.21.245 *done_loading_Images/360_room/R0010015_0002.jpg
+03-Aug-2016 20:04:20 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36
+03-Aug-2016 20:04:20 67.180.21.245 *start_loading
+03-Aug-2016 20:04:23 67.180.21.245 *done_loading_Images/360_room/R0010009_0004.jpg
+03-Aug-2016 20:04:34 67.180.21.245 *start_polygon
+03-Aug-2016 20:04:35 67.180.21.245 *What_is_this_object_query
+03-Aug-2016 20:04:41 67.180.21.245 *start_polygon
+03-Aug-2016 20:04:43 67.180.21.245 *What_is_this_object_query
+03-Aug-2016 20:04:46 360_room R0010015_0002 0 1 67.180.21.245  poster 1 admin cpts_not_modified 0 0
+03-Aug-2016 20:04:52 360_room R0010009_0004 1 2 67.180.21.245  poster 1 admin cpts_not_modified 0 0
+03-Aug-2016 20:05:25 67.180.21.245 *start_polygon
+03-Aug-2016 20:05:26 67.180.21.245 *What_is_this_object_query
+03-Aug-2016 20:05:32 67.180.21.245 *Opened_Edit_Popup
+03-Aug-2016 20:05:35 67.180.21.245 *Closed_Edit_Popup
+03-Aug-2016 20:05:39 67.180.21.245 *start_polygon
+03-Aug-2016 20:05:40 67.180.21.245 *What_is_this_object_query
+03-Aug-2016 20:05:43 360_room R0010015_0002 2 3 67.180.21.245  poster 2 admin cpts_not_modified 0 0
+03-Aug-2016 20:05:48 67.180.21.245 *start_polygon
+03-Aug-2016 20:05:50 67.180.21.245 *What_is_this_object_query
+03-Aug-2016 20:05:52 360_room R0010009_0004 3 3 67.180.21.245  *empty*    0 0
+03-Aug-2016 20:06:29 67.180.21.245 *start_loading
+03-Aug-2016 20:06:29 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36
+03-Aug-2016 20:06:31 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36
+03-Aug-2016 20:06:31 67.180.21.245 *done_loading_Images/360_room/R0010015_0002.jpg
+03-Aug-2016 20:06:31 67.180.21.245 *start_loading
+03-Aug-2016 20:06:35 67.180.21.245 *done_loading_Images/360_room/R0010009_0004.jpg
+03-Aug-2016 20:06:38 67.180.21.245 *Opened_Edit_Popup
+03-Aug-2016 20:06:52 67.180.21.245 *Closed_Edit_Popup
+03-Aug-2016 20:06:52 360_room R0010015_0002 3 3 67.180.21.245  PROPOSED_poster->proposed_poster 0 admin cpts_modified 0 0
+03-Aug-2016 20:07:43 67.180.21.245 *Opened_Edit_Popup
+03-Aug-2016 20:07:49 67.180.21.245 *Closed_Edit_Popup
+03-Aug-2016 20:19:08 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36
+03-Aug-2016 20:19:08 67.180.21.245 *start_loading
+03-Aug-2016 20:19:08 67.180.21.245 *start_loading
+03-Aug-2016 20:19:08 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36
+03-Aug-2016 20:19:10 67.180.21.245 *done_loading_Images/360_room/R0010009_0004.jpg
+03-Aug-2016 20:19:11 67.180.21.245 *done_loading_Images/360_room/R0010015_0002.jpg
+03-Aug-2016 20:26:15 67.180.21.245 *start_polygon
+03-Aug-2016 20:26:18 67.180.21.245 *What_is_this_object_query
+03-Aug-2016 20:26:21 360_room R0010015_0002 0 1 67.180.21.245  poster 1 admin cpts_not_modified 0 0
+03-Aug-2016 20:26:30 67.180.21.245 *Opened_Edit_Popup
+03-Aug-2016 20:26:36 67.180.21.245 *Closed_Edit_Popup
+03-Aug-2016 20:26:36 360_room R0010009_0004 1 1 67.180.21.245  PROPOSED_poster->proposed_poster 0 admin cpts_modified 0 0
+03-Aug-2016 20:27:53 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36
+03-Aug-2016 20:27:53 67.180.21.245 *start_loading
+03-Aug-2016 20:27:54 67.180.21.245 *done_loading_Images/360_room/R0010009_0004.jpg
+03-Aug-2016 20:27:57 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36
+03-Aug-2016 20:27:57 67.180.21.245 *start_loading
+03-Aug-2016 20:27:59 67.180.21.245 *done_loading_Images/360_room/R0010015_0002.jpg
+03-Aug-2016 20:28:23 67.180.21.245 *start_polygon
+03-Aug-2016 20:28:25 67.180.21.245 *What_is_this_object_query
+03-Aug-2016 20:28:27 360_room R0010015_0002 0 1 67.180.21.245  poster 1 admin cpts_not_modified 0 0
+03-Aug-2016 20:28:37 67.180.21.245 *Opened_Edit_Popup
+03-Aug-2016 20:28:41 67.180.21.245 *start_polygon
+03-Aug-2016 20:28:42 67.180.21.245 *What_is_this_object_query
+03-Aug-2016 20:28:45 360_room R0010015_0002 1 2 67.180.21.245  poster 2 admin cpts_not_modified 0 0
+03-Aug-2016 20:28:53 67.180.21.245 *Closed_Edit_Popup
+03-Aug-2016 20:28:53 360_room R0010009_0004 2 2 67.180.21.245  PROPOSED_poster->proposed_poster 0 admin cpts_modified 0 0
+03-Aug-2016 20:29:12 67.180.21.245 *Opened_Edit_Popup
+03-Aug-2016 20:29:13 67.180.21.245 *Closed_Edit_Popup
+03-Aug-2016 20:29:16 67.180.21.245 *start_polygon
+03-Aug-2016 20:29:17 67.180.21.245 *What_is_this_object_query
+03-Aug-2016 20:29:20 360_room R0010015_0002 2 3 67.180.21.245  poster 3 admin cpts_not_modified 0 0
+03-Aug-2016 20:29:23 67.180.21.245 *start_polygon
+03-Aug-2016 20:29:26 67.180.21.245 *What_is_this_object_query
+03-Aug-2016 20:29:28 360_room R0010009_0004 3 3 67.180.21.245  *empty*    0 0
+03-Aug-2016 20:30:31 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36
+03-Aug-2016 20:30:31 67.180.21.245 *start_loading
+03-Aug-2016 20:30:32 67.180.21.245 *done_loading_Images/360_room/R0010015_0002.jpg
+03-Aug-2016 20:31:29 67.180.21.245 *start_loading
+03-Aug-2016 20:31:29 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36
+03-Aug-2016 20:31:30 67.180.21.245 *done_loading_Images/360_room/R0010015_0002.jpg
+03-Aug-2016 20:43:31 67.180.21.245 *Opened_Edit_Popup
+03-Aug-2016 20:43:35 67.180.21.245 *Closed_Edit_Popup
+03-Aug-2016 20:43:35 360_room R0010015_0002 0 3 67.180.21.245  poster->poster 0 admin cpts_modified 0 0
+03-Aug-2016 20:43:37 67.180.21.245 *start_polygon
+03-Aug-2016 20:43:40 67.180.21.245 *What_is_this_object_query
+03-Aug-2016 20:43:43 360_room R0010015_0002 3 4 67.180.21.245  poster 1 admin cpts_not_modified 0 0
+03-Aug-2016 20:43:45 67.180.21.245 *start_polygon
+03-Aug-2016 20:43:48 67.180.21.245 *What_is_this_object_query
+03-Aug-2016 20:43:50 360_room R0010015_0002 4 5 67.180.21.245  poster 2 admin cpts_not_modified 0 0
+03-Aug-2016 20:43:51 67.180.21.245 *start_polygon
+03-Aug-2016 20:43:56 67.180.21.245 *What_is_this_object_query
+03-Aug-2016 20:44:00 360_room R0010015_0002 5 6 67.180.21.245  poster 3 admin cpts_not_modified 0 0
+03-Aug-2016 20:44:04 67.180.21.245 *Opened_Edit_Popup
+03-Aug-2016 20:44:08 67.180.21.245 *Closed_Edit_Popup
+03-Aug-2016 20:44:08 360_room R0010015_0002 6 6 67.180.21.245  poster->poster 3 admin cpts_modified 0 0
+03-Aug-2016 20:44:15 67.180.21.245 *start_polygon
+03-Aug-2016 20:44:22 67.180.21.245 *What_is_this_object_query
+03-Aug-2016 20:44:27 360_room R0010015_0002 6 7 67.180.21.245  lamp 4 admin cpts_not_modified 0 0
+03-Aug-2016 20:44:29 67.180.21.245 *Opened_Edit_Popup
+03-Aug-2016 20:44:33 67.180.21.245 *Closed_Edit_Popup
+03-Aug-2016 20:44:33 360_room R0010015_0002 7 7 67.180.21.245  lamp->lamp 4 admin cpts_modified 0 0
+03-Aug-2016 20:44:36 67.180.21.245 *start_polygon
+03-Aug-2016 20:44:39 67.180.21.245 *What_is_this_object_query
+03-Aug-2016 20:44:43 67.180.21.245 *start_polygon
+03-Aug-2016 20:44:42 360_room R0010015_0002 7 8 67.180.21.245  monitor 5 admin cpts_not_modified 0 0
+03-Aug-2016 20:44:44 67.180.21.245 *What_is_this_object_query
+03-Aug-2016 20:44:45 67.180.21.245 *Opened_Edit_Popup
+03-Aug-2016 20:44:52 67.180.21.245 *Closed_Edit_Popup
+03-Aug-2016 20:44:52 360_room R0010015_0002 8 8 67.180.21.245  monitor->monitor 5 admin cpts_modified 0 0
+03-Aug-2016 20:44:58 67.180.21.245 *start_polygon
+03-Aug-2016 20:45:01 67.180.21.245 *What_is_this_object_query
+03-Aug-2016 20:45:06 360_room R0010015_0002 8 9 67.180.21.245  computer 6 admin cpts_not_modified 0 0
+03-Aug-2016 20:45:12 67.180.21.245 *start_polygon
+03-Aug-2016 20:45:14 67.180.21.245 *What_is_this_object_query
+03-Aug-2016 20:45:17 360_room R0010015_0002 9 10 67.180.21.245  laptop 7 admin cpts_not_modified 0 0
+03-Aug-2016 20:45:19 67.180.21.245 *Opened_Edit_Popup
+03-Aug-2016 20:45:21 67.180.21.245 *Closed_Edit_Popup
+03-Aug-2016 20:45:21 360_room R0010015_0002 10 10 67.180.21.245  computer->laptop 7 admin cpts_not_modified 0 0
+03-Aug-2016 20:45:38 67.180.21.245 *Opened_Edit_Popup
+03-Aug-2016 20:45:41 67.180.21.245 *Deleting_object
+03-Aug-2016 20:45:41 360_room R0010009_0004 6 6 67.180.21.245  PROPOSED_computer 0 admin cpts_not_modified 0 1
+03-Aug-2016 20:45:41 67.180.21.245 *Closed_Edit_Popup
+03-Aug-2016 20:45:56 67.180.21.245 *start_polygon
+03-Aug-2016 20:45:58 67.180.21.245 *What_is_this_object_query
+03-Aug-2016 20:46:02 360_room R0010015_0002 10 11 67.180.21.245  box 8 admin cpts_not_modified 0 0
+03-Aug-2016 20:46:06 67.180.21.245 *start_polygon
+03-Aug-2016 20:46:11 67.180.21.245 *What_is_this_object_query
+03-Aug-2016 20:46:14 360_room R0010015_0002 11 12 67.180.21.245  bed 9 admin cpts_not_modified 0 0
+03-Aug-2016 20:46:23 67.180.21.245 *start_polygon
+03-Aug-2016 20:46:28 67.180.21.245 *What_is_this_object_query
+03-Aug-2016 20:46:31 360_room R0010015_0002 12 13 67.180.21.245  chair 10 admin cpts_not_modified 0 0
+03-Aug-2016 20:46:34 67.180.21.245 *Opened_Edit_Popup
+03-Aug-2016 20:46:39 67.180.21.245 *Closed_Edit_Popup
+03-Aug-2016 20:46:39 360_room R0010015_0002 13 13 67.180.21.245  chair->chair 10 admin cpts_modified 0 0
+03-Aug-2016 20:46:43 67.180.21.245 *start_polygon
+03-Aug-2016 20:46:45 67.180.21.245 *What_is_this_object_query
+03-Aug-2016 20:46:49 360_room R0010015_0002 13 14 67.180.21.245  trash_can 11 admin cpts_not_modified 0 0
+03-Aug-2016 20:46:57 67.180.21.245 *Opened_Edit_Popup
+03-Aug-2016 20:47:01 67.180.21.245 *Deleting_object
+03-Aug-2016 20:47:01 360_room R0010009_0004 8 8 67.180.21.245  PROPOSED_trash_can 0 admin cpts_not_modified 1 2
+03-Aug-2016 20:47:01 67.180.21.245 *Closed_Edit_Popup
+03-Aug-2016 20:47:03 67.180.21.245 *Opened_Edit_Popup
+03-Aug-2016 20:47:12 67.180.21.245 *Closed_Edit_Popup
+03-Aug-2016 20:47:12 360_room R0010009_0004 8 8 67.180.21.245  PROPOSED_chair->proposed_chair 0 admin cpts_modified 2 2
+03-Aug-2016 20:47:33 67.180.21.245 *start_polygon
+03-Aug-2016 20:47:38 67.180.21.245 *What_is_this_object_query
+03-Aug-2016 20:47:41 360_room R0010015_0002 14 15 67.180.21.245  desk 12 admin cpts_not_modified 0 0
+03-Aug-2016 20:47:47 67.180.21.245 *start_polygon
+03-Aug-2016 20:47:49 67.180.21.245 *What_is_this_object_query
+03-Aug-2016 20:47:52 360_room R0010015_0002 15 16 67.180.21.245  lamp 13 admin cpts_not_modified 0 0
+03-Aug-2016 20:48:01 67.180.21.245 *start_polygon
+03-Aug-2016 20:48:03 67.180.21.245 *What_is_this_object_query
+03-Aug-2016 20:48:06 360_room R0010015_0002 16 17 67.180.21.245  flag 14 admin cpts_not_modified 0 0
+04-Aug-2016 06:06:57 67.180.21.245 *start_polygon
+04-Aug-2016 06:06:57 67.180.21.245 *What_is_this_object_query
+04-Aug-2016 06:36:23 67.180.21.245 *Opened_Edit_Popup
+04-Aug-2016 06:42:18 67.180.21.245 *Closed_Edit_Popup
+04-Aug-2016 06:54:03 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36
+04-Aug-2016 06:54:03 67.180.21.245 *start_loading
+04-Aug-2016 06:55:31 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36
+04-Aug-2016 06:55:31 67.180.21.245 *start_loading
+04-Aug-2016 06:55:40 67.180.21.245 *done_loading_Images/practice/R0010015_0002.jpg
+04-Aug-2016 07:04:11 67.180.21.245 *start_polygon
+04-Aug-2016 07:04:14 67.180.21.245 *What_is_this_object_query
+04-Aug-2016 07:04:20 practice R0010015_0002 0 1 67.180.21.245  proposed_monitor 1 admin cpts_not_modified 0 0
+04-Aug-2016 07:04:24 67.180.21.245 *start_polygon
+04-Aug-2016 07:04:26 67.180.21.245 *What_is_this_object_query
+04-Aug-2016 07:04:34 practice R0010015_0002 1 2 67.180.21.245  proposed_poster 2 admin cpts_not_modified 0 0
+04-Aug-2016 07:04:35 67.180.21.245 *Opened_Edit_Popup
+04-Aug-2016 07:04:41 67.180.21.245 *Closed_Edit_Popup
+04-Aug-2016 07:04:41 practice R0010015_0002 2 2 67.180.21.245  proposed_poster->proposed_poster 2 admin cpts_modified 0 0
+04-Aug-2016 07:04:48 67.180.21.245 *start_polygon
+04-Aug-2016 07:04:49 67.180.21.245 *What_is_this_object_query
+04-Aug-2016 07:04:59 practice R0010015_0002 2 3 67.180.21.245  proposed_book 3 admin cpts_not_modified 0 0
+04-Aug-2016 07:05:00 67.180.21.245 *Opened_Edit_Popup
+04-Aug-2016 07:05:05 67.180.21.245 *Closed_Edit_Popup
+04-Aug-2016 07:05:05 practice R0010015_0002 3 3 67.180.21.245  proposed_book->proposed_book 3 admin cpts_modified 0 0
+04-Aug-2016 07:05:06 67.180.21.245 *Opened_Edit_Popup
+04-Aug-2016 07:05:07 67.180.21.245 *Closed_Edit_Popup
+04-Aug-2016 07:05:07 practice R0010015_0002 3 3 67.180.21.245  proposed_book->proposed_book 3 admin cpts_modified 0 0
+04-Aug-2016 07:05:49 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36
+04-Aug-2016 07:05:49 67.180.21.245 *start_loading
+04-Aug-2016 07:06:31 67.180.21.245 *start_loading
+04-Aug-2016 07:06:31 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36
+04-Aug-2016 07:06:34 67.180.21.245 *done_loading_Images/practice/R0010015_0002.jpg
+04-Aug-2016 07:06:41 67.180.21.245 *start_polygon
+04-Aug-2016 07:06:44 67.180.21.245 *What_is_this_object_query
+04-Aug-2016 07:06:46 67.180.21.245 *start_polygon
+04-Aug-2016 07:06:48 67.180.21.245 *What_is_this_object_query
+04-Aug-2016 07:06:53 practice R0010015_0002 3 4 67.180.21.245  posters 1 admin cpts_not_modified 0 0
+04-Aug-2016 07:07:10 67.180.21.245 *Opened_Edit_Popup
+04-Aug-2016 07:07:21 67.180.21.245 *Closed_Edit_Popup
+04-Aug-2016 07:07:22 67.180.21.245 *Opened_Edit_Popup
+04-Aug-2016 07:07:32 67.180.21.245 *Deleting_object
+04-Aug-2016 07:07:32 practice R0010015_0002 4 4 67.180.21.245  posters 1 admin cpts_not_modified 0 1
+04-Aug-2016 07:07:34 67.180.21.245 *Opened_Edit_Popup
+04-Aug-2016 07:07:32 67.180.21.245 *Closed_Edit_Popup
+04-Aug-2016 07:07:43 67.180.21.245 *Closed_Edit_Popup
+04-Aug-2016 07:07:43 practice R0010015_0002 4 4 67.180.21.245  proposed_poster->proposed_poster 1 admin cpts_modified 1 1
+04-Aug-2016 07:08:08 67.180.21.245 *Opened_Edit_Popup
+04-Aug-2016 07:08:17 67.180.21.245 *Closed_Edit_Popup
+04-Aug-2016 07:08:17 practice R0010015_0002 4 4 67.180.21.245  proposed_poster->proposed_poster 1 admin cpts_modified 1 1
+04-Aug-2016 07:08:23 67.180.21.245 *start_polygon
+04-Aug-2016 07:08:25 67.180.21.245 *What_is_this_object_query
+04-Aug-2016 07:08:30 practice R0010015_0002 4 5 67.180.21.245  poster 2 admin cpts_not_modified 1 1
+04-Aug-2016 07:08:38 67.180.21.245 *Opened_Edit_Popup
+04-Aug-2016 07:08:41 67.180.21.245 *Closed_Edit_Popup
+04-Aug-2016 07:08:41 practice R0010015_0002 5 5 67.180.21.245  poster->poster 2 admin cpts_modified 1 1
+04-Aug-2016 07:08:43 67.180.21.245 *Opened_Edit_Popup
+04-Aug-2016 07:08:49 67.180.21.245 *Closed_Edit_Popup
+04-Aug-2016 07:08:49 practice R0010015_0002 5 5 67.180.21.245  poster->poster 2 admin cpts_modified 1 1
+04-Aug-2016 07:08:53 67.180.21.245 *start_polygon
+04-Aug-2016 07:08:55 67.180.21.245 *What_is_this_object_query
+04-Aug-2016 07:17:42 67.180.21.245 *start_polygon
+04-Aug-2016 07:17:49 67.180.21.245 *What_is_this_object_query
+04-Aug-2016 17:59:16 67.180.21.245 *start_loading
+04-Aug-2016 17:59:16 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36
+04-Aug-2016 17:59:17 67.180.21.245 *done_loading_Images/360_room/R0010015_0002.jpg
+04-Aug-2016 18:01:07 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36
+04-Aug-2016 18:01:07 67.180.21.245 *start_loading
+04-Aug-2016 18:01:11 67.180.21.245 *done_loading_Images/practice/R0010015_0002.jpg
+04-Aug-2016 20:20:26 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36
+04-Aug-2016 20:20:26 67.180.21.245 *start_loading
+04-Aug-2016 20:20:27 67.180.21.245 *done_loading_Images/practice/R0010015_0002.jpg
+04-Aug-2016 20:20:34 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36
+04-Aug-2016 20:20:34 67.180.21.245 *start_loading
+04-Aug-2016 20:20:39 67.180.21.245 *done_loading_Images/360_room/R0010015_0002.jpg
+05-Aug-2016 18:44:24 67.180.21.245 *start_loading
+05-Aug-2016 18:44:24 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36
+05-Aug-2016 18:44:27 67.180.21.245 *done_loading_Images/practice/R0010015_0002.jpg
+08-Aug-2016 18:50:57 171.64.70.40 *start_loading
+08-Aug-2016 18:50:57 171.64.70.40 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36
+08-Aug-2016 18:51:04 171.64.70.40 *done_loading_Images/practice/R0010015_0002.jpg
+10-Aug-2016 19:57:36 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36
+10-Aug-2016 19:57:36 67.180.21.245 *start_loading
+10-Aug-2016 19:57:47 67.180.21.245 *done_loading_Images/practice/R0010015_0002.jpg
+16-Aug-2016 07:06:47 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36
+16-Aug-2016 07:06:47 67.180.21.245 *start_loading
+16-Aug-2016 07:10:18 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36
+16-Aug-2016 07:10:18 67.180.21.245 *start_loading
+16-Aug-2016 07:19:17 67.180.21.245 *start_loading
+16-Aug-2016 07:19:17 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36
+16-Aug-2016 07:25:05 67.180.21.245 *Browser_Information Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36
+16-Aug-2016 07:25:05 67.180.21.245 *start_loading
+16-Aug-2016 07:25:06 67.180.21.245 *done_loading_Images/360_room/R0010014_0001.jpg
